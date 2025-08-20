@@ -1,0 +1,639 @@
+[
+  {
+    "objectID": "syllabus/index.html",
+    "href": "syllabus/index.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Instructor Name: Dr. Gregory M. Kapfhammer\nOffice Location: Alden Hall 108\n\nPlease visit the instructor’s web site for more information!\n\n\n\n\nMonday: 11:00 AM – 12:00 noon\nTuesday: 2:30 PM – 3:30 PM\nWednesday: 10:00 AM – 12:00 noon\nWednesday: 2:00 PM – 3:00 PM\nThursday: 1:30 PM – 2:30 PM\n\nAll instructor appointments are 15-minute time slots and take place in Alden Hall, Room 108.\n\n\n\n\n\n\nScheduling Appointments\n\n\n\nTo schedule a meeting with the course instructor during office hours, please visit the Instructor’s Appointment Scheduler. You can schedule an appointment by clicking a suitable box in Google Calendar’s Appointment Scheduler and then reserving an open time slot. The details about your chosen appointment will appear in both your Google Calendar and the instructor’s Google Calendar. Please arrive ten minutes in advance for your meeting and be aware that, by necessity, the meeting before yours may run late.\n\n\n\n\n\nA study of fundamental methods for designing and implementing algorithms and analyzing their efficiency. While developing expertise in select models of computation and the key mathematical and experimental approaches to studying algorithm efficiency, students investigate different types of algorithms through hands-on activities that often require teamwork. Students also learn how to determine whether a problem can be efficiently solved by an algorithm that is implemented as a computer program. During a weekly laboratory session students use state-of-the-art technology to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\n\nPrerequisite: CMPSC 101\nDistribution Requirements: QR, SP\n\n\n\n\n\n\n\nExplaining the Distribution Requirements\n\n\n\n\n\n\nQuantitative Reasoning (QR): Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.\nScientific Process and Knowledge (SP): Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\n\n\n\n\nAllegheny College’s educational program is designed so that its graduates are able to:\n\nAC-1: Think critically and creatively.\nAC-2: Communicate clearly and persuasively as speakers and writers.\nAC-3: Invoke multiple ways of understanding to organize and evaluate evidence, and to interpret and make sense of their experiences and the experiences of others.\nAC-4: Apply their knowledge and learning to engage in informed debate, and to analyze and solve problems.\n\nComputer Science 202 at Allegheny College is a core course in the Computer Science major. Graduates with the Computer Science major — who all take the Computer Science 202 course — must demonstrate their attainment of these learning objectives:\n\nCS-1: Demonstrate and be able to communicate the knowledge of data types, algorithms, and mathematical principles behind discrete objects.\nCS-2: Use scientific and theoretical methods to design, implement, evaluate, deploy, improve, maintain, and document software and hardware systems.\nCS-3: Apply and articulate key concepts from a specialization area where the interconnection between software and hardware is important and evident.\nCS-4: Able to communicate technical details of the produced software and hardware artifacts both in writing and orally.\n\nAll five of the Computer Science major’s learning objectives support the QR and SP distribution requirements and the College’s learning objectives.\nThe specific learning objectives for Computer Science 202 are as follows:\n\nCS-202-1: Correctly implement both well-established and custom data structures using a programming language so as to solve a problem with a computer program.\n\nEnables the attainment of CS-1.\n\nCS-202-2: Perform an asymptotic analysis of an algorithm to arrive at its correct worst-case time complexity class.\n\nEnables the attainment of CS-2.\nEnables the attainment of CS-4.\n\nCS-202-3: Conduct experiments that measure the efficiency of different combinations of programming languages, data structures, and algorithms.\n\nEnables the attainment of CS-3.\n\nCS-202-4: Use both theoretical and experimental results to pick the data structure(s) and algorithm(s) that balance the trade-offs associated with correctly and efficiently solving a problem with a computer program.\n\nEnables the attainment of CS-2.\n\nCS-202-5: Effectively apply algorithmic problem solving techniques like searching, sorting, and memoization to correctly and efficiently solve a problem through the use of a computer program.\n\nEnables the attainment of CS-1.\n\n\nThe learning objectives for Computer Science 202 enable the attainment of the CS program learning objectives that in turn support the attainment of the College’s learning objectives.\n\n\n\n\n Online textbook called A First Course on Data Structures in Python\n The ds2 package in the donsheehy/datastructures GitHub repository\n\nThe online textbook and the ds2 package serve as the starting point for additional content developed by the course instructor. Finally, extensive details about the content that the course covers in the textbook are available in the course schedule and the course slides.\n\n\n\n\n\nThe grade that a student receives in this class will be based on the following categories. All of these percentages are approximate and, if the need to do so presents itself, the course instructor may, for instance, change the assigned percentages during the academic semester.\n\n\n\nCategory\nPercentage\n\n\n\n\nClass Participation\n5%\n\n\nMidterm Examinations\n20%\n\n\nFinal Examination\n10%\n\n\nAlgorithm All-Hands Projects\n15%\n\n\nAlgorithm Engineering Projects\n30%\n\n\nAlgorithm Engineering Skill-Checks\n20%\n\n\n\nThese assessment categories have the following definitions:\n\nClass Participation: Students are expected to regularly attend and actively participate in all of the class and laboratory sessions, as outlined on the course schedule. After either an unexcused absence or a late attendance to either a class or a laboratory session, a student’s weekly class participation grade will be reduced. Students who need to miss class or attend class late for an excused reason should communicate their situation to the course instructor in a timely fashion. A student’s weekly class participation grade will be reduced if they are frequently observed, during either class or laboratory sessions, undertaking non-course-related activities like viewing email, social media, or other content not about algorithm analysis.\nMidterm Examinations: Each midterm examination is an online, executable, and cumulative assessment covering all prior material from the course sessions, as outlined on the course schedule. Unless prior arrangements are made with the instructor, all students should use their computer to take these tests on the scheduled date and to complete it in the stated location while taking no more than the required amount of time. The midterm is an executable examination completed through the use of GitHub, VS Code, and the Python programming tools installed on a student’s laptop. Students may use external sources, including artificial intelligence coding assistants, during the completion of the midterm examination provided that they cite these sources and explain how they used them to complete the examination.\nFinal Examination: The final examination is an online, executable, cumulative assessment covering all of the material during all of the course sessions, as outlined on the course schedule. Unless prior arrangements are made with the instructor, all students should use their computer to take the final examination on the scheduled date and to complete it in the stated location while taking no more than the required amount of time. The cumulative final is an executable examination that a student will complete through the use of GitHub, VS Code, and the Python programming tools installed on their laptops. Students may use external sources, including artificial intelligence coding assistants, during the completion of the final examination provided that they cite these sources and explain how they used them to complete the examination.\nAlgorithm All-Hands Projects: These team-based projects enable students to explore both the scientific and engineering aspects of algorithm analysis, as outlined in the course schedule. During the completion of a scientific study phase of algorithm analysis, students will work in a team to propose an original research question and design an experiment to answer it. When completing an engineering effort phase of algorithm analysis, students work in a team as they design, implement, document, test, and maintain software tools that support the rigorous evaluation of the performance (e.g., time or space overhead) of a Python program or a feature of the Python programming language. The completion of this tool should be managed through a GitHub repository that the team creates and to which all team members contribute. The conclusion of an algorithm all-hands project involves the team-based creation, publication, and oral presentation of a report that overviews all of the experiences during the completion of the scientific study and engineering effort tasks for answering an original research question in the field of algorithm analysis. As evidenced by commits to the GitHub repository of the course web site and their participation in the algorithm all-hands session, all students should contribute to the writing, revision, presentation, and discussion of the algorithm all-hands project reports. Finally, students may use external sources, including artificial intelligence coding assistants, during the completion of an algorithm all-hands project provided that they cite these sources and explain how they used them to complete their part(s) of an algorithm all-hands project.\nAlgorithm Engineering Projects: These projects enable students to explore both the scientific and engineering aspects of algorithm analysis, as outlined in the course schedule. During the completion of this two-week project, students will design and implement a software system suitable for conducting experiments and then use it answer research questions that connect to previously discussed scientific content, as outlined in the course schedule. After implementing the benchmarking system, students will propose and formally state research questions and then discuss them with the course instructor during a laboratory session. Finally, students will conduct experiments to answer these research questions, collect data, analyze the results, and write a report that explains the results in the context of the implemented system. Students may use external sources, including artificial intelligence coding assistants, during the completion of an algorithm all-hands project provided that they cite these sources and explain how they used them to complete the various components of an algorithm engineering project.\nAlgorithm Engineering Skill-Checks: Completing during the second half of a laboratory session, these skill-checks are online, cumulative assessments covering all prior technical material from the course sessions, as outlined on the course schedule. Unless prior arrangements are made with the instructor, all students should use their computer to take these skill-checks on the scheduled date and to complete it in the stated location while taking no more than the required amount of time. Designed to prepare learners for an examination, each skill-check is an executable assessment that students complete through the use of GitHub, VS Code, and the Python programming tools on their laptops. Students may use external sources, including artificial intelligence coding assistants, during the completion of a skill-check provided that they cite these sources and explain how they used them to complete the examination.\n\n\n\n\nUnless exempted by the instructor, students must abide by the following assessment policies:\n\n\nAll assignments will have a stated due date shared through GitHub, GitHub Classroom, and/or the Algorithmology Discord. No credit will be awarded for any course work that you submit to the incorrect GitHub repository or web site. Unless special advance arrangements are made with the instructor to address extenuating circumstances, no work will be accepted after the deadline.\n\n\n\nUsing a report that the instructor shares with you through your GitHub repositories devoted to work in the field of algorithm analysis, you will privately receive a grade for and feedback on your course projects. Your grade will be a function of whether or not you (a) completed work that fulfills the project’s specification and (b) submitted it by the deadline to the stated platform.\n\n\n\nStudents may “spend” up to three algorithmology “tokens” that they may use to secure seven days of additional time to complete a project. You can either preemptively spend a token after missing a deadline for an assignment or, alternatively, spend the token to improve a project after receiving its assessment. For instance, a student may choose to spend a token by asking the instructor to reevaluate one of the algorithm engineering projects. With the exception of the final examination, students may also spend a token to re-take a skill-check or an executable examination. Students are encouraged to pay a token for the re-take of a skill-check or an executable examination no more than 48 hours after the completion of the original assessment. Outside of using these three tokens or severe, extenuating, and unexpected circumstances that are well documented, the instructor will not grant any requests for extensions or re-reassessment.\n\n\n\nIt is mandatory for all students to attend every one of the course sessions. If, due to extenuating circumstances, you will not be able to attend a session, then, whenever possible, please communicate with the instructor at least one week in advance to describe your situation. Students who have any signs of illness should not attend any in-person course sessions.\n\n\n\nIn order to minimize confusion and maximize learning, students must invest time to prepare for the class sessions that focus on professional development, technical development, and project development. Although the course instructor and the student technical leaders will always be available to serve as guide for individual students, teams of students, and the entire class, it is expected that students will volunteer to lead and actively contribute to all class sessions. Only those students who have prepared for class by reading and running the assigned material will be able to effectively participate in these class discussions. To help students remain organized and to effectively prepare for classes, the instructor will maintain a list of course slides and a course schedule with reading assignments, programming suggestions, and other important information about the course (e.g., references to the algorithm engineering projects).\n\n\n\n\nStudents who are struggling to understand the knowledge and skills developed in this course are encouraged to seek assistance from the course instructor and/or the student technical leaders. Students should, within the bounds of the Honor Code, ask and answer questions on the Algorithmology Discord Server; please request assistance from the instructor and student technical leaders first through public Discord channels before sending an email or a direct message. Students who need more assistance are invited to schedule a meeting through the instructor’s appointment scheduler and come to the meeting with details about their question. Students can see the office hour schedule for student technical leaders by viewing the list of student technical leaders and by monitoring announcements in the Allegheny College Computer Science Discord Server.\n\n\n\nThis course will primarily use GitHub and Discord for all course communication. We will use GitHub for the sharing of both source code and documentation for course projects and for reporting issues in those materials. We will use two distinct Discord servers for all course discussions. The Algorithmology Discord Server provides a way for members of the developer development community to use text and video to chat with each other and will be the main forum for discussing the professional and technical content in the field of algorithm analysis. The Allegheny College Computer Science Discord Server will be the main forum for Department of Computer Science announcements. Finally, any content that a student wants the instructor to assess (e.g., the work for an algorithm engineering project) must be in a GitHub repository.\n\n\n\nAlthough we will primarily use the Algorithmology Discord Server for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails. This class policy is based on the statement about the use of email that appears in The Compass, the College’s student handbook; please see the course instructor if you do not have this handbook.\n\n\n\nThe Allegheny College Academic bulletin describes The Academic Honor Program that governs the entire academic program at Allegheny College. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., executable examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who matriculates at the College acknowledges this Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\n\n\nStudents who create the source code and documentation for their algorithm engineering and algorithm all-hands projects should ensure the implementation of a high-quality final product. While students are permitted to use a wide variety of algorithm engineering tools, such as integrated development environments, testing frameworks, automated debuggers, and code generators (e.g., systems that leverage large language models like GitHub Copilot) and documentation sites such as StackOverflow, they must take responsibility for all of the source code and documentation that they submit for this course, including artifacts that are automatically generated by a software tool.\nThis means that every student must work as an effective algorithm engineer by documenting the sources for their work and verifying the correctness, maintainability, and long-term reliability of all source code and documentation that they submit. As such, students who use software tools to create content are responsible for citing their sources and demonstrating their understanding of it as a part of any follow-on assessment. Moreover, all students in the class are responsible for all of the source code and documentation submitted to the GitHub repository that hosts the course projects, including any tool-generated software artifacts. This means that every student should be able to answer questions, during either an in-person or online discussion, about any algorithm engineering content, including that which was automatically generated by a software tool.\nStudents who are effective algorithm engineers also pledge to abide by the ACM Code of Ethics and Professional Conduct. Unless the students in this course furnish a different governing contract, they also pledge to follow the principles espoused by exemplary technical organizations, such as Oxide Computer and its public statement of mission and principles.\n\n\n\nStudents with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898 or studentaccessibility@allegheny.edu. SASS is located in the Center for Student Success in Pelletier Library. Please contact SASS as soon as possible to ensure that approved accommodations are implemented in a timely fashion.\n\n\n\n\nIn reference to software, Frederick P. Brooks, Jr. wrote in chapter one of The Mythical Man Month that “the magic of myth and legend has come true in our time.” Software is a pervasive aspect of our society that changes how we think and act. High quality and efficient software also has the potential to positively influence the lives of many people. Let’s embark on this journey of discovery and innovation, harnessing the power of algorithms to efficiently solve complex problems with software. At the start of this class, I invite you to join together in an adventure in algorithm analysis!\n\n\n\n\n\n\nExternal Learners\n\n\n\nThis syllabus is for learners who enrolled in a for-credit Algorithm Analysis course in the Department of Computer and information Science at Allegheny College. Even though external learners are not bound by this syllabus, they can rely on the Algorithmology team and the members of the Algorithmology Discord."
+  },
+  {
+    "objectID": "syllabus/index.html#computer-science-202-spring-2025",
+    "href": "syllabus/index.html#computer-science-202-spring-2025",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Instructor Name: Dr. Gregory M. Kapfhammer\nOffice Location: Alden Hall 108\n\nPlease visit the instructor’s web site for more information!\n\n\n\n\nMonday: 11:00 AM – 12:00 noon\nTuesday: 2:30 PM – 3:30 PM\nWednesday: 10:00 AM – 12:00 noon\nWednesday: 2:00 PM – 3:00 PM\nThursday: 1:30 PM – 2:30 PM\n\nAll instructor appointments are 15-minute time slots and take place in Alden Hall, Room 108.\n\n\n\n\n\n\nScheduling Appointments\n\n\n\nTo schedule a meeting with the course instructor during office hours, please visit the Instructor’s Appointment Scheduler. You can schedule an appointment by clicking a suitable box in Google Calendar’s Appointment Scheduler and then reserving an open time slot. The details about your chosen appointment will appear in both your Google Calendar and the instructor’s Google Calendar. Please arrive ten minutes in advance for your meeting and be aware that, by necessity, the meeting before yours may run late.\n\n\n\n\n\nA study of fundamental methods for designing and implementing algorithms and analyzing their efficiency. While developing expertise in select models of computation and the key mathematical and experimental approaches to studying algorithm efficiency, students investigate different types of algorithms through hands-on activities that often require teamwork. Students also learn how to determine whether a problem can be efficiently solved by an algorithm that is implemented as a computer program. During a weekly laboratory session students use state-of-the-art technology to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\n\nPrerequisite: CMPSC 101\nDistribution Requirements: QR, SP\n\n\n\n\n\n\n\nExplaining the Distribution Requirements\n\n\n\n\n\n\nQuantitative Reasoning (QR): Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.\nScientific Process and Knowledge (SP): Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\n\n\n\n\nAllegheny College’s educational program is designed so that its graduates are able to:\n\nAC-1: Think critically and creatively.\nAC-2: Communicate clearly and persuasively as speakers and writers.\nAC-3: Invoke multiple ways of understanding to organize and evaluate evidence, and to interpret and make sense of their experiences and the experiences of others.\nAC-4: Apply their knowledge and learning to engage in informed debate, and to analyze and solve problems.\n\nComputer Science 202 at Allegheny College is a core course in the Computer Science major. Graduates with the Computer Science major — who all take the Computer Science 202 course — must demonstrate their attainment of these learning objectives:\n\nCS-1: Demonstrate and be able to communicate the knowledge of data types, algorithms, and mathematical principles behind discrete objects.\nCS-2: Use scientific and theoretical methods to design, implement, evaluate, deploy, improve, maintain, and document software and hardware systems.\nCS-3: Apply and articulate key concepts from a specialization area where the interconnection between software and hardware is important and evident.\nCS-4: Able to communicate technical details of the produced software and hardware artifacts both in writing and orally.\n\nAll five of the Computer Science major’s learning objectives support the QR and SP distribution requirements and the College’s learning objectives.\nThe specific learning objectives for Computer Science 202 are as follows:\n\nCS-202-1: Correctly implement both well-established and custom data structures using a programming language so as to solve a problem with a computer program.\n\nEnables the attainment of CS-1.\n\nCS-202-2: Perform an asymptotic analysis of an algorithm to arrive at its correct worst-case time complexity class.\n\nEnables the attainment of CS-2.\nEnables the attainment of CS-4.\n\nCS-202-3: Conduct experiments that measure the efficiency of different combinations of programming languages, data structures, and algorithms.\n\nEnables the attainment of CS-3.\n\nCS-202-4: Use both theoretical and experimental results to pick the data structure(s) and algorithm(s) that balance the trade-offs associated with correctly and efficiently solving a problem with a computer program.\n\nEnables the attainment of CS-2.\n\nCS-202-5: Effectively apply algorithmic problem solving techniques like searching, sorting, and memoization to correctly and efficiently solve a problem through the use of a computer program.\n\nEnables the attainment of CS-1.\n\n\nThe learning objectives for Computer Science 202 enable the attainment of the CS program learning objectives that in turn support the attainment of the College’s learning objectives.\n\n\n\n\n Online textbook called A First Course on Data Structures in Python\n The ds2 package in the donsheehy/datastructures GitHub repository\n\nThe online textbook and the ds2 package serve as the starting point for additional content developed by the course instructor. Finally, extensive details about the content that the course covers in the textbook are available in the course schedule and the course slides.\n\n\n\n\n\nThe grade that a student receives in this class will be based on the following categories. All of these percentages are approximate and, if the need to do so presents itself, the course instructor may, for instance, change the assigned percentages during the academic semester.\n\n\n\nCategory\nPercentage\n\n\n\n\nClass Participation\n5%\n\n\nMidterm Examinations\n20%\n\n\nFinal Examination\n10%\n\n\nAlgorithm All-Hands Projects\n15%\n\n\nAlgorithm Engineering Projects\n30%\n\n\nAlgorithm Engineering Skill-Checks\n20%\n\n\n\nThese assessment categories have the following definitions:\n\nClass Participation: Students are expected to regularly attend and actively participate in all of the class and laboratory sessions, as outlined on the course schedule. After either an unexcused absence or a late attendance to either a class or a laboratory session, a student’s weekly class participation grade will be reduced. Students who need to miss class or attend class late for an excused reason should communicate their situation to the course instructor in a timely fashion. A student’s weekly class participation grade will be reduced if they are frequently observed, during either class or laboratory sessions, undertaking non-course-related activities like viewing email, social media, or other content not about algorithm analysis.\nMidterm Examinations: Each midterm examination is an online, executable, and cumulative assessment covering all prior material from the course sessions, as outlined on the course schedule. Unless prior arrangements are made with the instructor, all students should use their computer to take these tests on the scheduled date and to complete it in the stated location while taking no more than the required amount of time. The midterm is an executable examination completed through the use of GitHub, VS Code, and the Python programming tools installed on a student’s laptop. Students may use external sources, including artificial intelligence coding assistants, during the completion of the midterm examination provided that they cite these sources and explain how they used them to complete the examination.\nFinal Examination: The final examination is an online, executable, cumulative assessment covering all of the material during all of the course sessions, as outlined on the course schedule. Unless prior arrangements are made with the instructor, all students should use their computer to take the final examination on the scheduled date and to complete it in the stated location while taking no more than the required amount of time. The cumulative final is an executable examination that a student will complete through the use of GitHub, VS Code, and the Python programming tools installed on their laptops. Students may use external sources, including artificial intelligence coding assistants, during the completion of the final examination provided that they cite these sources and explain how they used them to complete the examination.\nAlgorithm All-Hands Projects: These team-based projects enable students to explore both the scientific and engineering aspects of algorithm analysis, as outlined in the course schedule. During the completion of a scientific study phase of algorithm analysis, students will work in a team to propose an original research question and design an experiment to answer it. When completing an engineering effort phase of algorithm analysis, students work in a team as they design, implement, document, test, and maintain software tools that support the rigorous evaluation of the performance (e.g., time or space overhead) of a Python program or a feature of the Python programming language. The completion of this tool should be managed through a GitHub repository that the team creates and to which all team members contribute. The conclusion of an algorithm all-hands project involves the team-based creation, publication, and oral presentation of a report that overviews all of the experiences during the completion of the scientific study and engineering effort tasks for answering an original research question in the field of algorithm analysis. As evidenced by commits to the GitHub repository of the course web site and their participation in the algorithm all-hands session, all students should contribute to the writing, revision, presentation, and discussion of the algorithm all-hands project reports. Finally, students may use external sources, including artificial intelligence coding assistants, during the completion of an algorithm all-hands project provided that they cite these sources and explain how they used them to complete their part(s) of an algorithm all-hands project.\nAlgorithm Engineering Projects: These projects enable students to explore both the scientific and engineering aspects of algorithm analysis, as outlined in the course schedule. During the completion of this two-week project, students will design and implement a software system suitable for conducting experiments and then use it answer research questions that connect to previously discussed scientific content, as outlined in the course schedule. After implementing the benchmarking system, students will propose and formally state research questions and then discuss them with the course instructor during a laboratory session. Finally, students will conduct experiments to answer these research questions, collect data, analyze the results, and write a report that explains the results in the context of the implemented system. Students may use external sources, including artificial intelligence coding assistants, during the completion of an algorithm all-hands project provided that they cite these sources and explain how they used them to complete the various components of an algorithm engineering project.\nAlgorithm Engineering Skill-Checks: Completing during the second half of a laboratory session, these skill-checks are online, cumulative assessments covering all prior technical material from the course sessions, as outlined on the course schedule. Unless prior arrangements are made with the instructor, all students should use their computer to take these skill-checks on the scheduled date and to complete it in the stated location while taking no more than the required amount of time. Designed to prepare learners for an examination, each skill-check is an executable assessment that students complete through the use of GitHub, VS Code, and the Python programming tools on their laptops. Students may use external sources, including artificial intelligence coding assistants, during the completion of a skill-check provided that they cite these sources and explain how they used them to complete the examination.\n\n\n\n\nUnless exempted by the instructor, students must abide by the following assessment policies:\n\n\nAll assignments will have a stated due date shared through GitHub, GitHub Classroom, and/or the Algorithmology Discord. No credit will be awarded for any course work that you submit to the incorrect GitHub repository or web site. Unless special advance arrangements are made with the instructor to address extenuating circumstances, no work will be accepted after the deadline.\n\n\n\nUsing a report that the instructor shares with you through your GitHub repositories devoted to work in the field of algorithm analysis, you will privately receive a grade for and feedback on your course projects. Your grade will be a function of whether or not you (a) completed work that fulfills the project’s specification and (b) submitted it by the deadline to the stated platform.\n\n\n\nStudents may “spend” up to three algorithmology “tokens” that they may use to secure seven days of additional time to complete a project. You can either preemptively spend a token after missing a deadline for an assignment or, alternatively, spend the token to improve a project after receiving its assessment. For instance, a student may choose to spend a token by asking the instructor to reevaluate one of the algorithm engineering projects. With the exception of the final examination, students may also spend a token to re-take a skill-check or an executable examination. Students are encouraged to pay a token for the re-take of a skill-check or an executable examination no more than 48 hours after the completion of the original assessment. Outside of using these three tokens or severe, extenuating, and unexpected circumstances that are well documented, the instructor will not grant any requests for extensions or re-reassessment.\n\n\n\nIt is mandatory for all students to attend every one of the course sessions. If, due to extenuating circumstances, you will not be able to attend a session, then, whenever possible, please communicate with the instructor at least one week in advance to describe your situation. Students who have any signs of illness should not attend any in-person course sessions.\n\n\n\nIn order to minimize confusion and maximize learning, students must invest time to prepare for the class sessions that focus on professional development, technical development, and project development. Although the course instructor and the student technical leaders will always be available to serve as guide for individual students, teams of students, and the entire class, it is expected that students will volunteer to lead and actively contribute to all class sessions. Only those students who have prepared for class by reading and running the assigned material will be able to effectively participate in these class discussions. To help students remain organized and to effectively prepare for classes, the instructor will maintain a list of course slides and a course schedule with reading assignments, programming suggestions, and other important information about the course (e.g., references to the algorithm engineering projects).\n\n\n\n\nStudents who are struggling to understand the knowledge and skills developed in this course are encouraged to seek assistance from the course instructor and/or the student technical leaders. Students should, within the bounds of the Honor Code, ask and answer questions on the Algorithmology Discord Server; please request assistance from the instructor and student technical leaders first through public Discord channels before sending an email or a direct message. Students who need more assistance are invited to schedule a meeting through the instructor’s appointment scheduler and come to the meeting with details about their question. Students can see the office hour schedule for student technical leaders by viewing the list of student technical leaders and by monitoring announcements in the Allegheny College Computer Science Discord Server.\n\n\n\nThis course will primarily use GitHub and Discord for all course communication. We will use GitHub for the sharing of both source code and documentation for course projects and for reporting issues in those materials. We will use two distinct Discord servers for all course discussions. The Algorithmology Discord Server provides a way for members of the developer development community to use text and video to chat with each other and will be the main forum for discussing the professional and technical content in the field of algorithm analysis. The Allegheny College Computer Science Discord Server will be the main forum for Department of Computer Science announcements. Finally, any content that a student wants the instructor to assess (e.g., the work for an algorithm engineering project) must be in a GitHub repository.\n\n\n\nAlthough we will primarily use the Algorithmology Discord Server for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails. This class policy is based on the statement about the use of email that appears in The Compass, the College’s student handbook; please see the course instructor if you do not have this handbook.\n\n\n\nThe Allegheny College Academic bulletin describes The Academic Honor Program that governs the entire academic program at Allegheny College. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., executable examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who matriculates at the College acknowledges this Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\n\n\nStudents who create the source code and documentation for their algorithm engineering and algorithm all-hands projects should ensure the implementation of a high-quality final product. While students are permitted to use a wide variety of algorithm engineering tools, such as integrated development environments, testing frameworks, automated debuggers, and code generators (e.g., systems that leverage large language models like GitHub Copilot) and documentation sites such as StackOverflow, they must take responsibility for all of the source code and documentation that they submit for this course, including artifacts that are automatically generated by a software tool.\nThis means that every student must work as an effective algorithm engineer by documenting the sources for their work and verifying the correctness, maintainability, and long-term reliability of all source code and documentation that they submit. As such, students who use software tools to create content are responsible for citing their sources and demonstrating their understanding of it as a part of any follow-on assessment. Moreover, all students in the class are responsible for all of the source code and documentation submitted to the GitHub repository that hosts the course projects, including any tool-generated software artifacts. This means that every student should be able to answer questions, during either an in-person or online discussion, about any algorithm engineering content, including that which was automatically generated by a software tool.\nStudents who are effective algorithm engineers also pledge to abide by the ACM Code of Ethics and Professional Conduct. Unless the students in this course furnish a different governing contract, they also pledge to follow the principles espoused by exemplary technical organizations, such as Oxide Computer and its public statement of mission and principles.\n\n\n\nStudents with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898 or studentaccessibility@allegheny.edu. SASS is located in the Center for Student Success in Pelletier Library. Please contact SASS as soon as possible to ensure that approved accommodations are implemented in a timely fashion.\n\n\n\n\nIn reference to software, Frederick P. Brooks, Jr. wrote in chapter one of The Mythical Man Month that “the magic of myth and legend has come true in our time.” Software is a pervasive aspect of our society that changes how we think and act. High quality and efficient software also has the potential to positively influence the lives of many people. Let’s embark on this journey of discovery and innovation, harnessing the power of algorithms to efficiently solve complex problems with software. At the start of this class, I invite you to join together in an adventure in algorithm analysis!\n\n\n\n\n\n\nExternal Learners\n\n\n\nThis syllabus is for learners who enrolled in a for-credit Algorithm Analysis course in the Department of Computer and information Science at Allegheny College. Even though external learners are not bound by this syllabus, they can rely on the Algorithmology team and the members of the Algorithmology Discord."
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Interesting in learning more about how to use experimental and analytical techniques to study algorithms and data structures? Checkout these slide decks to learn more! Each deck explores a specific topic in connection with chapters in the book A First Course on Data Structures in Python. Finally, make sure to review the course schedule for more details about how these slides connect to various course projects.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nIntroduction to Algorithm Analysis\n\n\nHow can we use Python packages to characterize the runtime environment used during experiments?\n\n\n\n\n\nJan 13, 2025\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "schedule/weektwelve/index.html",
+    "href": "schedule/weektwelve/index.html",
+    "title": "Hash Tables",
+    "section": "",
+    "text": "Read chapter 15 in A First Course on Data Structures in Python\n Explore hash table implementations in the ds2 package of donsheehy/datastructures. Can you conduct an experiment to evaluate different approaches to mapping? Which approach has the best object-oriented design?\n Review previous chapters to contextualize how the data structures like ListMapping use the list data structure."
+  },
+  {
+    "objectID": "schedule/weektwelve/index.html#exploration",
+    "href": "schedule/weektwelve/index.html#exploration",
+    "title": "Hash Tables",
+    "section": "",
+    "text": "Read chapter 15 in A First Course on Data Structures in Python\n Explore hash table implementations in the ds2 package of donsheehy/datastructures. Can you conduct an experiment to evaluate different approaches to mapping? Which approach has the best object-oriented design?\n Review previous chapters to contextualize how the data structures like ListMapping use the list data structure."
+  },
+  {
+    "objectID": "schedule/weektwelve/index.html#activities",
+    "href": "schedule/weektwelve/index.html#activities",
+    "title": "Hash Tables",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Hash Tables\n\nExplore how to implement hashing functions that map numbers to list indices\nInvestigate trade-offs with bucket size, hashing function, and re-hashing\nExamine Python source code segments to illustrate key points\n\n Friday: Continue algorithm engineering project six (see the prior week for details about this project) and take mid-term examination two"
+  },
+  {
+    "objectID": "schedule/weektwelve/index.html#slides",
+    "href": "schedule/weektwelve/index.html#slides",
+    "title": "Hash Tables",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Twelve: Hash Tables"
+  },
+  {
+    "objectID": "schedule/weekthirteen/index.html",
+    "href": "schedule/weekthirteen/index.html",
+    "title": "Hierarchical Data Structures",
+    "section": "",
+    "text": "Read chapter 16 through 18 in A First Course on Data Structures in Python\n Explore tree implementations in the ds2 package of donsheehy/datastructures.\n Review previous chapters to see how data structures like the LinkedList influence the design and implementation of this data structure."
+  },
+  {
+    "objectID": "schedule/weekthirteen/index.html#exploration",
+    "href": "schedule/weekthirteen/index.html#exploration",
+    "title": "Hierarchical Data Structures",
+    "section": "",
+    "text": "Read chapter 16 through 18 in A First Course on Data Structures in Python\n Explore tree implementations in the ds2 package of donsheehy/datastructures.\n Review previous chapters to see how data structures like the LinkedList influence the design and implementation of this data structure."
+  },
+  {
+    "objectID": "schedule/weekthirteen/index.html#activities",
+    "href": "schedule/weekthirteen/index.html#activities",
+    "title": "Hierarchical Data Structures",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday: Hierarchical Data Structures\n\nExplore how to implement the Tree data structure\nLearn how to calculate characteristics of a tree like height and depth\nLearn how to traverse a tree in different ways like pre-order and post-order\nExamine Python source code segments to illustrate key points\n\nNo class on April 7, April 10, and April 11"
+  },
+  {
+    "objectID": "schedule/weekthirteen/index.html#slides",
+    "href": "schedule/weekthirteen/index.html#slides",
+    "title": "Hierarchical Data Structures",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Thirteen: Hierarchical Data Structures"
+  },
+  {
+    "objectID": "schedule/weeksix/index.html",
+    "href": "schedule/weeksix/index.html",
+    "title": "Running Time Analysis",
+    "section": "",
+    "text": "Read chapter 5 of A First Course on Data Structures in Python\n Experimentally evaluate performance of algorithms, data structures, and systems in the ds2 package of donsheehy/datastructures\n Note that next week we will cover a new chapter of the book!"
+  },
+  {
+    "objectID": "schedule/weeksix/index.html#exploration",
+    "href": "schedule/weeksix/index.html#exploration",
+    "title": "Running Time Analysis",
+    "section": "",
+    "text": "Read chapter 5 of A First Course on Data Structures in Python\n Experimentally evaluate performance of algorithms, data structures, and systems in the ds2 package of donsheehy/datastructures\n Note that next week we will cover a new chapter of the book!"
+  },
+  {
+    "objectID": "schedule/weeksix/index.html#activities",
+    "href": "schedule/weeksix/index.html#activities",
+    "title": "Running Time Analysis",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Analytical Evaluation\n\nFurther understand why program performance is critically important\nCharacterize performance patterns in Python programs\nUse asymptotic analysis to characterize performance\nExamine Python source code segments to illustrate key points\n\n Friday: Submit algorithm engineering project three, start algorithm engineering project four, and give presentations for the first algorithm all-hands session"
+  },
+  {
+    "objectID": "schedule/weeksix/index.html#project",
+    "href": "schedule/weeksix/index.html#project",
+    "title": "Running Time Analysis",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called filesorter, that runs benchmarks to study the performance of sorting different types of data stored in a CSV file.\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReference  File Sorting as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project:\n\nWeek 1: Implement all of the modules in filesorter\nWeek 2: Design and conduct experiments and document experimental results\n\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“The main take home point for me was how impactful the input file size is to runtime as well as the running time analysis. We can double the input size and it will show us the function by which the time increases. In this project, different methods produce the same output but exhibit different efficiency characteristics.” Pallas Athena-Cain\n“This experiment revealed how confounding variables, such as function design, play a role in the results gathered from outcome variables, such as time overhead. Striking the right balance between these aspects is key in developing the most efficient approach to sorting data quickly, yet also accurately.” Chloe Bonson"
+  },
+  {
+    "objectID": "schedule/weeksix/index.html#slides",
+    "href": "schedule/weeksix/index.html#slides",
+    "title": "Running Time Analysis",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Six: Running Time Analysis through Theoretical Evaluation"
+  },
+  {
+    "objectID": "schedule/weekone/index.html",
+    "href": "schedule/weekone/index.html",
+    "title": "Equipping Algorithm Engineers",
+    "section": "",
+    "text": "Read chapter 1 of A First Course on Data Structures in Python\n Overview the ds2 package in donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weekone/index.html#exploration",
+    "href": "schedule/weekone/index.html#exploration",
+    "title": "Equipping Algorithm Engineers",
+    "section": "",
+    "text": "Read chapter 1 of A First Course on Data Structures in Python\n Overview the ds2 package in donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weekone/index.html#activities",
+    "href": "schedule/weekone/index.html#activities",
+    "title": "Equipping Algorithm Engineers",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Course introduction\n\nIntroduction to algorithm engineering\nOverview of a course on algorithm analysis\nPrepare for an algorithm engineering project\n\n Friday: Algorithm engineering project one"
+  },
+  {
+    "objectID": "schedule/weekone/index.html#project",
+    "href": "schedule/weekone/index.html#project",
+    "title": "Equipping Algorithm Engineers",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called systemsense, that makes it possible to “sense” the characteristics of an execution platform and characterize its performance with microbenchmarks, thereby setting the stage for future algorithm engineering projects.\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReview  System Sense as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“If a function is not fully tested, any number of bugs could come up during the process of running and evaluating it, muddying the performance results.” Mordred Boulais\n“Operating systems each store and reference their own diagnostic information in distinct ways. Although some operating systems and computer architectures are obsolete from the perspective of a developer, it is important to note that each operating system and processor architecture was built for a specific purpose, just like we as humans are made with a specific purpose.” Simon Jones\n“The way modules, files, and function were written ensured that students with different computers would have comparable results. This is important so that going forward we can accurately compare our results. Metaphorically speaking, we need to compare apples to apples and oranges to oranges and not apples to oranges.” Rebekah Rudd"
+  },
+  {
+    "objectID": "schedule/weekone/index.html#slides",
+    "href": "schedule/weekone/index.html#slides",
+    "title": "Equipping Algorithm Engineers",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week One: Introduction to Algorithm Analysis"
+  },
+  {
+    "objectID": "schedule/weekfourteen/index.html",
+    "href": "schedule/weekfourteen/index.html",
+    "title": "Priority Queues",
+    "section": "",
+    "text": "Read chapter 19 in A First Course on Data Structures in Python\n Explore PriorityQueue implementations in the ds2 package of donsheehy/datastructures. Can you write tests to confirm that they preserve priority? Can you see how this data structure combines those that we previously studied?\n Review previous chapters to see how the data structures like List, Queue, and Tree support the behavior of this data structure."
+  },
+  {
+    "objectID": "schedule/weekfourteen/index.html#exploration",
+    "href": "schedule/weekfourteen/index.html#exploration",
+    "title": "Priority Queues",
+    "section": "",
+    "text": "Read chapter 19 in A First Course on Data Structures in Python\n Explore PriorityQueue implementations in the ds2 package of donsheehy/datastructures. Can you write tests to confirm that they preserve priority? Can you see how this data structure combines those that we previously studied?\n Review previous chapters to see how the data structures like List, Queue, and Tree support the behavior of this data structure."
+  },
+  {
+    "objectID": "schedule/weekfourteen/index.html#activities",
+    "href": "schedule/weekfourteen/index.html#activities",
+    "title": "Priority Queues",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Priority Queues\n\nExplore how to implement the PriorityQueue data structure\nUnderstand how the List and Tree support implementing the PriorityQueue\nExplore how the Heap can be used to implement the PriorityQueue\nExamine Python source code segments to illustrate key points\n\n Friday: Submit algorithm engineering project six, start algorithm engineering project seven, and prepare for the algorithm engineering skill-check next week"
+  },
+  {
+    "objectID": "schedule/weekfourteen/index.html#project",
+    "href": "schedule/weekfourteen/index.html#project",
+    "title": "Priority Queues",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called treeprocessor, that runs benchmarks to study the performance of finding data values in a hierarchical data structure.\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReview  Tree Processor as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project:\n\nWeek 1: Implement all of the modules in treeprocessor\nWeek 2: Design and conduct experiments and document experimental results\n\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“Creating a file traversal system highlights the intricacies of path structures and the flow of systems. It was also eye opening in terms of various permissions and error handling, as the importance of such factors impact how access to the directory is programmed. Knowing how these factors affect each other is key in figuring out how to most efficiently traverse a file system.” Chloe Bonson\n“After completing this project, one takeaway that I had is that files can have different sizes based on the operating system. The Windows operating system files take up more space based on the average amount of bytes from processing the same folder across the three operating systems that I studied.” Luke Barker"
+  },
+  {
+    "objectID": "schedule/weekfourteen/index.html#slides",
+    "href": "schedule/weekfourteen/index.html#slides",
+    "title": "Priority Queues",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Fourteen: Priority Queues"
+  },
+  {
+    "objectID": "schedule/weekfive/index.html",
+    "href": "schedule/weekfive/index.html",
+    "title": "Runtime Analysis",
+    "section": "",
+    "text": "Read chapter 5 of A First Course on Data Structures in Python\n Experimentally evaluate performance of algorithms, data structures, and systems in the ds2 package of donsheehy/datastructures\n Note that next week’s focus will be on running time analysis, which is a related concept in algorithm analysis!"
+  },
+  {
+    "objectID": "schedule/weekfive/index.html#exploration",
+    "href": "schedule/weekfive/index.html#exploration",
+    "title": "Runtime Analysis",
+    "section": "",
+    "text": "Read chapter 5 of A First Course on Data Structures in Python\n Experimentally evaluate performance of algorithms, data structures, and systems in the ds2 package of donsheehy/datastructures\n Note that next week’s focus will be on running time analysis, which is a related concept in algorithm analysis!"
+  },
+  {
+    "objectID": "schedule/weekfive/index.html#activities",
+    "href": "schedule/weekfive/index.html#activities",
+    "title": "Runtime Analysis",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Empirical Evaluation\n\nUnderstand why program performance is critically important\nCharacterize performance patterns in Python programs\nUse experimentation to characterize performance trade-offs\nPrepare for using asymptotic analysis to characterize performance\nExamine source code segments to illustrate key points\n\n Friday: Continue algorithm engineering project three (see the prior week for details about this project)"
+  },
+  {
+    "objectID": "schedule/weekfive/index.html#slides",
+    "href": "schedule/weekfive/index.html#slides",
+    "title": "Runtime Analysis",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Five: Runtime Analysis through Experimental Evaluation"
+  },
+  {
+    "objectID": "schedule/weekeleven/index.html",
+    "href": "schedule/weekeleven/index.html",
+    "title": "Searching and Sorting",
+    "section": "",
+    "text": "Read chapters 11 through 14 in A First Course on Data Structures in Python\n Explore algorithms that perform searching and sorting in the ds2 package of donsheehy/datastructures. Can you add debugging statements to trace how these algorithms work? Can you prove the worst-case time complexity of these algorithms?\n Review chapters to confirm that you understand the worst-case time complexities"
+  },
+  {
+    "objectID": "schedule/weekeleven/index.html#exploration",
+    "href": "schedule/weekeleven/index.html#exploration",
+    "title": "Searching and Sorting",
+    "section": "",
+    "text": "Read chapters 11 through 14 in A First Course on Data Structures in Python\n Explore algorithms that perform searching and sorting in the ds2 package of donsheehy/datastructures. Can you add debugging statements to trace how these algorithms work? Can you prove the worst-case time complexity of these algorithms?\n Review chapters to confirm that you understand the worst-case time complexities"
+  },
+  {
+    "objectID": "schedule/weekeleven/index.html#activities",
+    "href": "schedule/weekeleven/index.html#activities",
+    "title": "Searching and Sorting",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Searching and Sorting\n\nExplore how to implement searching and sorting algorithms Python\nApply a new algorithmic paradigm called dynamic programming\nLearn more about the mergesort and quickselect algorithms\nExamine Python source code segments to illustrate key points\n\n Friday: Submit algorithm engineering project five, start algorithm engineering project six, and give presentations for the second algorithm all-hands session"
+  },
+  {
+    "objectID": "schedule/weekeleven/index.html#project",
+    "href": "schedule/weekeleven/index.html#project",
+    "title": "Searching and Sorting",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called lcsfinder, that runs benchmarks to study the performance of finding the longest common sub-sequence of data values\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReview  Longest Common Subsequence Finder as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project:\n\nWeek 1: Implement all of the modules in lcsfinder\nWeek 2: Design and conduct experiments and document experimental results\n\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“A key takeaway is that while a simple recursive implementation may seem straightforward, it can lead to inefficient code with poor time complexity.” Alish Chhetri\n“In this project we learned about finding the longest common subsequence (LCS). We evaluated our algorithm’s performance by running a doubling experiment. We explored a dynamic function and a recursive function, along with a third that simply calculated the length of the computed LCS. Finally, we compared the pros and cons of these different methods, revealing some surprising results!” Rebekah Rudd"
+  },
+  {
+    "objectID": "schedule/weekeleven/index.html#slides",
+    "href": "schedule/weekeleven/index.html#slides",
+    "title": "Searching and Sorting",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Eleven: Searching and Sorting"
+  },
+  {
+    "objectID": "index.html#becoming-a-prosegrammer",
+    "href": "index.html#becoming-a-prosegrammer",
+    "title": "",
+    "section": "Becoming a Prosegrammer",
+    "text": "Becoming a Prosegrammer\nWelcome to the world of Prosegrammers — where prose meets programming! The term “Prosegrammer” is a delightful combination of “prose” (the written word) and “programmer” (people who write software). As a prosegrammer, you’ll master the art of using Python to create, manipulate, and analyze documents while also learning to craft clear, compelling documentation for your software projects. This course focuses on document engineering, a field that bridges the gap between technical writing and software development. Whether you’re generating reports from data, building interactive documentation systems, or creating tools that transform text, prosegrammers use code to make written communication more powerful and accessible. Join us as we explore how to be both eloquent writers and skilled programmers in the fascinating world of document engineering!"
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "",
+    "section": "Course Overview",
+    "text": "Course Overview\nWith the goal of cultivating skilled prosegrammers, this web site features a sixteen-week schedule filled with activities that support the development of your professional and technical capacities in the field of document engineering. Although this site is best used by an on-campus learner in the Department of Computer and Information Science at Allegheny College, the resources and projects are all publicly available. This course teaches you to harness Python’s power for creating and manipulating documents, from simple text processing to building sophisticated documentation systems. You’ll learn to use tools like Jupyter Notebooks and Quarto to create interactive documents that blend code, text, and visualizations. Throughout the course, you’ll also develop skills in reading and critiquing documentation for popular open-source projects, ensuring you can both create and consume high-quality technical writing. Check out the schedule and slides to begin your journey as a prosegrammer!"
+  },
+  {
+    "objectID": "index.html#wow-python-for-document-engineering-and-its-output",
+    "href": "index.html#wow-python-for-document-engineering-and-its-output",
+    "title": "",
+    "section": "Wow, Python for Document Engineering … and its Output!",
+    "text": "Wow, Python for Document Engineering … and its Output!\nAs you explore the technical resources on this site, you’ll discover how Python can transform the way we work with documents. For instance, here’s a simple example of a word_frequency function that analyzes text to count how often each word appears — a fundamental task in document engineering! This function takes a string of text, converts it to lowercase, removes punctuation, and creates a dictionary showing word frequencies. Pretty neat how Python makes document analysis so accessible!\n\nfrom typing import Dict\nimport string\n\ndef word_frequency(text: str) -&gt; Dict[str, int]:\n    \"\"\"Analyze text and return a dictionary of word frequencies.\"\"\"\n    # Convert to lowercase and remove punctuation\n    cleaned_text = text.lower().translate(str.maketrans('', '', string.punctuation))\n    words = cleaned_text.split()\n    \n    # Count word frequencies\n    frequency_dict = {}\n    for word in words:\n        frequency_dict[word] = frequency_dict.get(word, 0) + 1\n    \n    return frequency_dict\n\n# Example text about document engineering\nsample_text = \"Document engineering combines programming with writing. Writing clear documents requires skill. Programming helps automate document creation.\"\n\n# Analyze the text and display results\nword_counts = word_frequency(sample_text)\nprint(\"Word Frequencies:\")\nfor word, count in sorted(word_counts.items()):\n    print(f\"'{word}': {count}\")\n\nWord Frequencies:\n'automate': 1\n'clear': 1\n'combines': 1\n'creation': 1\n'document': 2\n'documents': 1\n'engineering': 1\n'helps': 1\n'programming': 2\n'requires': 1\n'skill': 1\n'with': 1\n'writing': 2\n\n\nBuilding on the previous example, let’s explore how prosegrammers can create more sophisticated document analysis tools! The following code demonstrates a document_summary function that provides key insights about any text document. This function calculates statistics like word count, sentence count, and average words per sentence — essential metrics for document engineers who need to analyze and improve written content. Watch how Python makes complex document analysis tasks straightforward and accessible!\n\nimport re\nfrom typing import Dict, Any\n\ndef document_summary(text: str) -&gt; Dict[str, Any]:\n    \"\"\"Generate a comprehensive summary of document statistics.\"\"\"\n    # Count words (excluding punctuation-only tokens)\n    words = [word for word in text.split() if any(char.isalnum() for char in word)]\n    word_count = len(words)\n    \n    # Count sentences (simple approach using sentence-ending punctuation)\n    sentences = re.split(r'[.!?]+', text)\n    sentence_count = len([s for s in sentences if s.strip()])\n    \n    # Count paragraphs (assuming double newlines separate paragraphs)\n    paragraphs = [p for p in text.split('\\n\\n') if p.strip()]\n    paragraph_count = len(paragraphs)\n    \n    # Calculate averages\n    avg_words_per_sentence = word_count / sentence_count if sentence_count &gt; 0 else 0\n    avg_sentences_per_paragraph = sentence_count / paragraph_count if paragraph_count &gt; 0 else 0\n    \n    return {\n        'word_count': word_count,\n        'sentence_count': sentence_count,\n        'paragraph_count': paragraph_count,\n        'avg_words_per_sentence': round(avg_words_per_sentence, 1),\n        'avg_sentences_per_paragraph': round(avg_sentences_per_paragraph, 1)\n    }\n\n# Example document about prosegrammers\nsample_document = \"\"\"\nProsegrammers are skilled professionals who combine programming expertise with writing abilities. They create tools that help generate, analyze, and improve documents.\n\nDocument engineering is an exciting field that leverages technology to enhance written communication. Python provides excellent libraries for text processing, making it an ideal language for prosegrammers.\n\nBy mastering both code and prose, prosegrammers can automate repetitive writing tasks, analyze large collections of documents, and create dynamic content that adapts to different audiences.\n\"\"\"\n\n# Analyze the document\nsummary = document_summary(sample_document.strip())\nprint(\"Document Analysis Summary:\")\nfor metric, value in summary.items():\n    print(f\"{metric.replace('_', ' ').title()}: {value}\")\n\nDocument Analysis Summary:\nWord Count: 74\nSentence Count: 5\nParagraph Count: 3\nAvg Words Per Sentence: 14.8\nAvg Sentences Per Paragraph: 1.7"
+  },
+  {
+    "objectID": "index.html#resources-for-your-document-engineering-adventure",
+    "href": "index.html#resources-for-your-document-engineering-adventure",
+    "title": "",
+    "section": "Resources for Your Document Engineering Adventure",
+    "text": "Resources for Your Document Engineering Adventure\nReady to embark on your journey as a prosegrammer? Start exploring here:\n\nThe sixteen-week course schedule provides detailed insights into each step that learners should take to emerge as skilled prosegrammers, including reading assignments focused on document engineering tools and projects that combine programming with technical writing.\nThe course syllabus introduces the course and its learning objectives, explaining how on-campus learners will develop both their programming skills and their ability to create exceptional documentation.\n\n\n\n\n\n\n\nProsegrammers Community Resources\n\n\n\nInterested in connecting with other aspiring prosegrammers? Please join the Prosegrammers Discord Server and join the conversation about document engineering, Python programming, and technical writing! If you are an on-campus learner at Allegheny College, you may also join the Allegheny College Computer Science Discord Server. Finally, if you are an on-campus learner, you can schedule a meeting with the instructor during office hours by visiting the Course Instructor’s Appointment Scheduler."
+  },
+  {
+    "objectID": "schedule/index.html",
+    "href": "schedule/index.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nEnsure Success in Algorithm Analysis\n\n\n\n\n\nJan 13, 2025\n\n\n\n\n\n\n\n\nUnderstand Python Programming Basics\n\n\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\nUnderstand Basics of Object-Oriented Programming\n\n\n\n\n\nJan 27, 2025\n\n\n\n\n\n\n\n\nEstablish Confidence in Program Correctness\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\nCharacterize Performance with Experiments\n\n\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\nCharacterize Performance with Analysis\n\n\n\n\n\nFeb 17, 2025\n\n\n\n\n\n\n\n\nExplore Basic Abstract Data Types\n\n\n\n\n\nFeb 22, 2025\n\n\n\n\n\n\n\n\nInvestigate List-Based Abstract Data Types\n\n\n\n\n\nMar 10, 2025\n\n\n\n\n\n\n\n\nExplore an Innovative Algorithmic Paradigm\n\n\n\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\nLearn How to Efficiently Process Data\n\n\n\n\n\nMar 24, 2025\n\n\n\n\n\n\n\n\nLearn How to Efficiently Search for Data in a List\n\n\n\n\n\nMar 31, 2025\n\n\n\n\n\n\n\n\nCreate and Navigate Tree-Based Data\n\n\n\n\n\nApr 7, 2025\n\n\n\n\n\n\n\n\nCreate a Queue that Supports Data Priority\n\n\n\n\n\nApr 14, 2025\n\n\n\n\n\n\n\n\nCreate a Data Structure for Linked Data\n\n\n\n\n\nApr 21, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule/index.html#weekly-schedule",
+    "href": "schedule/index.html#weekly-schedule",
+    "title": "Schedule",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nEnsure Success in Algorithm Analysis\n\n\n\n\n\nJan 13, 2025\n\n\n\n\n\n\n\n\nUnderstand Python Programming Basics\n\n\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\nUnderstand Basics of Object-Oriented Programming\n\n\n\n\n\nJan 27, 2025\n\n\n\n\n\n\n\n\nEstablish Confidence in Program Correctness\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\nCharacterize Performance with Experiments\n\n\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\nCharacterize Performance with Analysis\n\n\n\n\n\nFeb 17, 2025\n\n\n\n\n\n\n\n\nExplore Basic Abstract Data Types\n\n\n\n\n\nFeb 22, 2025\n\n\n\n\n\n\n\n\nInvestigate List-Based Abstract Data Types\n\n\n\n\n\nMar 10, 2025\n\n\n\n\n\n\n\n\nExplore an Innovative Algorithmic Paradigm\n\n\n\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\nLearn How to Efficiently Process Data\n\n\n\n\n\nMar 24, 2025\n\n\n\n\n\n\n\n\nLearn How to Efficiently Search for Data in a List\n\n\n\n\n\nMar 31, 2025\n\n\n\n\n\n\n\n\nCreate and Navigate Tree-Based Data\n\n\n\n\n\nApr 7, 2025\n\n\n\n\n\n\n\n\nCreate a Queue that Supports Data Priority\n\n\n\n\n\nApr 14, 2025\n\n\n\n\n\n\n\n\nCreate a Data Structure for Linked Data\n\n\n\n\n\nApr 21, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule/index.html#additional-details",
+    "href": "schedule/index.html#additional-details",
+    "title": "Schedule",
+    "section": "Additional Details",
+    "text": "Additional Details\n\nHigh-Level Overview\n\nModule One:\n\nTopic: Algorithm Analysis Foundations\nWeeks: One through six\nChapters: One through five in A First Course on Data Structures in Python\n\nModule Two:\n\nTopic: Algorithmic Building Blocks\nWeeks: Seven through eleven\nChapters: Six through fourteen in A First Course on Data Structures in Python\n\nModule Three:\n\nTopic: Advanced Data Structures\nWeeks: Twelve through sixteen\nChapters: Fifteen through twenty-one in A First Course on Data Structures in Python\n\n\n\n\nSchedule Details\n\nWeek-by-Week Highlights\n\nBasics:\n\nStart Semester: Week One\nSpring Break: Week Eight\nRefresh Break: Week Thirteen\nEnd Semester: Week Sixteen\n\nExaminations:\n\nMidterm Exam One: Week Seven\nMidterm Exam Two: Week Twelve\nFinal Exam: Week Sixteen\n\nSkill-Checks:\n\nSkill-Check One: Week Two\nSkill-Check Two: Week Four\nSkill-Check Three: Week Ten\nSkill-Check Four: Week Fifteen\n\nAlgorithm All-Hands Projects:\n\nProject One: Weeks One through Six\nProject Two: Weeks Seven through Eleven\nProject Three: Weeks Twelve through Sixteen\n\n\n\n\nImportant Dates\n\nMidterm Executable Examination One\n\nDate: February 28, 2025\nTime: 2:30 – 4:00 PM\nLocation: Alden 109\n\nMidterm Executable Examination Two\n\nDate: April 4, 2025\nTime: 2:30 – 4:00 PM\nLocation: Alden 109\n\nFinal Executable Examination\n\nExamination Code: D\nDate: May 2, 2025\nTime: 9:00 AM – 12:00 Noon\nLocation: Alden 109\n\n\n\n\n\nWeekly Cadence\n\n Tuesday and Thursday: Algorithm Analysis Exposition\n\nIntroduction to scientific, technical, and engineering topics:\n\nData structures and algorithms\nPerformance evaluation techniques\nSoftware engineering best practices\nPrepare for these projects:\n\nAlgorithm engineering project\nAlgorithm all-hands project\n\nPrepare for these assessments:\n\nMidterm examination\nFinal examination\nSkill-checks\n\n\n\n Thursday and Friday: Algorithm All-Hands Projects\n\nCadence: Two weeks devoted to phase one, two weeks for phase two, and finally one week for phase three. Complete these tasks during the second halves of Thursday’s classroom session and Friday’s laboratory session.\n Phase One: Building on the course’s prior scientific and engineering content, prepare a research question and design an experiment to answer it\n\nGoal: Scientific study in algorithmology\n\nPropose research question connect to current module\nSpecify evaluation metrics used to answer research question\nDesign an experiment to measure evaluation metrics\nAssign tasks for the remaining phases of the project\n\n\n Phase Two: Leveraging prior work, implement all needed software tools and apply them when conducting the experiment designed in the prior phase\n\nGoal: Engineering effort in algorithmology\n\nIdentify useful function(s) for refinement\nExplain steps for improving the function(s)\nCreate a pull request and follow it through review\nGive an overview of the completed function(s)\nGive a demonstration of a command-line tool using the function(s)\n\n\n Phase Three: Leveraging prior work, answer the research question\n\nGoal: Effective communication in algorithmology\n\nAnalyze and interpret the results\nCreate a web-based report to present and discuss the results\nCollaboratively publish the report to the course web site\nPresent the report and participate in a discussion session\nProvide thorough answer(s) to the chosen research question\n\n\n\n Friday: Algorithm Engineering Project\n\n Week One: Design, implement, test, and document software tools\n\nData structure(s) and algorithm(s)\nBenchmark evaluation framework\nData analysis and visualization tools\n\n Week Two: Design, conduct, and report on an experiment\n\nDemonstrate implementation of completed system\nDocument the experimental design\nPose research question(s)\nDefine evaluation metrics\nConduct the experiment\nAnalyze and interpret the results\nDraw conclusions and make recommendations\n\n\n Friday: Skill-Checks and Executable Examinations\n\n Skill-Check: Completed during the last 45-minutes of the laboratory session\n Examination: Completed during the entire laboratory session"
+  },
+  {
+    "objectID": "schedule/weekfifteen/index.html",
+    "href": "schedule/weekfifteen/index.html",
+    "title": "Graph Structures",
+    "section": "",
+    "text": "Read chapters 20 and 21 in A First Course on Data Structures in Python\n Explore directed and un-directed graph implementations in the ds2 package of donsheehy/datastructures.\n Review previous chapters to see how the data structures like List and Tree support the behavior of this data structure."
+  },
+  {
+    "objectID": "schedule/weekfifteen/index.html#exploration",
+    "href": "schedule/weekfifteen/index.html#exploration",
+    "title": "Graph Structures",
+    "section": "",
+    "text": "Read chapters 20 and 21 in A First Course on Data Structures in Python\n Explore directed and un-directed graph implementations in the ds2 package of donsheehy/datastructures.\n Review previous chapters to see how the data structures like List and Tree support the behavior of this data structure."
+  },
+  {
+    "objectID": "schedule/weekfifteen/index.html#activities",
+    "href": "schedule/weekfifteen/index.html#activities",
+    "title": "Graph Structures",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday: Graph Structures\n\nExplore how to implement the Graph and Digraph data structures\nUnderstand the adjacency list and adjacency matrix representations\nExamine Python source code segments to illustrate key points\n\n Thursday: Presentations for the third algorithm all-hands project\n Friday: Continue algorithm engineering project seven (see the prior week for details about this project) and take algorithm engineering skill-check four"
+  },
+  {
+    "objectID": "schedule/weekfifteen/index.html#slides",
+    "href": "schedule/weekfifteen/index.html#slides",
+    "title": "Graph Structures",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Fifteen: Graph Structures"
+  },
+  {
+    "objectID": "schedule/weekfour/index.html",
+    "href": "schedule/weekfour/index.html",
+    "title": "Software Testing",
+    "section": "",
+    "text": "Read chapter 4 of A First Course on Data Structures in Python\n Study test for the ds2 package of donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weekfour/index.html#exploration",
+    "href": "schedule/weekfour/index.html#exploration",
+    "title": "Software Testing",
+    "section": "",
+    "text": "Read chapter 4 of A First Course on Data Structures in Python\n Study test for the ds2 package of donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weekfour/index.html#activities",
+    "href": "schedule/weekfour/index.html#activities",
+    "title": "Software Testing",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Software Testing\n\nUnderstand why algorithm engineers must test programs\nDiscern the differences between benchmarking and testing\nExplore the benefits and limitations of testing\nInvestigate different approaches to software testing\nUnderstand performance trade-offs with software testing\nExamine source code segments to illustrate trade-offs\n\n Friday: Submit algorithm engineering project two, start algorithm engineering project three, and take the second algorithm engineering skill-check in the second half of the laboratory session."
+  },
+  {
+    "objectID": "schedule/weekfour/index.html#project",
+    "href": "schedule/weekfour/index.html#project",
+    "title": "Software Testing",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called objectprocessing, that runs benchmarks to study the performance of storing and searching for objects using three different ways for determining whether or not a search term matches the value in an object’s attributes.\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReference  Object Processing as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project:\n\nWeek 1: Implement all of the modules in objectprocessing\nWeek 2: Design, conduct, and document experimental results\n\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“Object processing can be a challenging task! But it is useful when determining overheads for how fast different search approaches are going to be in Python. It allows us to manipulate different variables of the approach to determine the fastest way to search through a database.” Keller Liptrap\n“This experiment taught me how to properly organize and search through large data files using an object-oriented approach. This project taught me how efficient these systems can be when handling larger data sets.” Sabrina Rodriguez"
+  },
+  {
+    "objectID": "schedule/weekfour/index.html#slides",
+    "href": "schedule/weekfour/index.html#slides",
+    "title": "Software Testing",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Four: Software Testing"
+  },
+  {
+    "objectID": "schedule/weeknine/index.html",
+    "href": "schedule/weeknine/index.html",
+    "title": "Linked and Doubly Linked Lists",
+    "section": "",
+    "text": "Read chapters 7 and 8 in A First Course on Data Structures in Python\n Try out the implementations of OrderedList in the ds2 package of donsheehy/datastructures. Can you write your own tests cases for these abstract data types? Can you use these abstract data types in your own program?\n Note that chapter 7 was also the focus of last week\n Design, implement, and test your own efficient implementation of the Deque using the DoubleLinkedList! How would you measure this structure’s performance?"
+  },
+  {
+    "objectID": "schedule/weeknine/index.html#exploration",
+    "href": "schedule/weeknine/index.html#exploration",
+    "title": "Linked and Doubly Linked Lists",
+    "section": "",
+    "text": "Read chapters 7 and 8 in A First Course on Data Structures in Python\n Try out the implementations of OrderedList in the ds2 package of donsheehy/datastructures. Can you write your own tests cases for these abstract data types? Can you use these abstract data types in your own program?\n Note that chapter 7 was also the focus of last week\n Design, implement, and test your own efficient implementation of the Deque using the DoubleLinkedList! How would you measure this structure’s performance?"
+  },
+  {
+    "objectID": "schedule/weeknine/index.html#activities",
+    "href": "schedule/weeknine/index.html#activities",
+    "title": "Linked and Doubly Linked Lists",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Linked Lists and Doubly Linked Lists\n\nDeepen understanding of an abstract data type (ADT)\nUnderstand implementation trade-offs for list-based structures\nUse asymptotic analysis to characterize performance of an ADT\nExamine Python source code segments to illustrate key points\n\n Friday: Submit algorithm engineering project four and start algorithm engineering project five and review for the algorithm engineering skill-check next week"
+  },
+  {
+    "objectID": "schedule/weeknine/index.html#project",
+    "href": "schedule/weeknine/index.html#project",
+    "title": "Linked and Doubly Linked Lists",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called listmutator, that runs benchmarks to study the performance of combining data into different types of lists\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReview  List Mutation as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project:\n\nWeek 1: Implement all of the modules in listmutator\nWeek 2: Design and conduct experiments and document experimental results\n\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“Python allows for an easy way to create complex data structures through a user-friendly syntax. Because of Python’s subtle overhead when calling multiple functions in a sequence, this overhead is greatly magnified when scaled on the order of 10e6 items or more. That said, using Python to perform doubling experiments is a quick way to quickly evaluate the effectiveness of data structures and algorithms.” Simon Jones\n“Implementing a robust benchmarking methodology can be challenging. You have to define the experimental setup, conduct multiple runs to account for variability, and analyze the results statistically to draw meaningful conclusions.” Vital Joseph"
+  },
+  {
+    "objectID": "schedule/weeknine/index.html#slides",
+    "href": "schedule/weeknine/index.html#slides",
+    "title": "Linked and Doubly Linked Lists",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Nine: Implementing List-Based Structures"
+  },
+  {
+    "objectID": "schedule/weekseven/index.html",
+    "href": "schedule/weekseven/index.html",
+    "title": "Stacks, Queues, and Deques",
+    "section": "",
+    "text": "Read chapters 6 and 7 in A First Course on Data Structures in Python\n Try out the implementations of Stack, Queue, and Deque in the ds2 package of donsheehy/datastructures. Can you write your own tests cases for these data structures? Can you use these data structures in your own program?\n Note that, along with chapter 8, chapter 7 will again be the focus for next week"
+  },
+  {
+    "objectID": "schedule/weekseven/index.html#exploration",
+    "href": "schedule/weekseven/index.html#exploration",
+    "title": "Stacks, Queues, and Deques",
+    "section": "",
+    "text": "Read chapters 6 and 7 in A First Course on Data Structures in Python\n Try out the implementations of Stack, Queue, and Deque in the ds2 package of donsheehy/datastructures. Can you write your own tests cases for these data structures? Can you use these data structures in your own program?\n Note that, along with chapter 8, chapter 7 will again be the focus for next week"
+  },
+  {
+    "objectID": "schedule/weekseven/index.html#activities",
+    "href": "schedule/weekseven/index.html#activities",
+    "title": "Stacks, Queues, and Deques",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Stacks, Queues, and Deques\n\nExplore the concept of an abstract data type (ADT)\nUnderstand implementation trade-offs for stacks, queues, and deques\nUse asymptotic analysis to characterize performance of an ADT\nEnhance an ADT implementation with useful exception handling\nExamine Python source code segments to illustrate key points\n\n Friday: Continue algorithm engineering project four (see the prior week for details about this project) and take mid-term examination one"
+  },
+  {
+    "objectID": "schedule/weekseven/index.html#slides",
+    "href": "schedule/weekseven/index.html#slides",
+    "title": "Stacks, Queues, and Deques",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Seven: Implementing Stack, Queues, and Deques"
+  },
+  {
+    "objectID": "schedule/weekten/index.html",
+    "href": "schedule/weekten/index.html",
+    "title": "Dynamic Programming",
+    "section": "",
+    "text": "Read chapters 9 and 10 in A First Course on Data Structures in Python\n Explore algorithms that use recursion and dynamic programming in the ds2 package of donsheehy/datastructures. Can you add debugging statements to trace how these algorithms work?\n Read chapter 9 for a review of recursion and how it works in the Python language\n Design, implement, and test your own efficient implementation of the lcs function! How would you measure this function’s performance?"
+  },
+  {
+    "objectID": "schedule/weekten/index.html#exploration",
+    "href": "schedule/weekten/index.html#exploration",
+    "title": "Dynamic Programming",
+    "section": "",
+    "text": "Read chapters 9 and 10 in A First Course on Data Structures in Python\n Explore algorithms that use recursion and dynamic programming in the ds2 package of donsheehy/datastructures. Can you add debugging statements to trace how these algorithms work?\n Read chapter 9 for a review of recursion and how it works in the Python language\n Design, implement, and test your own efficient implementation of the lcs function! How would you measure this function’s performance?"
+  },
+  {
+    "objectID": "schedule/weekten/index.html#activities",
+    "href": "schedule/weekten/index.html#activities",
+    "title": "Dynamic Programming",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Dynamic Programming\n\nExplore how to implement recursive functions in Python\nInvestigate a new algorithmic paradigm called dynamic programming\nLearn more about the longest common sub-sequence problem\nExamine Python source code segments to illustrate key points\n\n Friday: Continue algorithm engineering project five (see the prior week for details about this project) and take algorithm engineering skill-check three"
+  },
+  {
+    "objectID": "schedule/weekten/index.html#slides",
+    "href": "schedule/weekten/index.html#slides",
+    "title": "Dynamic Programming",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Ten: Recursion and Dynamic Programming"
+  },
+  {
+    "objectID": "schedule/weekthree/index.html",
+    "href": "schedule/weekthree/index.html",
+    "title": "Object-Oriented Programming",
+    "section": "",
+    "text": "Read chapter 3 of A First Course on Data Structures in Python\n Overview objects in ds2 package of donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weekthree/index.html#exploration",
+    "href": "schedule/weekthree/index.html#exploration",
+    "title": "Object-Oriented Programming",
+    "section": "",
+    "text": "Read chapter 3 of A First Course on Data Structures in Python\n Overview objects in ds2 package of donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weekthree/index.html#activities",
+    "href": "schedule/weekthree/index.html#activities",
+    "title": "Object-Oriented Programming",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Object-oriented programming\n\nReview the goals of object-oriented programming\nReview the principles of object-oriented programming\n\nAbstraction\nInheritance\nEncapsulation\nPolymorphism\n\nExamine source code segments to illustrate trade-offs\nConduct experiments to measure performance of object-orientation\n\n Friday: Continue algorithm engineering project two (see the prior week for details about this project)"
+  },
+  {
+    "objectID": "schedule/weekthree/index.html#slides",
+    "href": "schedule/weekthree/index.html#slides",
+    "title": "Object-Oriented Programming",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Three: Object-Oriented Programming in Python"
+  },
+  {
+    "objectID": "schedule/weektwo/index.html",
+    "href": "schedule/weektwo/index.html",
+    "title": "Reviewing Python Programming",
+    "section": "",
+    "text": "Read chapters 1 and 2 of A First Course on Data Structures in Python\n Overview functions in ds2 package of donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weektwo/index.html#exploration",
+    "href": "schedule/weektwo/index.html#exploration",
+    "title": "Reviewing Python Programming",
+    "section": "",
+    "text": "Read chapters 1 and 2 of A First Course on Data Structures in Python\n Overview functions in ds2 package of donsheehy/datastructures"
+  },
+  {
+    "objectID": "schedule/weektwo/index.html#activities",
+    "href": "schedule/weektwo/index.html#activities",
+    "title": "Reviewing Python Programming",
+    "section": "Activities",
+    "text": "Activities\n\n Tuesday and Thursday: Course introduction\n\nReview the basic building blocks of a Python program:\n\nSequence\nSelection\nIteration\n\nConsider different ways to create collections in Python\nMeasure the performance trade-offs of Python’s collections\n\n Friday: Submit algorithm engineering project one, start algorithm engineering project two (note that the first project requires only one week of work), and take the first algorithm engineering skill-check in the second half of the laboratory session"
+  },
+  {
+    "objectID": "schedule/weektwo/index.html#project",
+    "href": "schedule/weektwo/index.html#project",
+    "title": "Reviewing Python Programming",
+    "section": "Project",
+    "text": "Project\n\nGoal\nTo build and use a Python program, called containmentchecking, that runs benchmarks to measure the performance of in for list, tuple, and set, thereby enabling software engineers to pick the fastest collection for their program.\n\n\nSteps\n\nClick the link provided in Discord to get started on this project\nReview  Containment Checking as a public reference repository\nInstall the project’s dependencies using devenv and/or poetry\nFollow the instructions to complete the project:\n\nWeek 1: Implement all of the modules in containmentchecking\nWeek 2: Design and conduct experiments and document experimental results\n\nSchedule office hours if you have questions\n\n\n\n\n\n\n\nStudent Insights\n\n\n\n\n\nStudents who completed this project shared these insights:\n\n“My biggest takeaway from this entire experience is that it’s important to know what kinds of inputs would be considered ‘large’, ‘small’, or ‘standard’ for whatever task you’re performing. Having that kind of information is crucial in being able to come up with good values to test to make sure the experiment is being performed correctly.” Jacob Allebach\n“Throughout conducting my experiments, I learned that the tuple is the overall quickest container to use for containment checking. Especially when searching through super large values, I would definitely use a tuple. Lists were a close second to tuples, and Sets were extremely slow.” Aidan Dyga"
+  },
+  {
+    "objectID": "schedule/weektwo/index.html#slides",
+    "href": "schedule/weektwo/index.html#slides",
+    "title": "Reviewing Python Programming",
+    "section": "Slides",
+    "text": "Slides\n\n Full Screen: Week Two: Exploring the Python Programming Language"
+  },
+  {
+    "objectID": "slides/weekone/index.html#algorithm-analysis-process",
+    "href": "slides/weekone/index.html#algorithm-analysis-process",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Algorithm analysis process",
+    "text": "Algorithm analysis process\n\n\n Design, implement, and test\n\nData structures and algorithms\nBenchmark framework\nData analysis tools\n\n Create execution environments\n\nRepeatable and reproducible\nControlled and varied\nLocal and in the cloud\n\n Use science and engineering to study system performance!"
+  },
+  {
+    "objectID": "slides/weekone/index.html#how-fast-is-this-program",
+    "href": "slides/weekone/index.html#how-fast-is-this-program",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "How fast is this program?",
+    "text": "How fast is this program?\n\nfrom typing import List\ndef duplicates(input_list: List[int]) -&gt; bool:\n    \"\"\"Determine whether or not the input list contains a duplicate value.\"\"\"\n    n = len(input_list)\n    for i in range(n):\n        for j in range(n):\n            if i != j and input_list[i] == input_list[j]:\n                return True\n    return False\n\nassert(duplicates([1,2,6,3,4,5,6,7,8]))\nassert(not duplicates([1,2,3,4]))\nprint(duplicates([1,2,6,3,4,5,6,7,8]))\nprint(not duplicates([1,2,3,4]))\n\nTrue\nTrue\n\n\n\n\nAnalytical evaluation: prove performance characteristics\nExperimental evaluation: measure performance in practice"
+  },
+  {
+    "objectID": "slides/weekone/index.html#interact-with-duplicates",
+    "href": "slides/weekone/index.html#interact-with-duplicates",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Interact with duplicates",
+    "text": "Interact with duplicates\n\n\n\n\n\n\n\n\nImportant question: is this function implemented correctly?"
+  },
+  {
+    "objectID": "slides/weekone/index.html#create-benchmark-for-duplicates",
+    "href": "slides/weekone/index.html#create-benchmark-for-duplicates",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Create benchmark for duplicates",
+    "text": "Create benchmark for duplicates\n\nfrom typing import Callable, List\nimport time\n\ndef timetrials(function: Callable, n: int, trials: int = 10) -&gt; float:\n    \"\"\"Time a function with an input of size n for trials number of times.\"\"\"\n    totaltime = 0\n    for _ in range(trials):\n        start = time.time()\n        function(list(range(n)))\n        totaltime += time.time() - start\n    print(\"Average time =%10.7f (s) for n = %d\" % (totaltime/trials, n))\n    return totaltime/trials\n\n\n\ntimetrial: time a provided function with an input of size n\nUse the time.time function to compute start for each trial\nCompute the elapsed time using totaltime += time.time() - start\nUse print to display the average time for n and return the average"
+  },
+  {
+    "objectID": "slides/weekone/index.html#run-benchmark-for-duplicates",
+    "href": "slides/weekone/index.html#run-benchmark-for-duplicates",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Run benchmark for duplicates",
+    "text": "Run benchmark for duplicates\n\n# conduct a doubling experiment for a provided function\ntimings = []\nfor n in [50, 100, 200, 400, 800, 1600, 3200]:\n    timings.append(timetrials(duplicates, n))\n\nAverage time = 0.0000705 (s) for n = 50\nAverage time = 0.0002419 (s) for n = 100\nAverage time = 0.0010011 (s) for n = 200\nAverage time = 0.0043606 (s) for n = 400\nAverage time = 0.0214216 (s) for n = 800\nAverage time = 0.0934627 (s) for n = 1600\nAverage time = 0.3762176 (s) for n = 3200\n\n\n\n\n Discuss in your teams:\n\nWhen input size doubles, how does the execution time change?\nWhat is the likely worst-case time complexity of duplicates?\nWhat does this tell us about the performance of duplicates?"
+  },
+  {
+    "objectID": "slides/weekone/index.html#examples-of-four-programs-to-study-through-performance-benchmarks",
+    "href": "slides/weekone/index.html#examples-of-four-programs-to-study-through-performance-benchmarks",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Examples of four programs to study through performance benchmarks",
+    "text": "Examples of four programs to study through performance benchmarks\n\nTerminal window shell like bash or zsh\nTerminal prompt like powerlevel10k or starship\nWeb browser like firefox or chrome\nText editor like vim or emacs\n\n\n How do we characterize the program and its execution environment? … How do we compare their performance in different configurations? … How do we improve their performance? …"
+  },
+  {
+    "objectID": "slides/weekone/index.html#real-world-performance-evaluation",
+    "href": "slides/weekone/index.html#real-world-performance-evaluation",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Real-world performance evaluation",
+    "text": "Real-world performance evaluation\n\n\n Characterize program and its execution environment?\n\nHow was the program implemented?\nWhat hardware runs in the execution environment?\nWhat software is installed on system and used by program?\n\n Compare and improve the performance of the program?\n\nWhat performance metrics are importance to measure?\nHow to reliably measure a program’s performance?\nWhat benchmarks will yield insights into performance?\nHow to optimize the program to improve performance?"
+  },
+  {
+    "objectID": "slides/weekone/index.html#wow-measuring-and-improving-the-performance-of-any-complex-program-is-very-challenging-why-is-that",
+    "href": "slides/weekone/index.html#wow-measuring-and-improving-the-performance-of-any-complex-program-is-very-challenging-why-is-that",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Wow, measuring and improving the performance of any complex program is very challenging! Why is that?",
+    "text": "Wow, measuring and improving the performance of any complex program is very challenging! Why is that?\n\n\nDifferences in the execution environment\nDifficulty in measuring the performance\nChallenging to compare the performance\nHard to repeat and reproduce experiments\nResults change as the program evolves\nCaution needed to avoid over-optimization"
+  },
+  {
+    "objectID": "slides/weekone/index.html#wait-what-is-the-execution-environment-of-a-program",
+    "href": "slides/weekone/index.html#wait-what-is-the-execution-environment-of-a-program",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Wait, what is the execution environment of a program?",
+    "text": "Wait, what is the execution environment of a program?\n\n\nPython interpreter version (e.g., Python 3.11 or Python 3.12)\nOperating system (e.g., Linux, Windows, or macOS)\nHardware specifications (e.g., CPU and memory)\nInstalled libraries and their versions\nEnvironment variables and configurations\nVirtual environments or Docker containers\nPower management settings on laptop\nNetwork settings and connectivity"
+  },
+  {
+    "objectID": "slides/weekone/index.html#learn-more-about-algorithm-analysis",
+    "href": "slides/weekone/index.html#learn-more-about-algorithm-analysis",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Learn more about algorithm analysis",
+    "text": "Learn more about algorithm analysis\n\n\n Read chapters 1 and 2 in “A First Course on Data Structures in Python”\n\n Overview the ds2 package in donsheehy/datastructures book and package code\n\n\n\nThe FCDSP book is both “simple” and “complex”\nCoverage of introductory topics:\n\nPython programming\nObject-oriented design\nSoftware testing\n\nData structures, algorithms, algorithmic paradigms\nExperimental and theoretical analysis of performance"
+  },
+  {
+    "objectID": "slides/weekone/index.html#algorithm-analysis-in-the-time-of-generative-artificial-intelligence",
+    "href": "slides/weekone/index.html#algorithm-analysis-in-the-time-of-generative-artificial-intelligence",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Algorithm analysis in the time of generative artificial intelligence",
+    "text": "Algorithm analysis in the time of generative artificial intelligence\n\n\nGitHub Copilot generates an algorithm or a data structure:\n\nIs the generated code correct and efficient?\nCan the generated code be optimized?\nIs the generated code easy to understand and maintain?\nCan you integrate the generated code into your system?\nCan you conduct experiments to evaluate performance?\n\n\n\n\n Algorithm engineers who use software engineering tools, including code generators, are responsible for ensuring correctness and efficiency!"
+  },
+  {
+    "objectID": "slides/weekone/index.html#using-the-systemsense-tool",
+    "href": "slides/weekone/index.html#using-the-systemsense-tool",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Using the systemsense tool",
+    "text": "Using the systemsense tool\n\nCommands\nbenchmarkinfo: Benchmark the system used for experiments.\ncompleteinfo: Detect information about and then benchmark the system used for experiments.\nsysteminfo: Detect all relevant information about the system used for experiments.\n\n\n\nsysteminfo: use packages like psutil to collect relevant information about the execution environment, suitable for characterizing and comparing local and cloud-based systems\nbenchmarkinfo: use packages like timeit to run simple micro-benchmarks involving basic operations so as to characterize and compare baseline system performance\nTools: Install python, mise, asdf, and/or devenv, and poetry"
+  },
+  {
+    "objectID": "slides/weekone/index.html#detecting-cpu-details",
+    "href": "slides/weekone/index.html#detecting-cpu-details",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Detecting CPU details",
+    "text": "Detecting CPU details\ndef get_cpu() -&gt; Dict[str, str]:\n    \"\"\"Return information about the current CPU in the system.\"\"\"\n    # detect the name of the function in\n    # which this source code exists\n    function_name = inspect.stack()[0][3]\n    # parse out the second part of the name after\n    # the underscore character\n    function_name = function_name.split(\"_\")[1]\n    # create a dictionary with the function's\n    # purpose as the key and the value as\n    # the return of the function that collects it\n    return {function_name: str(platform.machine())}\n\n\nUse the inspect package to detect the name of the function\nUse the platform package to detect the CPU architecture\nEnsure that the function works in all execution environments!"
+  },
+  {
+    "objectID": "slides/weekone/index.html#detecting-disk-details",
+    "href": "slides/weekone/index.html#detecting-disk-details",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Detecting disk details",
+    "text": "Detecting disk details\ndef get_disk() -&gt; Dict[str, str]:\n    \"\"\"Return disk space usage.\"\"\"\n    function_name = inspect.stack()[0][3]\n    function_name = function_name.split(\"_\")[1]\n    if platform.system() == constants.system.Windows:\n        total_disk = psutil.disk_usage(\"C:\\\\\").total\n        used_disk = psutil.disk_usage(\"C:\\\\\").used\n    else:\n        total_disk = psutil.disk_usage(\"/\").total\n        used_disk = psutil.disk_usage(\"/\").used\n    total_disk_gb = total_disk / (1024**3)\n    used_disk_gb = used_disk / (1024**3)\n    disk = f\"Using {used_disk_gb:.2f} GB of {total_disk_gb:.2f} GB\"\n    return {function_name: disk}\n\n\nUse the psutil package to detect disk usage details\nCustomize the function for different operating systems"
+  },
+  {
+    "objectID": "slides/weekone/index.html#performing-a-micro-benchmark",
+    "href": "slides/weekone/index.html#performing-a-micro-benchmark",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Performing a micro-benchmark",
+    "text": "Performing a micro-benchmark\ndef time_benchmark_concatenation(\n    repeat: int = 3, number: int = 100000, size: int = 100\n) -&gt; Dict[str, str]:\n    \"\"\"Time the benchmark_concatenation function.\"\"\"\n    function_name = inspect.stack()[0][3].split(_)[2]\n    performance_list = timeit.repeat(\n        \"benchmark.benchmark_concatenation(size)\",\n        repeat=repeat,\n        setup=f\"\"\"\nfrom systemsense import benchmark\nsize = {size}\n        \"\"\",\n        number=number,\n    )\n    return {function_name: str(performance_list)}\n\n\nUse timeit to benchmark string concatenation function\nCall function subject to benchmarking multiple times"
+  },
+  {
+    "objectID": "slides/weekone/index.html#important-software-and-processes",
+    "href": "slides/weekone/index.html#important-software-and-processes",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Important software and processes",
+    "text": "Important software and processes\n\n\nAlgorithm Engineering Projects\n\nLatest version of the Python programming language\nUse mise or asdf to manage Python versions\nUse poetry to manage Python packages\nUse git with instructor-provided repositories\n\n\n\n\n\nAlgorithm All-Hands Projects\n\nUse the same tools as in the engineering projects\nUse git and GitHub flow on the course web site’s repository\nUse quarto to render a preview of the course web site\nUse the Quarto VS Code extension to run code segments"
+  },
+  {
+    "objectID": "slides/weekone/index.html#you-must-have-all-of-the-required-programs-installed-and-running-make-sure-that-your-tools-work-correctly",
+    "href": "slides/weekone/index.html#you-must-have-all-of-the-required-programs-installed-and-running-make-sure-that-your-tools-work-correctly",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "You must have all of the required programs installed and running! Make sure that your tools work correctly!",
+    "text": "You must have all of the required programs installed and running! Make sure that your tools work correctly!\n\n\n\n\n\n\n\nTips for effective algorithm engineering\n\n\n\nDevote time out of class to installing the necessary tools\nConfirm that the tools work during the first lab session\nRun and enhance all of the source code in the web site\nComplete the first algorithm engineering project on time\nContribute to the first algorithm all-hands project\nPrepare for the first algorithm engineering skill-check\n\n Get ready for a challenging and exciting introduction to algorithmology!"
+  },
+  {
+    "objectID": "slides/weekone/index.html#overall-goals-of-algorithmology",
+    "href": "slides/weekone/index.html#overall-goals-of-algorithmology",
+    "title": "Introduction to Algorithm Analysis",
+    "section": "Overall goals of “algorithmology”",
+    "text": "Overall goals of “algorithmology”\n\n\nAlgorithm Engineering:\n\nDesign and implement algorithms and data structures\nTest all aspects of the system to ensure correctness\nMake a benchmark framework to measure performance\n\nAlgorithm Evaluation:\n\nDesign experiments to answer research questions\nConduct experiments and collect accurate data sets\nAnalyze and visualize data to draw conclusions\n\nCommunicate the results and conclusion of algorithm evaluation\nCheck syllabus for details about the Algorithm Analysis course!"
+  }
+]

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu+Mono&display=swap");
+
+.reveal {
+  background-color: #F9F7FB;
+  color: #333333;
+}
+
+.reveal a {
+  color: #5D3A74;
+  text-decoration: none;
+}
+
+.reveal a:hover {
+  color: #7A4E99 !important;
+  text-decoration: underline;
+}
+
+.reveal pre {
+  background-color: #F9F7FB;
+}
+
+.reveal pre code {
+  font-size: 24px;
+  margin-top: 0em;
+  background-color: transparent;
+  color: #333333;
+  border-left: 3px solid #5D3A74;
+  padding-left: 0.5em;
+}
+
+.reveal div.sourceCode pre code {
+  margin-top: -0.05em;
+  min-height: 100% !important;
+  max-height: 550px !important;
+}
+
+.reveal code {
+  color: #8A2BE2; /* Brighter Purple */
+  background-color: rgba(0, 0, 0, 0);
+  white-space: pre-wrap;
+}
+
+code span.bu {
+  color: #5D3A74; /* Changed from #d73a49 */
+}
+
+p.codespacer {
+  height: 1px;
+}
+
+p.tightspacer {
+  height: 0.5px;
+}
+
+.boxed-content {
+  border: 3px solid #5D3A74;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tight-boxed-content {
+  border: 3px solid #5D3A74;
+  padding: -2px;
+  border-radius: 5px;
+}
+
+:root {
+  --quarto-font-monospace: "Ubuntu Mono", SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace !important;
+  --r-code-font: "Ubuntu Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace !important;
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "listing": "/slides/index.html",
+    "items": [
+      "/slides/weekone/index.html"
+    ]
+  },
+  {
+    "listing": "/schedule/index.html",
+    "items": [
+      "/schedule/weekone/index.html",
+      "/schedule/weektwo/index.html",
+      "/schedule/weekthree/index.html",
+      "/schedule/weekfour/index.html",
+      "/schedule/weekfive/index.html",
+      "/schedule/weeksix/index.html",
+      "/schedule/weekseven/index.html",
+      "/schedule/weeknine/index.html",
+      "/schedule/weekten/index.html",
+      "/schedule/weekeleven/index.html",
+      "/schedule/weektwelve/index.html",
+      "/schedule/weekthirteen/index.html",
+      "/schedule/weekfourteen/index.html",
+      "/schedule/weekfifteen/index.html"
+    ]
+  }
+]
