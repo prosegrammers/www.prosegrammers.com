@@ -21,30 +21,78 @@ format:
 ## Ruff Overview
 Ruff is a program made for linting and code formatting for Python files. Linting checks your code for errors and bugs but also for style issues - for example, sorting imports or getting rid of excessive empty lines. With formatting, ruff checks for formatting styles such as how many spaces for an indent or the max length of a line. The command `ruff check` will tell you of any linting issues it finds as well as the specific code it would give to that type of issue. `ruff check --fix` will fix said issues. To format your files run `ruff format`.
 
+## Ruff Overview
+Ruff is a program made for linting and code formatting for Python files. Linting checks your code for errors and bugs but also for style issues - for example, sorting imports or getting rid of excessive empty lines. With formatting, ruff checks for formatting styles such as how many spaces for an indent or the max length of a line. The command `ruff check` will tell you of any linting issues it finds as well as the specific code it would give to that type of issue. `ruff check --fix` will fix said issues. To format your files run `ruff format`.
+
 ## Why Documentation Matters
- - Docs help others use your tool and support collaboration.
- - Good docs increase adoption and ease maintenance.
- - Goal: Evaluate Ruff's documentation using multiple frameworks.
 
-## README-Driven Documentation
- - README is the project's front door.
- - Key elements: purpose, setup, usage, contribution guidelines.
- - Writing README first aligns project goals with implementation.
+- Documentation isn’t just support material — it defines user trust and shapes project identity.  
+- Ruff’s docs look polished, but their tone and structure feel **robotic**, not human.  
+- They read like technical reference pages, not like a developer’s guide to success.  
+- Strong tool, weak communication: Ruff tells us what it *is*, not why it *matters*.  
+- A documentation system should inspire confidence and community — Ruff’s currently feels closed-off and impersonal.
 
-## Diátaxis Framework
- - Organizes documentation by user needs: tutorials, how-to guides, references, explanations.
- - Functional quality: accuracy and usefulness.
- - Deep quality: flow and user anticipation.
+## README-Driven Development
 
-## Strengths
- - README-driven: 'Getting started' is clear and approachable.
- - Diátaxis: Tutorials/how-to for new users are well-covered.
- - Narrative & Global: Core usage and value communicated clearly.
+- **Core idea:** A README should explain the tool’s *purpose, philosophy, and practical use cases* before any code exists.  
+- Ruff’s “Getting Started” and “Introduction” pages *serve as* its README, but they fail to lead with purpose.  
+- **Critiques:**  
+  - Opens with installation steps instead of context — users learn *how* to install before learning *why* they should.  
+  - No narrative about Ruff’s origin or motivation (why combine flake8, black, isort?).  
+  - Assumes users already know Python linting — alienating newcomers.  
+  - No emotional or community appeal — it’s efficient but sterile.  
+- In README-driven terms: Ruff’s “README” documents the tool’s *existence*, not its *vision.*
 
-## Weaknesses & Opportunities
- - README-driven: Limited 'why' explanations behind rules/config.
- - Diátaxis: Heavy on reference, fewer advanced explanations.
- - Narrative & Global: No multilingual versions, examples assume typical developer environments.
+## The Diátaxis Framework
+
+- The Diátaxis framework divides documentation into **four purposes:**  
+  1. **Tutorials** – learning through doing  
+  2. **How-to guides** – solving specific problems  
+  3. **Reference** – factual, precise info  
+  4. **Explanation** – concepts, motivations, design choices  
+
+- Ruff’s docs heavily favor **Reference**, barely touching the others.  
+- It’s technically complete but **pedagogically empty** — everything is factual, nothing is taught.  
+
+## README Strengths and Missed Opportunities 
+
+- **Strengths:**  
+  - Simple installation and immediate usage instructions — minimal friction for advanced users.  
+  - Clear performance benchmarks help justify Ruff’s “fast” branding.  
+  - Consistent formatting and typography — easy to skim.  
+
+- **Weaknesses:**  
+  - No “quick win” example to hook new users.  
+  - Zero personal tone — no sense of developer empathy or problem-solving narrative.  
+  - Doesn’t explain what problems Ruff *solved* in existing tools.  
+  - Feels like it was written *after* Ruff was built, not *before* — breaking the README-driven rule.  
+
+
+## Applying Diátaxis to Ruff
+
+| Diátaxis Section | Ruff’s Strengths | Ruff’s Failures |
+|------------------|------------------|-----------------|
+| **Tutorials** | None — users are dropped into installation with no walkthrough or context. | No “first project” example or beginner flow. |
+| **How-To Guides** | Limited command-line snippets. | Missing structured guides (e.g., “Using Ruff in CI,” “Migrating from flake8”). |
+| **Reference** | Very strong — exhaustive configuration options and flags. | Overwhelms new users with detail before giving big-picture understanding. |
+| **Explanation** | Occasional mentions in FAQ. | No design philosophy, no insight into trade-offs or reasoning. |
+
+- Ruff overindexes on **facts** and underdelivers on **learning**.  
+
+
+##  The Core Problem: Speed Without Substance 
+
+- Ruff’s docs mirror its design philosophy: fast, minimal, and technical — but that minimalism hurts understanding.  
+- The “speed-first” mindset strips away the human side of documentation.  
+- For new developers, it feels like entering a machine, not a community.  
+- Without storytelling, tutorials, or clear “why,” the docs succeed at **explaining commands** but fail at **teaching the tool.**
+
+
+## Ruff: Literate Programming
+As stated in the DECO presentation, Literate Programming explains why and how code works and prioritizes human legibility. Though it doesn’t do the former, it can aid in providing the latter. For example, with Ruff, if you have multiple parameters in a function header, when you run `ruff format` on the file, it will organize the parameters to have one on each line. This makes it much easier to read, even though it takes more lines, following Literate Programming’s ideal of “clarity over preciseness.” The Ruff documentation itself also uses comments to provide notes on its code examples, such as comments for the commands `ruff check` and `ruff format`.
+
+## Ruff: Localization
+As for Localization, Ruff is made for linting and formatting which doesn’t have so much to do with this process. According to the DECO presentation, it is the process of adapting content/software/documentation to a specific locale. Ruff can’t really help with translations or dates/times, but it can keep your code linted and formatted which makes your code easier to read when you are working on localization.
 
 ## Ruff: Literate Programming
 As stated in the DECO presentation, Literate Programming explains why and how code works and prioritizes human legibility. Though it doesn’t do the former, it can aid in providing the latter. For example, with Ruff, if you have multiple parameters in a function header, when you run `ruff format` on the file, it will organize the parameters to have one on each line. This makes it much easier to read, even though it takes more lines, following Literate Programming’s ideal of “clarity over preciseness.” The Ruff documentation itself also uses comments to provide notes on its code examples, such as comments for the commands `ruff check` and `ruff format`.
