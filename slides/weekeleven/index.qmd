@@ -129,7 +129,8 @@ performance needs**!
 - **Linear search**: check every item sequentially at $O(n)$
 - **Binary search**: divide and conquer approach at $O(\log n)$
 - Binary search requires sorted data but is much faster
-- Essential for implementing search features in documentation
+- {{< iconify fa6-solid rocket >}} **Essential for implementing search features
+in documentation!**
 
 :::
 
@@ -154,7 +155,7 @@ print(binary_search([2, 4, 6, 8, 10], 5))
 
 - Searches for `item` in sorted list `L` by dividing in half
 - Returns `True` if found, `False` otherwise
-- Time complexity: $O(\log n)$ for sorted lists
+- **Time complexity**: $O(\log n)$ for sorted lists
 
 :::
 
@@ -194,7 +195,8 @@ print(f"'{search_term}' found in index: {found}")
 - **Simple sorts**: bubble, selection, insertion at $O(n^2)$
 - **Advanced sorts**: mergesort, quicksort at $O(n \log n)$
 - Simple algorithms work well for small datasets
-- Advanced algorithms essential for large document collections
+- {{< iconify fa6-solid rocket >}} **Advanced algorithms essential for large
+document collections**!
 
 :::
 
@@ -213,11 +215,11 @@ bubblesort(data)
 print("Sorted:", data)
 ```
 
-::: {.fragment style="font-size: 0.85em; margin-top: -0.2em"}
+::: {.fragment style="font-size: 0.95em; margin-top: -0.2em"}
 
 - Repeatedly swaps adjacent elements if out of order
 - Simple to understand and implement
-- Time complexity: $O(n^2)$ makes it slow for large datasets
+- **Time complexity**: $O(n^2)$ makes it slow for large datasets
 
 :::
 
