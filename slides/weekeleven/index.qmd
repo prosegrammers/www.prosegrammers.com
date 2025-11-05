@@ -215,7 +215,7 @@ bubblesort(data)
 print("Sorted:", data)
 ```
 
-::: {.fragment style="font-size: 0.95em; margin-top: -0.2em"}
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em"}
 
 - Repeatedly swaps adjacent elements if out of order
 - Simple to understand and implement
@@ -253,11 +253,11 @@ mergesort(data)
 print(data)
 ```
 
-::: {.fragment style="font-size: 0.85em; margin-top: -0.2em"}
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em"}
 
 - Divides list in half, sorts recursively, then merges
-- Time complexity: $O(n \log n)$ in all cases
 - More efficient than bubble sort for large datasets
+- **Time complexity**: $O(n \log n)$ in all cases
 
 :::
 
