@@ -302,7 +302,7 @@ X.sort()
 print("Sorted X:", X)
 ```
 
-::: {.fragment style="font-size: 0.85em;"}
+::: {.fragment style="font-size: 0.95em;"}
 
 - `sorted()`: returns new sorted list, keeps original unchanged
 - `.sort()`: sorts list in-place, modifies original
@@ -366,7 +366,8 @@ for func in api_functions:
   - Large datasets: use Python's `sorted()` or `.sort()`
   - Special cases: counting sort for restricted ranges
 
-- {{< iconify fa6-solid lightbulb >}} Understand algorithm worst-case time
-complexity to make smart choices for your document engineering projects!
+- {{< iconify fa6-solid lightbulb >}} **Make sure to understand algorithm
+worst-case time complexity to make smart choices for your document engineering
+projects**!
 
 :::
