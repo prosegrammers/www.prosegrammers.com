@@ -13,7 +13,7 @@ toc-expand: 3
   - Instructor-led deep-dive on retrieval augmented generation
   - As needed, instructor review of previous technical topics
 - {{< iconify fa6-solid people-line size=18px >}} **Tuesday**:
-  - DECO5 and DECO6 and DEPC and DEPC6 presentation slides completed through
+  - DECO5 and DECO6 and DEPC5 and DEPC6 presentation slides completed through
   the use of [Quarto](https://quarto.org/),
   [RevealJS](https://revealjs.com/),
   [Markdown](https://www.markdownguide.org/), [Git](https://git-scm.com/),
