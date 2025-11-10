@@ -1,0 +1,48 @@
+---
+title: "Natural Language Processing"
+description: "Grasp how analyze documents"
+date: 2025-11-17
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Activities
+
+- {{< iconify fa6-solid lightbulb size=18px >}} **Monday**:
+  - Instructor-led deep-dive on searching and sorting
+  - As needed, instructor review of previous technical topics
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday**:
+  - [DEPC3 presentation](/slides/depc/weekten/index.qmd) and [DEPC4
+  presentation](/slides/depc/weekeleven/index.qmd) completed through the use of
+  [Quarto](https://quarto.org/), [RevealJS](https://revealjs.com/),
+  [Markdown](https://www.markdownguide.org/), [Git](https://git-scm.com/),
+  [GitHub](https://github.com/), and the [GitHub Flow
+  model](https://docs.github.com/en/get-started/quickstart/github-flow)
+  - Presentation available, in final form, as a pull request in the [GitHub
+  repository for the course web
+  site](https://github.com/prosegrammers/www.prosegrammers.com), no later than
+  11:59 PM
+  - Each DEPC3 and DEPC4 team member must use Git and their own GitHub account to commit
+  their work to the [pull
+  request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+  for their team's slides
+- {{< iconify fa6-solid people-line size=18px >}} **Wednesday**:
+  - Team-based delivery of DEPC3 and DEPC4 presentations
+- {{< iconify fa6-solid gears size=18px >}} **Wednesday Laboratory**:
+  - Continue working on second document engineering tool-building project
+  - Students meet with the student technical leaders
+  - Students give in-person demonstration to course instructor
+- {{< iconify fa6-solid gears size=18px >}} **Friday**:
+  - Randomly selected ordering of class completes document engineering
+  knowledge-check two as an in-person assessment
+  - Continue working on second document engineering tool-building project
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekeleven/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Eleven: Searching and Sorting for Document Engineering](../../slides/weekeleven/)
