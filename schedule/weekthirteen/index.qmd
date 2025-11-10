@@ -16,10 +16,11 @@ toc-expand: 3
   - Instructor-led deep-dive on natural language processing
   - As needed, instructor review of previous technical topics
 - {{< iconify fa6-solid gears size=18px >}} **Wednesday Laboratory**:
-  - Continue working on second document engineering tool-building project
+  - Release the third document engineering tool-building project
   - Students meet with the student technical leaders
   - Students give in-person demonstration to course instructor
 - {{< iconify fa6-solid gears size=18px >}} **Friday**:
-  - Randomly selected ordering of class completes document engineering
-  knowledge-check two as an in-person assessment
-  - Continue working on second document engineering tool-building project
+  - Use installed software tools for document engineering skill-check five
+  - Complete skill-check five during the in-person classroom session
+  - Please review [Week One: Introduction to Document
+  Engineering](../../slides/weekone/) for a list of necessary software tools
