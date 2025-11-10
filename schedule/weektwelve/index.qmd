@@ -19,6 +19,7 @@ toc-expand: 3
   - Continue working on second document engineering tool-building project
   - Students meet with the student technical leaders
   - Students give in-person demonstration to course instructor
+  - Second phase of the document engineering project due by 11:59 PM
 - {{< iconify fa6-solid gears size=18px >}} **Friday**:
   - Instructor-led deep-dive on regular expressions
   - As needed, instructor review of previous technical topics
