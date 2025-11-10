@@ -10,10 +10,11 @@ toc-expand: 3
 ## Activities
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Monday**:
-  - Instructor-led deep-dive on searching and sorting
+  - Instructor-led deep-dive on natural language processing
   - As needed, instructor review of previous technical topics
 - {{< iconify fa6-solid people-line size=18px >}} **Wednesday**:
-  - Team-based delivery of DEPC3 and DEPC4 presentations
+  - Instructor-led deep-dive on natural language processing
+  - As needed, instructor review of previous technical topics
 - {{< iconify fa6-solid gears size=18px >}} **Wednesday Laboratory**:
   - Continue working on second document engineering tool-building project
   - Students meet with the student technical leaders
