@@ -1,0 +1,24 @@
+---
+title: "Regular Expressions"
+description: "Learn how to perform pattern matching"
+date: 2025-11-10
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Activities
+
+- {{< iconify fa6-solid lightbulb size=18px >}} **Monday**:
+  - Instructor-led deep-dive on regular expressions
+  - As needed, instructor review of previous technical topics
+- {{< iconify fa6-solid people-line size=18px >}} **Wednesday**:
+  - Instructor-led deep-dive on regular expressions
+  - As needed, instructor review of previous technical topics
+- {{< iconify fa6-solid gears size=18px >}} **Wednesday Laboratory**:
+  - Continue working on second document engineering tool-building project
+  - Students meet with the student technical leaders
+  - Students give in-person demonstration to course instructor
+- {{< iconify fa6-solid gears size=18px >}} **Friday**:
+  - Instructor-led deep-dive on regular expressions
+  - As needed, instructor review of previous technical topics
