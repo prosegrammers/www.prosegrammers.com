@@ -1,6 +1,6 @@
 ---
 title: "Natural Language Processing"
-description: "Grasp how analyze documents"
+description: "Grasp how automatically analyze documents"
 date: 2025-11-17
 layout: full
 toc: true
