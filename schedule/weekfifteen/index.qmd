@@ -34,6 +34,7 @@ toc-expand: 3
   - Team-based delivery of DECO5 and DECO6 presentations
   - Team-based delivery of DEPC5 and DEPC6 presentations
 - {{< iconify fa6-solid gears size=18px >}} **Friday**:
-  - Randomly selected ordering of class completes document engineering
-  knowledge-check two as an in-person assessment
-  - Continue working on second document engineering tool-building project
+  - Use installed software tools for document engineering skill-check six
+  - Complete skill-check six during the in-person classroom session
+  - Please review [Week One: Introduction to Document
+  Engineering](../../slides/weekone/) for a list of necessary software tools
