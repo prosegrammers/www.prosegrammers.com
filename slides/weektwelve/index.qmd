@@ -47,6 +47,17 @@ diagrams, summaries, and descriptions of technical topics or processes.
 
 :::
 
+# Creating regular expressions in Python
+
+::: fragment
+
+- {{< iconify fa6-solid code >}} Use the `re` module for regex operations
+- {{< iconify fa6-solid gears >}} Compile patterns with `re.compile()`
+- {{< iconify fa6-solid lightbulb >}} **Raw strings** (`r''`) prevent escape
+confusion
+
+:::
+
 ## Regular expression notation
 
 ::: {.fragment style="margin-top: -0.25em; font-size: 0.85em;"}
@@ -65,6 +76,61 @@ addresses?**
 correctness?**
 
 :::
+
+
+## Basic regex creation steps
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.9em;"}
+
+- **Import the module**: start with `import re`
+- **Define pattern**: use raw string like `r'pattern'`
+- **Compile pattern**: create regex object with `re.compile(pattern)`
+- **Apply pattern**: use methods like `match()`, `search()`, or `findall()`
+- **Extract results**: process match objects or lists of matches
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid microscope >}} How do we *create* effective patterns?
+*...* How do we *test* that patterns work correctly? *...* How do we *debug*
+when patterns fail? *...* How do we *optimize* patterns for performance?
+
+:::
+
+## Creating your first regex
+
+```{python}
+import re
+
+# define a simple pattern for phone numbers
+pattern = r'\d{3}-\d{3}-\d{4}'
+phone_regex = re.compile(pattern)
+
+# test the pattern
+test_cases = [
+    '555-123-4567',
+    '123-456-7890',
+    '1234567890',
+    '555-12-3456'
+]
+
+print("Testing phone number pattern:")
+for test in test_cases:
+    if phone_regex.fullmatch(test):
+        print(f"  '{test}': Valid")
+    else:
+        print(f"  '{test}': Invalid")
+```
+
+::: {.fragment style="margin-top: -0.1em; font-size: 0.9em;"}
+
+- `\d` matches any digit (0-9)
+- `{3}` means exactly 3 occurrences
+- The pattern requires hyphens at specific positions
+
+:::
+
 
 ## Regular expressions in Python
 
@@ -137,69 +203,6 @@ MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
 
 :::
 
-# Creating regular expressions in Python
-
-::: fragment
-
-- {{< iconify fa6-solid code >}} Use the `re` module for regex operations
-- {{< iconify fa6-solid gears >}} Compile patterns with `re.compile()`
-- {{< iconify fa6-solid lightbulb >}} **Raw strings** (`r''`) prevent escape
-confusion
-
-:::
-
-## Basic regex creation steps
-
-::: {.incremental style="margin-top: -0.15em; font-size: 0.9em;"}
-
-- **Import the module**: start with `import re`
-- **Define pattern**: use raw string like `r'pattern'`
-- **Compile pattern**: create regex object with `re.compile(pattern)`
-- **Apply pattern**: use methods like `match()`, `search()`, or `findall()`
-- **Extract results**: process match objects or lists of matches
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
-
-{{< iconify fa6-solid microscope >}} How do we *create* effective patterns?
-*...* How do we *test* that patterns work correctly? *...* How do we *debug*
-when patterns fail? *...* How do we *optimize* patterns for performance?
-
-:::
-
-## Creating your first regex
-
-```{python}
-import re
-
-# define a simple pattern for phone numbers
-pattern = r'\d{3}-\d{3}-\d{4}'
-phone_regex = re.compile(pattern)
-
-# test the pattern
-test_cases = [
-    '555-123-4567',
-    '123-456-7890',
-    '1234567890',
-    '555-12-3456'
-]
-
-print("Testing phone number pattern:")
-for test in test_cases:
-    if phone_regex.fullmatch(test):
-        print(f"  '{test}': Valid")
-    else:
-        print(f"  '{test}': Invalid")
-```
-
-::: {.fragment style="margin-top: -0.1em; font-size: 0.9em;"}
-
-- `\d` matches any digit (0-9)
-- `{3}` means exactly 3 occurrences
-- The pattern requires hyphens at specific positions
-
-:::
 
 ## Try creating phone regex!
 
