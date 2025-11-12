@@ -59,24 +59,6 @@ confusion
 
 :::
 
-## Regular expression notation
-
-::: {.fragment style="margin-top: -0.25em; font-size: 0.85em;"}
-
-- **Pattern matching**: describe sets of strings concisely
-- **Practical extensions**: 
-    - `.` means any char
-    - `+` means one or more
-    - `[...]` is a character class
-    - `[a-z]` matches any character in range
-    - `[^abc]` matches any character except those listed
-    - These are all "syntactic sugar" for convenience
-- {{< iconify fa6-solid lightbulb >}} **Can you write a regex for email
-addresses?**
-- {{< iconify fa6-solid rocket >}} **How do you test a regular expressions'
-correctness?**
-
-:::
 
 
 ## Basic regular expression steps
@@ -212,14 +194,33 @@ benefits and drawbacks of regular expressions?
 
 :::
 
-# Components of regular expressions
+# Key Components of a Regular Expression
 
-::: fragment
+::: {.fragment .boxed-content style="margin-top: -0.15em; font-size: 0.95em;"}
 
 - {{< iconify fa6-solid gears >}} **Literal characters**: match exact text
 - {{< iconify fa6-solid code >}} **Metacharacters**: special meaning symbols
 - {{< iconify fa6-solid lightbulb >}} **Character classes**: sets of characters
 - {{< iconify fa6-solid rocket >}} **Quantifiers**: specify repetition
+
+:::
+
+## Regular expression notation
+
+::: {.fragment style="margin-top: -0.25em; font-size: 0.85em;"}
+
+- **Pattern matching**: describe sets of strings concisely
+- **Practical extensions**: 
+    - `.` means any char
+    - `+` means one or more
+    - `[...]` is a character class
+    - `[a-z]` matches any character in range
+    - `[^abc]` matches any character except those listed
+    - These are all "syntactic sugar" for convenience
+- {{< iconify fa6-solid lightbulb >}} **Can you write a regex for email
+addresses?**
+- {{< iconify fa6-solid rocket >}} **How do you test a regular expressions'
+correctness?**
 
 :::
 
