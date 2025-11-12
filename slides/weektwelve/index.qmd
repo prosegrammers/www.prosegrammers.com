@@ -79,14 +79,14 @@ correctness?**
 :::
 
 
-## Basic regex creation steps
+## Basic regular expression steps
 
 ::: {.incremental style="margin-top: -0.15em; font-size: 0.9em;"}
 
 - **Import the module**: start with `import re`
 - **Define pattern**: use raw string like `r'pattern'`
 - **Compile pattern**: create regex object with `re.compile(pattern)`
-- **Apply pattern**: use methods like `match()`, `search()`, or `findall()`
+- **Apply pattern**: run `match()`, `search()`, or `findall()`
 - **Extract results**: process match objects or lists of matches
 
 :::
