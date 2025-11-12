@@ -46,3 +46,90 @@ diagrams, summaries, and descriptions of technical topics or processes.
 **CS-104-2**, **CS-104-3**, and **CS-104-4**!
 
 :::
+
+## Find an open-source Python project that contains a regular expression! {transition="convex"}
+
+::: fragment
+
+- What did you find? How does it work?
+- What are the benefits and limitations?
+- **Share the link and a code segment**
+- Here is an example from `GatorGrader`:
+
+:::
+
+::: fragment
+
+```python
+MULTILINECOMMENT_RE_JAVA = r"""/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/"""
+SINGLELINECOMMENT_RE_JAVA = r"""^(?:[^"/\\]|\"(?:[^\"\\]|\\.)*
+\"|/(?:[^/"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*//(.*)$"""
+SINGLELINECOMMENT_RE_PYTHON = r"""^(?:[^"#\\]|\"(?:[^\"\\]|\\.)*\"|
+/(?:[^#"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*#(.*)$"""
+MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
+```
+
+:::
+
+## Regular expression notation
+
+::: {.fragment style="margin-top: -0.25em; font-size: 0.85em;"}
+
+- **Pattern matching**: describe sets of strings concisely
+- **Practical extensions**: 
+    - `.` means any char
+    - `+` means one or more
+    - `[...]` is a character class
+    - `[a-z]` matches any character in range
+    - `[^abc]` matches any character except those listed
+    - These are all "syntactic sugar" for convenience
+- {{< iconify fa6-solid lightbulb >}} **Can you write a regex for email
+addresses?**
+- {{< iconify fa6-solid rocket >}} **How do you test a regular expressions'
+correctness?**
+
+:::
+
+## Regular expressions in Python
+
+```{python}
+import re
+
+def test_pattern(pattern: str, test_strings: list) -> None:
+    """Test a regex pattern against multiple strings."""
+    regex = re.compile(pattern)
+    for s in test_strings:
+        match = regex.fullmatch(s)
+        print(f"'{s}': {'Match' if match else 'No match'}")
+
+# pattern: strings starting with 'A' and ending with 'B'
+pattern = r'A.*B'
+test_strings = ['AB', 'ACCCB', 'AXYZB', 'ABC', 'BA']
+print("Pattern: A.*B (start with A, end with B)")
+test_pattern(pattern, test_strings)
+
+# pattern: exactly 3 digits
+print("\nPattern: [0-9]{3} (exactly 3 digits)")
+pattern2 = r'[0-9]{3}'
+test_strings2 = ['123', '456', '12', '1234', 'abc']
+test_pattern(pattern2, test_strings2)
+```
+
+## Pattern matching for email
+
+```{python}
+import re
+
+# pattern for simple email validation
+pattern = r'[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+'
+test_strings = [
+    'user@example.com',
+    'test.user@domain.org',
+    'invalid@',
+    '@invalid.com',
+    'no-at-sign.com'
+]
+print("Email pattern: [a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z]+")
+test_pattern(pattern, test_strings)
+```
+
