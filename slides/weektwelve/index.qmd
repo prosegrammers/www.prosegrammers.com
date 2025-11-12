@@ -201,7 +201,7 @@ benefits and drawbacks of regular expressions?
 - {{< iconify fa6-solid gears >}} **Literal characters**: match exact text
 - {{< iconify fa6-solid code >}} **Metacharacters**: special meaning symbols
 - {{< iconify fa6-solid lightbulb >}} **Character classes**: sets of characters
-- {{< iconify fa6-solid rocket >}} **Quantifiers**: specify repetition
+- {{< iconify fa6-solid rocket >}} **Quantifiers**: specify amount of repetition
 
 :::
 
