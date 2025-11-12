@@ -226,7 +226,7 @@ correctness?**
 
 ## Understanding regex metacharacters
 
-::: {.fragment style="margin-top: -0.15em; font-size: 0.85em;"}
+::: {.fragment .boxed-content style="margin-top: -0.15em; font-size: 0.875em;"}
 
 - `.` matches any single character except newline
 - `^` matches start of string
@@ -240,16 +240,9 @@ correctness?**
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.9em;"}
-
-{{< iconify fa6-solid microscope >}} These building blocks combine to create
-powerful patterns for document processing!
-
-:::
-
 ## Character classes in regex
 
-::: {.fragment style="margin-top: -0.15em; font-size: 0.85em;"}
+::: {.fragment .boxed-content style="margin-top: -0.15em; font-size: 0.875em;"}
 
 - `[abc]` matches any single character a, b, or c
 - `[a-z]` matches any lowercase letter
@@ -263,9 +256,11 @@ powerful patterns for document processing!
 
 :::
 
-## Regex quantifiers explained
+## Explore quantifiers like `*` and `+`
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 9
 import re
 
 patterns = {
@@ -287,11 +282,11 @@ for pattern, description in patterns.items():
         print(f"  '{test}': {result}")
 ```
 
-## Explore quantifiers interactively
+## Further exploration of quantifiers
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 import re
 
 # test different quantifiers
@@ -305,10 +300,11 @@ for test in test_strings:
     print(f"  '{test}': {result}")
 ```
 
-::: {.fragment style="margin-top: -0.05em; font-size: 0.85em;"}
+::: {.fragment style="margin-top: -0.15em; font-size: 0.85em;"}
 
 - {{< iconify fa6-solid gears >}} **Experiment**: try changing the pattern to
-`\d+` or `\d*` to see how matching behavior changes!
+`\d+` or `\d*` to see how matching behavior changes! What did you discover and
+learn?
 
 :::
 
