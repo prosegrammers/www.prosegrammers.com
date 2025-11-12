@@ -102,7 +102,7 @@ when patterns fail? *...* How do we *optimize* patterns for performance?
 
 :::
 
-## Creating your first regex
+## Creating your first regular expression
 
 ```{pyodide}
 #| autorun: true
@@ -169,7 +169,7 @@ test_pattern(pattern2, test_strings2)
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 8
+#| max-lines: 12
 import re
 
 # pattern for simple email validation
@@ -185,9 +185,7 @@ print("Email pattern: [a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z]+")
 test_pattern(pattern, test_strings)
 ```
 
-
-
-## Try creating phone regex!
+## Revisit the phone regular expression
 
 ```{pyodide}
 #| autorun: true
@@ -205,10 +203,12 @@ for test in test_cases:
     print(f"'{test}': {result}")
 ```
 
-::: {.fragment style="margin-top: -0.05em; font-size: 0.825em;"}
+::: {.fragment style="margin-top: -0.05em; font-size: 0.8em;"}
 
-- {{< iconify fa6-solid lightbulb >}} **Try modifying**: can you make the
-hyphens optional? What about allowing dots or spaces as separators?
+- {{< iconify fa6-solid lightbulb >}} **Enhance**: can hyphens be optional?
+Allow dots or spaces as separators?
+- {{< iconify fa6-solid circle-exclamation >}} **Question**: What are the
+benefits and drawbacks of regular expressions?
 
 :::
 
