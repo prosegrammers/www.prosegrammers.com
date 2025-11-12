@@ -421,11 +421,15 @@ include your own email examples!
 ::: fragment
 
 - {{< iconify fa6-solid file-lines >}} **Extract metadata**: parse dates,
-versions, IDs
-- {{< iconify fa6-solid filter >}} **Validate input**: check format compliance
+versions, identifiers
+- {{< iconify fa6-solid filter >}} **Validate input**: confirm format compliance
 - {{< iconify fa6-solid text-slash >}} **Clean text**: remove unwanted patterns
-- {{< iconify fa6-solid magnifying-glass >}} **Analyze content**: find
-patterns in docs
+- {{< iconify fa6-solid magnifying-glass >}} **Analyze content**: find patterns
+in documents
+- {{< iconify fa6-solid rocket >}} **Confirm correctness**: test to be confident
+in correctness
+- {{< iconify fa6-solid lightbulb >}} **Ensure understanding**: ensure you
+understand the regex!
 
 :::
 
