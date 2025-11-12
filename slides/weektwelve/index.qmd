@@ -325,11 +325,19 @@ learn?
 
 - `re.match(pattern, string)`: checks if pattern matches at start of string
 - `re.search(pattern, string)`: finds first occurrence of pattern anywhere
-- `re.findall(pattern, string)`: returns list of all non-overlapping matches
+- `re.findall(pattern, string)`: returns list of non-overlapping matches
 - `re.finditer(pattern, string)`: returns iterator of match objects
-- `re.sub(pattern, repl, string)`: replaces matches with replacement string
+- `re.sub(pattern, repl, string)`: replaces matches with new string
 - `re.split(pattern, string)`: splits string by pattern occurrences
 - `pattern.fullmatch(string)`: checks if entire string matches pattern
+
+:::
+
+::: {.fragment .boxed-content style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- {{< iconify fa6-solid gears >}} **Explore**: How can pattern matching aid the
+implementation of your document engineering project? What are new features that
+you could add? How would you test them to ensure correctness?
 
 :::
 
