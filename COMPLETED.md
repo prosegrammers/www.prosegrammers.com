@@ -1012,6 +1012,135 @@ slides are at the `#` level in the Markdown file.
 decks that I have created. For instance, this topic is less complicated than the
 material that I produced for weeknine and thus the slide count should be less.
 
+### Create Slides for Week Twelve in `slides/weektwelve/index.qmd`
+
+- [X] Review the content in the `GEMINI.md` file (or the `AGENTS.md` file) that
+explains the theme of the course on document engineering.
+- [X] Review the content in the `index.qmd` file in the root of the repository
+that explains the idea of a "Prosegrammer" and the concept of document
+engineering. All the slides that you create have to specifically connect to the
+theme of prosegramming and document engineering.
+- [X] Review the content in the `index.qmd` file in the `syllabus` directory of
+the repository that explains rules and regulations for this course on document
+engineering. Note that these are the rules that students follow and not
+specifically the rules and regulations that you follow as a coding agent.
+- [X] Please remember that I am currently working on the slides in
+`slides/weektwelve/index.qmd` that introduce how to create and use regular
+expressions for the purposes of document engineering. I want the slides to
+define what a regular expression is an explain their benefits and drawbacks.
+- [X] I have already written some slides and I don't want you to delete them.
+However, I need you to add more slides about tasks like:
+    - Create a regular expression in Python
+    - The various components of a regular expression in Python
+    - How to use regular expressions in Python
+    - How to perform pattern matching with a regular expression
+    - How to use regular expressions in Python for document engineering
+    - How to test a program (maybe use `unittest`) using a regex
+    - Other simple and easy to understand topics about regex
+- [X] You can look at the other slide decks that I have already prepared:
+  - `slides/weekone/index.qmd`
+  - `slides/weektwo/index.qmd`
+  - `slides/weekthree/index.qmd`
+  - `slides/weekfour/index.qmd`
+  - `slides/weekfive/index.qmd`
+  - `slides/weeksix/index.qmd`
+  - `slides/weekeight/index.qmd`
+  - `slides/weeknine/index.qmd`
+  - `slides/weekten/index.qmd`
+  - `slides/weekeleven/index.qmd` ... and see how I am currently using Markdown
+  and Quarto in my slides!
+- [X] Please do not use Markdown or Quarto formats that I am not currently
+using in my slides to make sure that the content has a consistent format.
+- [X] If you check the `index.qmd` file in this GitHub repository, you can see
+a simple example of word frequency analysis. Please use simple examples like
+this one to illustrate how to use containers like lists, tuples, and sets in
+Python.
+- [X] Make sure that all the content is accessible to beginners who do not have
+extensive experience with programming or the documentation of a software tool.
+- [X] Make sure that all the content has concrete examples that make points
+clear to beginners. Provide simple summaries of the concrete code examples.
+- [X] Always include "signposting" slides that clearly state what you are going
+to explain in the next block of slides about a specific topic. These
+signposting slides are at the `#` level in the Markdown file.
+- [X] Do not create slides that break the formatting or use icons that
+do not exist. You should use short titles that fit on a single line.
+You should use bullet points for ideas and make then short and clear.
+- [X] Keep the total number of slides to a count the same as the prior slide
+decks that I have created.
+
+## Support for Week Twelve Slides Content
+
+### Regular Expressions for Document Engineering
+
+- Regular expressions (regex) are patterns used to match character combinations
+in text, as defined by formal language theory and implemented across virtually
+all programming languages
+- Python's `re` module in the standard library provides comprehensive regex
+functionality following Perl-compatible regular expression (PCRE) syntax
+- Regex patterns enable efficient text parsing, validation, extraction, and
+transformation operations essential to document engineering workflows
+- Common document engineering applications include email validation, date
+extraction, markdown parsing, and structured text processing
+
+### Regex Components and Syntax
+
+- Metacharacters (`.`, `^`, `$`, `*`, `+`, `?`, `{n,m}`) provide pattern
+building blocks as standardized in IEEE POSIX regex specifications
+- Character classes (`[abc]`, `\d`, `\w`, `\s`) define sets of matching
+characters, following standard regex notation used across programming languages
+- Quantifiers control repetition in patterns, enabling flexible matching of
+variable-length text segments in documents
+- The `re.compile()` function improves performance by pre-compiling patterns
+for reuse, as recommended in Python's official documentation
+
+### Pattern Matching Methods in Python
+
+- `re.search()` finds first match anywhere in string, ideal for locating
+patterns within large documents
+- `re.match()` matches only at start of string, useful for validating document
+format headers and structured text beginnings
+- `re.findall()` returns all non-overlapping matches, supporting comprehensive
+pattern extraction from document collections
+- `re.sub()` performs pattern-based substitution, enabling automated document
+cleaning and transformation pipelines
+- `re.split()` divides strings on pattern matches, facilitating document
+parsing and tokenization
+
+### Document Engineering Applications of Regex
+
+- Date extraction from documents uses patterns like `\d{4}-\d{2}-\d{2}` to
+identify ISO 8601 formatted dates common in technical documentation
+- Email validation patterns ensure proper format in contact information and
+bibliographic metadata
+- Markdown syntax parsing relies on regex to identify headers, links, code
+blocks, and formatting markers
+- Log file analysis and structured text parsing benefit from regex pattern
+matching for extracting relevant information
+
+### Testing Regular Expressions
+
+- The `unittest` framework provides structured testing for regex patterns,
+ensuring pattern reliability across different text inputs
+- Test cases should cover positive matches (valid patterns), negative matches
+(invalid patterns), and edge cases (boundary conditions, special characters)
+- Regex testing validates pattern correctness before deployment in production
+document processing systems
+- Tools like regex101.com provide interactive regex testing and debugging with
+visual pattern explanation
+
+### Benefits and Limitations of Regex
+
+- Benefits include powerful pattern matching, built-in language support,
+concise syntax for complex text operations, and widespread adoption across
+tools and platforms
+- Limitations include readability challenges with complex patterns,
+performance concerns with catastrophic backtracking, and difficulty debugging
+intricate regular expressions
+- Alternatives like parser libraries (e.g., `pyparsing`) offer better
+solutions for highly structured document formats
+- Best practices recommend using regex for pattern-based tasks while choosing
+specialized parsers for formal grammars and complex document structures
+
 ### Create Slides for Week Eleven in `slides/weekeleven/index.qmd`
 
 - [X] Review the content in the `GEMINI.md` file (or the `AGENTS.md` file) that
