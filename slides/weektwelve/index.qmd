@@ -81,27 +81,32 @@ correctness?**
 
 ## Basic regular expression steps
 
-::: {.incremental style="margin-top: -0.15em; font-size: 0.9em;"}
+::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
 
 - **Import the module**: start with `import re`
 - **Define pattern**: use raw string like `r'pattern'`
 - **Compile pattern**: create regex object with `re.compile(pattern)`
 - **Apply pattern**: run `match()`, `search()`, or `findall()`
 - **Extract results**: process match objects or lists of matches
+- **Test and debug**: verify with various input cases of strings
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size:
+0.775em;"}
 
 {{< iconify fa6-solid microscope >}} How do we *create* effective patterns?
 *...* How do we *test* that patterns work correctly? *...* How do we *debug*
 when patterns fail? *...* How do we *optimize* patterns for performance?
+*...* How do we *reliably* use them in programs?
 
 :::
 
 ## Creating your first regex
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 5
 import re
 
 # define a simple pattern for phone numbers
@@ -124,11 +129,12 @@ for test in test_cases:
         print(f"  '{test}': Invalid")
 ```
 
-::: {.fragment style="margin-top: -0.1em; font-size: 0.9em;"}
+::: {.fragment style="margin-top: -0.1em; font-size: 0.7em;"}
 
 - `\d` matches any digit (0-9)
 - `{3}` means exactly 3 occurrences
 - The pattern requires hyphens at specific positions
+- **Does this work for a wide variety of phone numbers? Well, try it out!**
 
 :::
 
