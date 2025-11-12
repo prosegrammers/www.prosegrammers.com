@@ -51,6 +51,7 @@ diagrams, summaries, and descriptions of technical topics or processes.
 
 ::: fragment
 
+- {{< iconify fa6-solid rocket >}} Define a regular expression pattern
 - {{< iconify fa6-solid code >}} Use the `re` module for regex operations
 - {{< iconify fa6-solid gears >}} Compile patterns with `re.compile()`
 - {{< iconify fa6-solid lightbulb >}} **Raw strings** (`r''`) prevent escape
