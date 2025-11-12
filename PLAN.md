@@ -52,5 +52,8 @@ clear to beginners. Provide simple summaries of the concrete code examples.
 - [ ] Always include "signposting" slides that clearly state what you are going
 to explain in the next block of slides about a specific topic. These
 signposting slides are at the `#` level in the Markdown file.
+- [ ] Do not create slides that break the formatting or use icons that
+do not exist. You should use short titles that fit on a single line.
+You should use bullet points for ideas and make then short and clear.
 - [ ] Keep the total number of slides to a count the same as the prior slide
 decks that I have created.
