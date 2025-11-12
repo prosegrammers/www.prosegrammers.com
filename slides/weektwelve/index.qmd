@@ -88,7 +88,7 @@ print("Pattern: A.*B (start with A, end with B)")
 test_pattern(pattern, test_strings)
 
 # pattern: exactly 3 digits
-print("\nPattern: [0-9]{3} (exactly 3 digits)")
+print("Pattern: [0-9]{3} (exactly 3 digits)")
 pattern2 = r'[0-9]{3}'
 test_strings2 = ['123', '456', '12', '1234', 'abc']
 test_pattern(pattern2, test_strings2)
