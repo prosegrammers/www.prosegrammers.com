@@ -47,7 +47,6 @@ diagrams, summaries, and descriptions of technical topics or processes.
 
 :::
 
-
 ## Regular expression notation
 
 ::: {.fragment style="margin-top: -0.25em; font-size: 0.85em;"}
