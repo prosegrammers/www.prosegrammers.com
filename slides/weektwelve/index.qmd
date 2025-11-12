@@ -69,7 +69,9 @@ correctness?**
 
 ## Regular expressions in Python
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 5
 import re
 
 def test_pattern(pattern: str, test_strings: list) -> None:
@@ -94,7 +96,9 @@ test_pattern(pattern2, test_strings2)
 
 ## Pattern matching for email
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
 import re
 
 # pattern for simple email validation
