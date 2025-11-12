@@ -138,8 +138,7 @@ for test in test_cases:
 
 :::
 
-
-## Regular expressions in Python
+## Testing regular expressions in Python
 
 ```{pyodide}
 #| autorun: true
@@ -186,29 +185,6 @@ print("Email pattern: [a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z]+")
 test_pattern(pattern, test_strings)
 ```
 
-## Find an open-source Python project that contains a regular expression! {transition="convex"}
-
-::: fragment
-
-- What did you find? How does it work?
-- What are the benefits and limitations?
-- **Share the link and a code segment**
-- Here is an example from `GatorGrader`:
-
-:::
-
-::: fragment
-
-```python
-MULTILINECOMMENT_RE_JAVA = r"""/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/"""
-SINGLELINECOMMENT_RE_JAVA = r"""^(?:[^"/\\]|\"(?:[^\"\\]|\\.)*
-\"|/(?:[^/"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*//(.*)$"""
-SINGLELINECOMMENT_RE_PYTHON = r"""^(?:[^"#\\]|\"(?:[^\"\\]|\\.)*\"|
-/(?:[^#"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*#(.*)$"""
-MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
-```
-
-:::
 
 
 ## Try creating phone regex!
@@ -712,7 +688,8 @@ is powerful but not always the best solution.
 - Test patterns thoroughly with diverse inputs
 - Use named groups for readability: `(?P<name>...)`
 - Keep patterns simple; split complex logic into multiple patterns
-- Use online tools like regex101 for development and testing
+- Use online tools like [regex101](https://regex101.com/) for development and
+testing
 - Document assumptions about input format
 - Handle edge cases gracefully in production code
 
@@ -722,6 +699,30 @@ is powerful but not always the best solution.
 
 {{< iconify fa6-solid rocket >}} Master regex fundamentals to become an
 effective prosegrammer who can process and analyze documents efficiently!
+
+:::
+
+## Find an open-source Python project that contains a regular expression! {transition="convex"}
+
+::: fragment
+
+- What did you find? How does it work?
+- What are the benefits and limitations?
+- **Share the link and a code segment**
+- Here is an example from `GatorGrader`:
+
+:::
+
+::: fragment
+
+```python
+MULTILINECOMMENT_RE_JAVA = r"""/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/"""
+SINGLELINECOMMENT_RE_JAVA = r"""^(?:[^"/\\]|\"(?:[^\"\\]|\\.)*
+\"|/(?:[^/"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*//(.*)$"""
+SINGLELINECOMMENT_RE_PYTHON = r"""^(?:[^"#\\]|\"(?:[^\"\\]|\\.)*\"|
+/(?:[^#"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*#(.*)$"""
+MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
+```
 
 :::
 
