@@ -308,20 +308,20 @@ learn?
 
 :::
 
-# Using regular expressions for pattern matching
+# Use regular expressions for pattern matching
 
 ::: fragment
 
-- {{< iconify fa6-solid search >}} **Search**: find pattern anywhere in string
+- {{< iconify fa6-solid rocket >}} **Search**: find pattern anywhere in string
 - {{< iconify fa6-solid bullseye >}} **Match**: check if pattern starts string
-- {{< iconify fa6-solid list >}} **Find all**: extract all matches
+- {{< iconify fa6-solid list >}} **Find all**: extract all matches for pattern
 - {{< iconify fa6-solid repeat >}} **Replace**: substitute matched patterns
 
 :::
 
 ## Key regex methods in Python
 
-::: {.incremental style="margin-top: -0.15em; font-size: 0.825em;"}
+::: {.incremental style="margin-top: -0.15em; font-size: 0.8em;"}
 
 - `re.match(pattern, string)`: checks if pattern matches at start of string
 - `re.search(pattern, string)`: finds first occurrence of pattern anywhere
