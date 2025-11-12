@@ -47,29 +47,6 @@ diagrams, summaries, and descriptions of technical topics or processes.
 
 :::
 
-## Find an open-source Python project that contains a regular expression! {transition="convex"}
-
-::: fragment
-
-- What did you find? How does it work?
-- What are the benefits and limitations?
-- **Share the link and a code segment**
-- Here is an example from `GatorGrader`:
-
-:::
-
-::: fragment
-
-```python
-MULTILINECOMMENT_RE_JAVA = r"""/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/"""
-SINGLELINECOMMENT_RE_JAVA = r"""^(?:[^"/\\]|\"(?:[^\"\\]|\\.)*
-\"|/(?:[^/"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*//(.*)$"""
-SINGLELINECOMMENT_RE_PYTHON = r"""^(?:[^"#\\]|\"(?:[^\"\\]|\\.)*\"|
-/(?:[^#"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*#(.*)$"""
-MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
-```
-
-:::
 
 ## Regular expression notation
 
@@ -132,4 +109,28 @@ test_strings = [
 print("Email pattern: [a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z]+")
 test_pattern(pattern, test_strings)
 ```
+
+## Find an open-source Python project that contains a regular expression! {transition="convex"}
+
+::: fragment
+
+- What did you find? How does it work?
+- What are the benefits and limitations?
+- **Share the link and a code segment**
+- Here is an example from `GatorGrader`:
+
+:::
+
+::: fragment
+
+```python
+MULTILINECOMMENT_RE_JAVA = r"""/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/"""
+SINGLELINECOMMENT_RE_JAVA = r"""^(?:[^"/\\]|\"(?:[^\"\\]|\\.)*
+\"|/(?:[^/"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*//(.*)$"""
+SINGLELINECOMMENT_RE_PYTHON = r"""^(?:[^"#\\]|\"(?:[^\"\\]|\\.)*\"|
+/(?:[^#"\\]|\\.)|/\"(?:[^\"\\]|\\.)*\"|\\.)*#(.*)$"""
+MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
+```
+
+:::
 
