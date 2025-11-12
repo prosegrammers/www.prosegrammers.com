@@ -137,3 +137,601 @@ MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
 
 :::
 
+# Creating regular expressions in Python
+
+::: fragment
+
+- {{< iconify fa6-solid code >}} Use the `re` module for regex operations
+- {{< iconify fa6-solid gears >}} Compile patterns with `re.compile()`
+- {{< iconify fa6-solid lightbulb >}} **Raw strings** (`r''`) prevent escape
+confusion
+
+:::
+
+## Basic regex creation steps
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.9em;"}
+
+- **Import the module**: start with `import re`
+- **Define pattern**: use raw string like `r'pattern'`
+- **Compile pattern**: create regex object with `re.compile(pattern)`
+- **Apply pattern**: use methods like `match()`, `search()`, or `findall()`
+- **Extract results**: process match objects or lists of matches
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid microscope >}} How do we *create* effective patterns?
+*...* How do we *test* that patterns work correctly? *...* How do we *debug*
+when patterns fail? *...* How do we *optimize* patterns for performance?
+
+:::
+
+## Creating your first regex
+
+```{python}
+import re
+
+# define a simple pattern for phone numbers
+pattern = r'\d{3}-\d{3}-\d{4}'
+phone_regex = re.compile(pattern)
+
+# test the pattern
+test_cases = [
+    '555-123-4567',
+    '123-456-7890',
+    '1234567890',
+    '555-12-3456'
+]
+
+print("Testing phone number pattern:")
+for test in test_cases:
+    if phone_regex.fullmatch(test):
+        print(f"  '{test}': Valid")
+    else:
+        print(f"  '{test}': Invalid")
+```
+
+::: {.fragment style="margin-top: -0.1em; font-size: 0.9em;"}
+
+- `\d` matches any digit (0-9)
+- `{3}` means exactly 3 occurrences
+- The pattern requires hyphens at specific positions
+
+:::
+
+## Try creating phone regex!
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+import re
+
+# create pattern for phone numbers
+pattern = r'\d{3}-\d{3}-\d{4}'
+phone_regex = re.compile(pattern)
+
+# test with different inputs
+test_cases = ['555-123-4567', '1234567890', '555-12-3456']
+for test in test_cases:
+    result = "Valid" if phone_regex.fullmatch(test) else "Invalid"
+    print(f"'{test}': {result}")
+```
+
+::: {.fragment style="margin-top: -0.05em; font-size: 0.825em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Try modifying**: can you make the
+hyphens optional? What about allowing dots or spaces as separators?
+
+:::
+
+# Components of regular expressions
+
+::: fragment
+
+- {{< iconify fa6-solid gears >}} **Literal characters**: match exact text
+- {{< iconify fa6-solid code >}} **Metacharacters**: special meaning symbols
+- {{< iconify fa6-solid lightbulb >}} **Character classes**: sets of characters
+- {{< iconify fa6-solid rocket >}} **Quantifiers**: specify repetition
+
+:::
+
+## Understanding regex metacharacters
+
+::: {.fragment style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- `.` matches any single character except newline
+- `^` matches start of string
+- `$` matches end of string
+- `*` matches zero or more repetitions
+- `+` matches one or more repetitions
+- `?` matches zero or one repetition
+- `{n}` matches exactly n repetitions
+- `{n,m}` matches between n and m repetitions
+- `\` escapes special characters
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.9em;"}
+
+{{< iconify fa6-solid microscope >}} These building blocks combine to create
+powerful patterns for document processing!
+
+:::
+
+## Character classes in regex
+
+::: {.fragment style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- `[abc]` matches any single character a, b, or c
+- `[a-z]` matches any lowercase letter
+- `[A-Z]` matches any uppercase letter
+- `[0-9]` matches any digit
+- `[^abc]` matches any character except a, b, or c
+- `\d` matches any digit (same as `[0-9]`)
+- `\w` matches word characters (letters, digits, underscore)
+- `\s` matches whitespace (spaces, tabs, newlines)
+- `\D`, `\W`, `\S` are negations of the above
+
+:::
+
+## Regex quantifiers explained
+
+```{python}
+import re
+
+patterns = {
+    r'a*': 'zero or more a',
+    r'a+': 'one or more a',
+    r'a?': 'zero or one a',
+    r'a{3}': 'exactly 3 a',
+    r'a{2,4}': '2 to 4 a'
+}
+
+test_strings = ['', 'a', 'aa', 'aaa', 'aaaa', 'aaaaa']
+
+for pattern, description in patterns.items():
+    regex = re.compile(pattern)
+    print(f"\nPattern {pattern} ({description}):")
+    for test in test_strings:
+        match = regex.fullmatch(test)
+        result = "Match" if match else "No match"
+        print(f"  '{test}': {result}")
+```
+
+## Explore quantifiers interactively
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+import re
+
+# test different quantifiers
+pattern = r'\d{2,4}'
+regex = re.compile(pattern)
+
+test_strings = ['1', '12', '123', '1234', '12345']
+print(f"Pattern: {pattern} (2 to 4 digits)")
+for test in test_strings:
+    result = "Match" if regex.fullmatch(test) else "No match"
+    print(f"  '{test}': {result}")
+```
+
+::: {.fragment style="margin-top: -0.05em; font-size: 0.85em;"}
+
+- {{< iconify fa6-solid gears >}} **Experiment**: try changing the pattern to
+`\d+` or `\d*` to see how matching behavior changes!
+
+:::
+
+# Using regular expressions for pattern matching
+
+::: fragment
+
+- {{< iconify fa6-solid search >}} **Search**: find pattern anywhere in string
+- {{< iconify fa6-solid bullseye >}} **Match**: check if pattern starts string
+- {{< iconify fa6-solid list >}} **Find all**: extract all matches
+- {{< iconify fa6-solid repeat >}} **Replace**: substitute matched patterns
+
+:::
+
+## Key regex methods in Python
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.825em;"}
+
+- `re.match(pattern, string)`: checks if pattern matches at start of string
+- `re.search(pattern, string)`: finds first occurrence of pattern anywhere
+- `re.findall(pattern, string)`: returns list of all non-overlapping matches
+- `re.finditer(pattern, string)`: returns iterator of match objects
+- `re.sub(pattern, repl, string)`: replaces matches with replacement string
+- `re.split(pattern, string)`: splits string by pattern occurrences
+- `pattern.fullmatch(string)`: checks if entire string matches pattern
+
+:::
+
+## Search versus match methods
+
+```{python}
+import re
+
+pattern = r'\d{3}'
+text = 'Order number 456 received'
+
+# search finds pattern anywhere
+search_result = re.search(pattern, text)
+print(f"Search result: {search_result.group() if search_result else 'None'}")
+
+# match only checks start of string
+match_result = re.match(pattern, text)
+print(f"Match result: {match_result.group() if match_result else 'None'}")
+
+# fullmatch requires entire string to match
+full_result = re.fullmatch(pattern, '789')
+print(f"Fullmatch result: {full_result.group() if full_result else 'None'}")
+```
+
+::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+
+- **Search** is most flexible for finding patterns
+- **Match** checks specific positions
+- **Fullmatch** requires exact pattern conformity
+
+:::
+
+## Finding all matches with `findall`
+
+```{python}
+import re
+
+text = 'Contact us at support@example.com or sales@company.org'
+email_pattern = r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b'
+
+# find all email addresses
+emails = re.findall(email_pattern, text)
+print(f"Found {len(emails)} email addresses:")
+for email in emails:
+    print(f"  - {email}")
+```
+
+::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+
+- `\b` represents word boundaries
+- `+` matches one or more characters
+- Character classes `[...]` define valid characters
+
+:::
+
+## Try extracting emails yourself
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
+import re
+
+text = 'Reach john@test.com or mary.smith@university.edu for info'
+pattern = r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b'
+
+emails = re.findall(pattern, text)
+print("Email addresses found:")
+for email in emails:
+    print(f"  {email}")
+```
+
+::: {.fragment style="margin-top: -0.1em; font-size: 0.825em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Try modifying**: change the text to
+include your own email examples!
+
+:::
+
+# Regular expressions for document engineering
+
+::: fragment
+
+- {{< iconify fa6-solid file-lines >}} **Extract metadata**: parse dates,
+versions, IDs
+- {{< iconify fa6-solid filter >}} **Validate input**: check format compliance
+- {{< iconify fa6-solid text-slash >}} **Clean text**: remove unwanted patterns
+- {{< iconify fa6-solid magnifying-glass >}} **Analyze content**: find
+patterns in docs
+
+:::
+
+## Extracting dates from documents
+
+```{python}
+import re
+
+document = """
+Meeting scheduled for 2024-03-15.
+Report due on 03/22/2024.
+Conference from 2024-04-10 to 2024-04-12.
+"""
+
+# pattern for ISO date format (YYYY-MM-DD)
+iso_pattern = r'\d{4}-\d{2}-\d{2}'
+iso_dates = re.findall(iso_pattern, document)
+
+# pattern for US date format (MM/DD/YYYY)
+us_pattern = r'\d{2}/\d{2}/\d{4}'
+us_dates = re.findall(us_pattern, document)
+
+print("ISO format dates:", iso_dates)
+print("US format dates:", us_dates)
+```
+
+::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+
+- Different date formats require different patterns
+- Prosegrammers extract structured data from unstructured text
+
+:::
+
+## Cleaning markdown formatting
+
+```{python}
+import re
+
+markdown_text = """
+# Header One
+This is **bold** and this is *italic*.
+Check out [this link](http://example.com).
+"""
+
+# remove markdown bold syntax
+no_bold = re.sub(r'\*\*(.+?)\*\*', r'\1', markdown_text)
+
+# remove markdown italic syntax
+no_italic = re.sub(r'\*(.+?)\*', r'\1', no_bold)
+
+# remove markdown links, keep text
+no_links = re.sub(r'\[(.+?)\]\(.+?\)', r'\1', no_italic)
+
+print("Original:")
+print(markdown_text)
+print("\nCleaned:")
+print(no_links)
+```
+
+::: {.fragment style="margin-top: 0.0em; font-size: 0.825em;"}
+
+- `.+?` is non-greedy matching (stops at first occurrence)
+- Capture groups `(.+?)` let us keep matched text
+- `\1` in replacement refers to first captured group
+
+:::
+
+## Validating document structure
+
+```{python}
+import re
+
+def validate_header_structure(markdown: str) -> bool:
+    """Check if markdown has proper header hierarchy."""
+    lines = markdown.split('\n')
+    header_pattern = r'^(#{1,6})\s+(.+)$'
+    previous_level = 0
+    for line in lines:
+        match = re.match(header_pattern, line)
+        if match:
+            current_level = len(match.group(1))
+            if current_level > previous_level + 1:
+                return False
+            previous_level = current_level
+    return True
+
+good_doc = "# Title\n## Section\n### Subsection"
+bad_doc = "# Title\n### Subsection"
+
+print(f"Good structure: {validate_header_structure(good_doc)}")
+print(f"Bad structure: {validate_header_structure(bad_doc)}")
+```
+
+::: {.fragment style="margin-top: 0.0em; font-size: 0.825em;"}
+
+- Document engineering tools verify structure correctness
+- Regex helps enforce formatting conventions
+
+:::
+
+# Testing regular expressions
+
+::: fragment
+
+- {{< iconify fa6-solid flask >}} **Unit tests**: verify pattern correctness
+- {{< iconify fa6-solid check-double >}} **Test cases**: positive and negative
+examples
+- {{< iconify fa6-solid bug >}} **Edge cases**: empty strings, special chars
+- {{< iconify fa6-solid code-compare >}} **Frameworks**: use `unittest` or
+`pytest`
+
+:::
+
+## Testing regex with `unittest`
+
+```{python}
+import unittest
+import re
+
+class TestEmailRegex(unittest.TestCase):
+    def setUp(self):
+        """Set up test fixtures."""
+        self.email_pattern = r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b'
+        self.regex = re.compile(self.email_pattern)
+    
+    def test_valid_email(self):
+        """Test that valid emails match."""
+        self.assertTrue(self.regex.fullmatch('user@example.com'))
+        self.assertTrue(self.regex.fullmatch('test.user@domain.co.uk'))
+    
+    def test_invalid_email(self):
+        """Test that invalid emails do not match."""
+        self.assertFalse(self.regex.fullmatch('invalid@'))
+        self.assertFalse(self.regex.fullmatch('@example.com'))
+        self.assertFalse(self.regex.fullmatch('no-at-sign.com'))
+
+unittest.main(argv=['ignored'], verbosity=2, exit=False)
+```
+
+## Testing regex patterns systematically
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- **Positive tests**: verify pattern matches valid inputs
+- **Negative tests**: ensure pattern rejects invalid inputs
+- **Edge cases**: test empty strings, very long inputs, special characters
+- **Boundary tests**: check minimum and maximum length requirements
+- **Real-world data**: use actual document samples for testing
+- **Test coverage**: ensure all pattern components are tested
+- **Refactoring**: change patterns confidently with comprehensive tests
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid rocket >}} Well-tested regex patterns make document
+engineering tools reliable and maintainable!
+
+:::
+
+## Testing date extraction function
+
+```{python}
+import unittest
+import re
+
+def extract_dates(text: str) -> list:
+    """Extract all ISO format dates from text."""
+    pattern = r'\d{4}-\d{2}-\d{2}'
+    return re.findall(pattern, text)
+
+class TestDateExtraction(unittest.TestCase):
+    def test_single_date(self):
+        """Test extraction of single date."""
+        result = extract_dates("Meeting on 2024-03-15")
+        self.assertEqual(result, ['2024-03-15'])
+    
+    def test_multiple_dates(self):
+        """Test extraction of multiple dates."""
+        text = "From 2024-01-01 to 2024-12-31"
+        result = extract_dates(text)
+        self.assertEqual(len(result), 2)
+    
+    def test_no_dates(self):
+        """Test text with no dates."""
+        result = extract_dates("No dates here")
+        self.assertEqual(result, [])
+
+unittest.main(argv=['ignored'], verbosity=2, exit=False)
+```
+
+## Practical regex testing strategies
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- **Start simple**: test basic cases before complex ones
+- **Use online tools**: [regex101.com](https://regex101.com/) for pattern
+debugging
+- **Document patterns**: add comments explaining regex logic
+- **Version patterns**: track changes to regex as requirements evolve
+- **Benchmark performance**: test speed with large documents
+- **Handle errors**: use try-except blocks for malformed input
+- **Share test data**: maintain test document collection for validation
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.9em;"}
+
+{{< iconify fa6-solid lightbulb >}} Testing regex is essential because
+patterns can be complex and subtle bugs can hide in edge cases!
+
+:::
+
+# Benefits and limitations of regular expressions
+
+::: {.fragment .incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- {{< iconify fa6-solid thumbs-up >}} **Benefits**:
+    - Powerful pattern matching in compact syntax
+    - Built-in support across programming languages
+    - Fast for many text processing tasks
+    - Great for validation and extraction
+
+- {{< iconify fa6-solid triangle-exclamation >}} **Limitations**:
+    - Can become complex and hard to read
+    - Not suitable for parsing nested structures
+    - Performance issues with catastrophic backtracking
+    - Learning curve for advanced features
+
+:::
+
+## When to use regex for documents
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- **Good use cases**:
+    - Extracting emails, URLs, dates from text
+    - Validating input formats (phone numbers, IDs)
+    - Simple text cleaning and normalization
+    - Finding keywords or patterns in documents
+    - Basic markdown or syntax highlighting
+
+- **Consider alternatives for**:
+    - Parsing HTML or XML (use BeautifulSoup, lxml)
+    - Complex nested structures (use parsers)
+    - Full language parsing (use AST tools)
+    - Large-scale text analysis (use NLP libraries)
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.9em;"}
+
+{{< iconify fa6-solid microscope >}} Choose the right tool for the job! Regex
+is powerful but not always the best solution.
+
+:::
+
+## Regex best practices for prosegrammers
+
+::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+
+- Use raw strings `r''` to avoid escape character confusion
+- Compile patterns once and reuse for better performance
+- Add comments to explain complex patterns
+- Test patterns thoroughly with diverse inputs
+- Use named groups for readability: `(?P<name>...)`
+- Keep patterns simple; split complex logic into multiple patterns
+- Use online tools like regex101 for development and testing
+- Document assumptions about input format
+- Handle edge cases gracefully in production code
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.9em;"}
+
+{{< iconify fa6-solid rocket >}} Master regex fundamentals to become an
+effective prosegrammer who can process and analyze documents efficiently!
+
+:::
+
+## Course goals reminder
+
+::: {.fragment .fade style="margin-top: -0.15em; font-size: 0.775em;"}
+
+- **Document Creation**:
+    - Design and implement document generation workflows
+    - Test all aspects of documents to ensure quality and accuracy
+    - Create frameworks for automated document production
+- **Document Analysis**:
+    - Collect and analyze data about document usage and quality
+    - Visualize insights to improve documentation strategies
+- **Document Processing**:
+    - Use regex for pattern matching and text extraction
+    - Build validation tools for document structure
+    - Clean and normalize document content programmatically
+- **Check [syllabus](/syllabus/index.qmd) for details about Document
+Engineering course!**
+
+:::
+
