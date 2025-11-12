@@ -23,3 +23,12 @@ toc-expand: 3
 - {{< iconify fa6-solid gears size=18px >}} **Friday**:
   - Instructor-led deep-dive on regular expressions
   - As needed, instructor review of previous technical topics
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weektwelve/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Eleven: Regular Expressions for Document Engineering](../../slides/weektwelve/)
