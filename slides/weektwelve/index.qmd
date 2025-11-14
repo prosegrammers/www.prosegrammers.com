@@ -413,8 +413,12 @@ for email in emails:
 
 ::: {.fragment style="margin-top: -0.1em; font-size: 0.825em;"}
 
-- {{< iconify fa6-solid lightbulb >}} **Try modifying**: change the text to
-include your own email examples!
+- {{< iconify fa6-solid lightbulb >}} **Modification**: change the text to
+include your own suitable emails
+- {{< iconify fa6-solid text-slash >}} **Exploration**: identify some email
+addresses that are not detected
+- {{< iconify fa6-solid rocket >}} **Extension**: make pattern detection for
+emails more robust
 
 :::
 
