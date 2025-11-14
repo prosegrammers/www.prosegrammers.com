@@ -544,7 +544,8 @@ print(f"Bad structure: {validate_header_structure(bad_doc)}")
 - {{< iconify fa6-solid flask >}} **Unit tests**: verify pattern correctness
 - {{< iconify fa6-solid check-double >}} **Test cases**: positive and negative
 examples
-- {{< iconify fa6-solid bug >}} **Edge cases**: empty strings, special chars
+- {{< iconify fa6-solid bug >}} **Edge cases**: empty strings or special
+characters
 - {{< iconify fa6-solid code-compare >}} **Frameworks**: use `unittest` or
 `pytest`
 
@@ -686,9 +687,9 @@ patterns can be complex and subtle bugs can hide in edge cases!
 
 :::
 
-## Regex best practices for prosegrammers
+## What are some regex best practices for prosegrammers?
 
-::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+::: {.incremental style="margin-top: -0.15em; font-size: 0.825em;"}
 
 - Use raw strings `r''` to avoid escape character confusion
 - Compile patterns once and reuse for better performance
