@@ -669,11 +669,11 @@ patterns can be complex and subtle bugs can hide in edge cases!
 
 ## When to use regex for documents
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.85em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
 
 - **Good use cases**:
     - Extracting emails, URLs, dates from text
-    - Validating input formats (phone numbers, IDs)
+    - Validating input formats (e.g., simple phone numbers or IDs)
     - Simple text cleaning and normalization
     - Finding keywords or patterns in documents
     - Basic markdown or syntax highlighting
