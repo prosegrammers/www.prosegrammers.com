@@ -502,7 +502,9 @@ print(no_links)
 
 ## Validating document structure
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 7
 import re
 
 def validate_header_structure(markdown: str) -> bool:
@@ -530,10 +532,12 @@ print(f"Bad structure: {validate_header_structure(bad_doc)}")
 
 - Document engineering tools verify structure correctness
 - Regex helps enforce formatting conventions
+- Make sure that your patterns are tested and reliable
+- Aim to avoid **false positives** and **false negatives**
 
 :::
 
-# Testing regular expressions
+# How can we test regular expressions?
 
 ::: fragment
 
@@ -646,9 +650,9 @@ patterns can be complex and subtle bugs can hide in edge cases!
 
 :::
 
-# Benefits and limitations of regular expressions
+# Benefits and limitations of regular expressions {transition="convex"}
 
-::: {.fragment .incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+::: {.fragment .incremental style="margin-top: -0.5em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid thumbs-up >}} **Benefits**:
     - Powerful pattern matching in compact syntax
@@ -660,13 +664,12 @@ patterns can be complex and subtle bugs can hide in edge cases!
     - Can become complex and hard to read
     - Not suitable for parsing nested structures
     - Performance issues with catastrophic backtracking
-    - Learning curve for advanced features
 
 :::
 
 ## When to use regex for documents
 
-::: {.incremental style="margin-top: -0.15em; font-size: 0.85em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em;"}
 
 - **Good use cases**:
     - Extracting emails, URLs, dates from text
@@ -676,17 +679,10 @@ patterns can be complex and subtle bugs can hide in edge cases!
     - Basic markdown or syntax highlighting
 
 - **Consider alternatives for**:
-    - Parsing HTML or XML (use BeautifulSoup, lxml)
-    - Complex nested structures (use parsers)
-    - Full language parsing (use AST tools)
+    - Parsing HTML or XML (use BeautifulSoup or lxml)
+    - Complex nested structures (use Markdown parser)
+    - Full language parsing (use AST-based tools)
     - Large-scale text analysis (use NLP libraries)
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.9em;"}
-
-{{< iconify fa6-solid microscope >}} Choose the right tool for the job! Regex
-is powerful but not always the best solution.
 
 :::
 
