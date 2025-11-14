@@ -474,7 +474,9 @@ print("US format dates:", us_dates)
 
 ## Cleaning markdown formatting
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 5
 import re
 
 markdown_text = """
@@ -483,13 +485,13 @@ This is **bold** and this is *italic*.
 Check out [this link](http://example.com).
 """
 
-# remove markdown bold syntax
+# remove markdown bold syntax with non-greedy matching
 no_bold = re.sub(r'\*\*(.+?)\*\*', r'\1', markdown_text)
 
 # remove markdown italic syntax
 no_italic = re.sub(r'\*(.+?)\*', r'\1', no_bold)
 
-# remove markdown links, keep text
+# remove markdown links, keep text, use first capture group
 no_links = re.sub(r'\[(.+?)\]\(.+?\)', r'\1', no_italic)
 
 print("Original:")
@@ -497,14 +499,6 @@ print(markdown_text)
 print("\nCleaned:")
 print(no_links)
 ```
-
-::: {.fragment style="margin-top: 0.0em; font-size: 0.825em;"}
-
-- `.+?` is non-greedy matching (stops at first occurrence)
-- Capture groups `(.+?)` let us keep matched text
-- `\1` in replacement refers to first captured group
-
-:::
 
 ## Validating document structure
 
