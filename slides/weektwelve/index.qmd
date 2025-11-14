@@ -594,7 +594,8 @@ unittest.main(argv=['ignored'], verbosity=2, exit=False)
 ::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
 
 {{< iconify fa6-solid rocket >}} Well-tested regex patterns make document
-engineering tools reliable and maintainable!
+engineering tools reliable and maintainable! Please test all methods that use
+regular expressions!
 
 :::
 
@@ -646,8 +647,9 @@ debugging
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.9em;"}
 
-{{< iconify fa6-solid lightbulb >}} Testing regex is essential because
-patterns can be complex and subtle bugs can hide in edge cases!
+{{< iconify fa6-solid lightbulb >}} Testing regex is essential because patterns
+can be complex and hard to understand --- subtle bugs can hide in tricky edge
+cases!
 
 :::
 
