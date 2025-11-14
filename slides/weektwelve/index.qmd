@@ -496,7 +496,7 @@ no_links = re.sub(r'\[(.+?)\]\(.+?\)', r'\1', no_italic)
 
 print("Original:")
 print(markdown_text)
-print("\nCleaned:")
+print("Cleaned:")
 print(no_links)
 ```
 
