@@ -249,10 +249,10 @@ correctness?**
 - `[A-Z]` matches any uppercase letter
 - `[0-9]` matches any digit
 - `[^abc]` matches any character except a, b, or c
-- `\d` matches any digit (same as `[0-9]`)
-- `\w` matches word characters (letters, digits, underscore)
-- `\s` matches whitespace (spaces, tabs, newlines)
-- `\D`, `\W`, `\S` are negations of the above
+- `\d` matches any digit (this is the same as `[0-9]`)
+- `\w` matches word characters (i.e., letters, digits, and underscore)
+- `\s` matches whitespace (i.e., spaces, tabs, and newlines)
+- `\D`, `\W`, `\S` are negations of the above three classes
 
 :::
 
