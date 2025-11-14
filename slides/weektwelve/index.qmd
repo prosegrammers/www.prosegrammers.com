@@ -655,7 +655,7 @@ cases!
 
 # Benefits and limitations of regular expressions {transition="convex"}
 
-::: {.fragment .incremental style="margin-top: -0.5em; font-size: 0.7em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid thumbs-up >}} **Benefits**:
     - Powerful pattern matching in compact syntax
@@ -689,7 +689,7 @@ cases!
 
 :::
 
-## What are some regex best practices for prosegrammers?
+## Regex best practices
 
 ::: {.incremental style="margin-top: -0.15em; font-size: 0.825em;"}
 
@@ -703,13 +703,8 @@ cases!
 testing
 - Document assumptions about input format
 - Handle edge cases gracefully in production code
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.9em;"}
-
-{{< iconify fa6-solid rocket >}} Master regex fundamentals to become an
-effective prosegrammer who can process and analyze documents efficiently!
+- {{< iconify fa6-solid rocket >}} **Again, write tests for all functions using
+regex**!
 
 :::
 
