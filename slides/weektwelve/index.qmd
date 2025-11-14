@@ -428,20 +428,23 @@ emails more robust
 
 - {{< iconify fa6-solid file-lines >}} **Extract metadata**: parse dates,
 versions, identifiers
-- {{< iconify fa6-solid filter >}} **Validate input**: confirm format compliance
+- {{< iconify fa6-solid filter >}} **Validate input**: confirm format
+compliance
 - {{< iconify fa6-solid text-slash >}} **Clean text**: remove unwanted patterns
 - {{< iconify fa6-solid magnifying-glass >}} **Analyze content**: find patterns
 in documents
-- {{< iconify fa6-solid rocket >}} **Confirm correctness**: test to be confident
-in correctness
+- {{< iconify fa6-solid rocket >}} **Confirm correctness**: test to be
+confident in correctness
 - {{< iconify fa6-solid lightbulb >}} **Ensure understanding**: ensure you
-understand the regex!
+understand the regex
 
 :::
 
 ## Extracting dates from documents
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
 import re
 
 document = """
@@ -462,10 +465,10 @@ print("ISO format dates:", iso_dates)
 print("US format dates:", us_dates)
 ```
 
-::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment style="margin-top: -0.15em; font-size: 0.8em;"}
 
-- Different date formats require different patterns
 - Prosegrammers extract structured data from unstructured text
+- Different date formats (e.g., `ISO` versus `US`) require different patterns
 
 :::
 
