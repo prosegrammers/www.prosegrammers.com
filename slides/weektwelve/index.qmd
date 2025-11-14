@@ -693,7 +693,7 @@ cases!
 
 ::: {.incremental style="margin-top: -0.15em; font-size: 0.825em;"}
 
-- Use raw strings `r''` to avoid escape character confusion
+- Use raw strings with `r''` to avoid escape character confusion
 - Compile patterns once and reuse for better performance
 - Add comments to explain complex patterns
 - Test patterns thoroughly with diverse inputs
