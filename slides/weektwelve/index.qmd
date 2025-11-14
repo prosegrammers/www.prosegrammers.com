@@ -734,7 +734,7 @@ MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
 
 ## Course goals reminder
 
-::: {.fragment .fade style="margin-top: -0.15em; font-size: 0.775em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.725em;"}
 
 - **Document Creation**:
     - Design and implement document generation workflows
