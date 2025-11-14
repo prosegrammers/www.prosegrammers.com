@@ -337,13 +337,15 @@ learn?
 
 - {{< iconify fa6-solid gears >}} **Explore**: How can pattern matching aid the
 implementation of your document engineering project? What are new features that
-you could add? How would you test them to ensure correctness?
+you could add? How would you test them to ensure system correctness?
 
 :::
 
 ## Search versus match methods
 
-```{python}
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
 import re
 
 pattern = r'\d{3}'
@@ -358,7 +360,7 @@ match_result = re.match(pattern, text)
 print(f"Match result: {match_result.group() if match_result else 'None'}")
 
 # fullmatch requires entire string to match
-full_result = re.fullmatch(pattern, '789')
+full_result = re.fullmatch(pattern, '789 items in the closet')
 print(f"Fullmatch result: {full_result.group() if full_result else 'None'}")
 ```
 
