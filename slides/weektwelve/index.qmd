@@ -488,7 +488,7 @@ Check out [this link](http://example.com).
 # remove markdown bold syntax with non-greedy matching
 no_bold = re.sub(r'\*\*(.+?)\*\*', r'\1', markdown_text)
 
-# remove markdown italic syntax
+# remove markdown italic syntax using non-greedy matching
 no_italic = re.sub(r'\*(.+?)\*', r'\1', no_bold)
 
 # remove markdown links, keep text, use first capture group
