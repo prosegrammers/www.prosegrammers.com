@@ -87,15 +87,15 @@ of learning objective **CS-104-3**!
 
 :::
 
-# Tokenization: breaking text into words
+# Tokenization means breaking text into words
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.45em; font-size: 0.725em;"}
 
 - {{< iconify fa6-solid scissors >}} **Tokenization** splits text into
 individual units called tokens
   - Words, numbers, punctuation marks
   - Foundation for all text analysis tasks
-  - Simple approach uses whitespace splitting
+  - Simple approach uses "blank space splitting"
 
 - {{< iconify fa6-solid lightbulb >}} **Why tokenize documents?**
   - Count words and analyze vocabulary
