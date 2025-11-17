@@ -754,19 +754,19 @@ Engineering course!**
 
 ## Key takeaways for prosegrammers
 
-::: {.incremental style="margin-top: 0.1em; font-size: 0.7em;"}
+::: {.incremental style="margin-top: -0.1em; font-size: 0.665em;"}
 
-- {{< iconify fa6-solid microscope >}} **Understand regex basics**
+- {{< iconify fa6-solid microscope >}} **Understand regular expression basics**
   - Use raw strings (`r''`) and `re.compile()` for clarity and reuse
   - Know metacharacters, character classes, and quantifiers
 
-- {{< iconify fa6-solid bullseye >}} **Apply regex thoughtfully**
+- {{< iconify fa6-solid bullseye >}} **Apply regular expressions thoughtfully**
   - Use `search`, `match`, `findall`, and `sub` appropriately
   - Prefer specialized parsers for complex formats (e.g., HTML or Markdown) 
 
 - {{< iconify fa6-solid flask >}} **Test and validate patterns**
   - Write unit tests with positive, negative, and edge cases
-  - Benchmark patterns to avoid catastrophic backtracking
+  - Benchmark patterns to avoid "catastrophic backtracking"
 
 - {{< iconify fa6-solid lightbulb >}} **Practical prosegrammer tips**
   - Document and comment complex patterns and use named groups
