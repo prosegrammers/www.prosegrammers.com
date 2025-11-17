@@ -313,7 +313,7 @@ for word in words:
 
 # Stop word removal: filtering common words
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
 
 - {{< iconify fa6-solid filter >}} **Stop words** are common words that
 carry little meaning
@@ -333,11 +333,10 @@ carry little meaning
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 10
 from typing import List, Set
 
-def remove_stop_words(tokens: List[str], stop_words: Set[str]) ->
-List[str]:
+def remove_stop_words(tokens: List[str], stop_words: Set[str]) -> List[str]:
     """Filter out common stop words from token list."""
     return [word for word in tokens if word.lower() not in stop_words]
 
@@ -357,11 +356,11 @@ print(f"Filtered: {filtered}")
 
 :::
 
-## Analyzing text with stop word removal
+## Analysis after removing stop words
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 14
+#| max-lines: 10
 from typing import List, Set, Dict
 
 def analyze_content(text: str, stop_words: Set[str]) -> Dict[str, int]:
@@ -385,8 +384,7 @@ reverse=True):
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
 - Combine tokenization with stop word removal
-- Count only meaningful content words
-- Reveals key topics in the document
+- Count only meaningful content words to reveal key topics
 
 :::
 
