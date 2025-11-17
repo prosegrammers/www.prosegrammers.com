@@ -374,12 +374,12 @@ projects**!
 
 ## Key takeaways for prosegrammers
 
-::: {.incremental style="margin-top: 0.1em; font-size: 0.675em;"}
+::: {.incremental style="margin-top: -0.1em; font-size: 0.65em;"}
 
 - {{< iconify fa6-solid magnifying-glass >}} **Choose the right search method**
   - Use linear search for small collections and binary search for large,
     sorted indexes
-  - Consider full-text search or indexing for complex queries
+  - Consider full-text search or indexing or databases for complex queries
 
 - {{< iconify fa6-solid arrow-down-a-z >}} **Sort thoughtfully**
   - Use Python's `sorted()` or `.sort()` for production workloads
@@ -387,7 +387,8 @@ projects**!
 
 - {{< iconify fa6-solid rocket >}} **Balance correctness and efficiency**
   - Prioritize correct, well-tested code before optimizing
-  - Understand algorithmic complexity (Big-O) when data scales
+  - Use algorithmic complexity (i.e., Big-O notation and analysis) to grasp
+  fundamentals
 
 - {{< iconify fa6-solid lightbulb >}} **Practical prosegrammer tips**
   - Use `bisect` or indexing structures for fast lookups
