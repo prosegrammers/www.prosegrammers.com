@@ -24,3 +24,13 @@ toc-expand: 3
   - Complete skill-check five during the in-person classroom session
   - Please review [Week One: Introduction to Document
   Engineering](../../slides/weekone/) for a list of necessary software tools
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekthirteen/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Thirteen: Natural Language Processing for Document
+Engineering](../../slides/weekthirteen/)
