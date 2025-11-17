@@ -371,3 +371,27 @@ worst-case time complexity to make smart choices for your document engineering
 projects**!
 
 :::
+
+## Key takeaways for prosegrammers
+
+::: {.incremental style="margin-top: 0.1em; font-size: 0.675em;"}
+
+- {{< iconify fa6-solid magnifying-glass >}} **Choose the right search method**
+  - Use linear search for small collections and binary search for large,
+    sorted indexes
+  - Consider full-text search or indexing for complex queries
+
+- {{< iconify fa6-solid arrow-down-a-z >}} **Sort thoughtfully**
+  - Use Python's `sorted()` or `.sort()` for production workloads
+  - Use `key=` to sort by dates, relevance, or custom fields
+
+- {{< iconify fa6-solid rocket >}} **Balance correctness and efficiency**
+  - Prioritize correct, well-tested code before optimizing
+  - Understand algorithmic complexity (Big-O) when data scales
+
+- {{< iconify fa6-solid lightbulb >}} **Practical prosegrammer tips**
+  - Use `bisect` or indexing structures for fast lookups
+  - Benchmark sorting/searching on representative data
+  - Keep sorts stable when ordering related document metadata
+
+:::
