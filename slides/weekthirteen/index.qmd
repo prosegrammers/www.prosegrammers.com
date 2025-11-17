@@ -50,12 +50,12 @@ engineering?**
 
 ::: {.fragment .boxed-content .fade style="font-size: 1.0em;"}
 
-- {{< iconify fa6-solid gears >}} Natural language processing transforms
-raw text into structured data that programs can analyze
-- {{< iconify fa6-solid book >}} Simple algorithms handle common NLP
-tasks without external libraries
-- {{< iconify fa6-solid code >}} Understanding basic NLP helps
-prosegrammers build powerful document analysis tools
+- {{< iconify fa6-solid gears >}} Natural language processing transforms raw
+text into structured data that programs can more easily analyze
+- {{< iconify fa6-solid book >}} Although great packages exist, simple
+algorithms handle common NLP tasks without external libraries
+- {{< iconify fa6-solid code >}} Understanding basic NLP helps prosegrammers
+build their own powerful document analysis tools
 
 :::
 
