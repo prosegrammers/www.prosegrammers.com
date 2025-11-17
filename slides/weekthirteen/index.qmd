@@ -285,7 +285,7 @@ for word in words:
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 10
 from typing import Dict
 
 def simple_lemmatize(word: str, lemma_dict: Dict[str, str]) -> str:
@@ -308,7 +308,6 @@ for word in words:
 
 - Use dictionary to map words to base forms
 - Returns original word if not in dictionary
-- More accurate than stemming for known words
 
 :::
 
