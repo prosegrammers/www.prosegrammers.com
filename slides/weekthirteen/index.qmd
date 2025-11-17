@@ -388,7 +388,7 @@ reverse=True):
 
 :::
 
-# Word frequency analysis: counting term occurrences
+# Enhancing word frequency analysis
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
 
@@ -437,7 +437,7 @@ reverse=True):
 
 :::
 
-## Advanced frequency analysis
+## Advanced word frequency analysis
 
 ```{pyodide}
 #| autorun: true
@@ -454,8 +454,7 @@ def top_words(text: str, n: int = 5) -> List[Tuple[str, int]]:
 reverse=True)
     return sorted_words[:n]
 
-doc = "document engineering with python for document analysis and
-python programming"
+doc = "document engineering with python for document analysis and python programming"
 top = top_words(doc, 3)
 print("Top 3 words:")
 for word, count in top:
@@ -470,7 +469,7 @@ for word, count in top:
 
 :::
 
-# Keyword extraction: identifying important terms
+# Keyword extraction to find important terms
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
 
@@ -508,8 +507,7 @@ min_freq]
     return sorted(keywords, key=lambda x: freq[x], reverse=True)
 
 stops = {"the", "a", "is", "in", "of", "and", "to", "for"}
-doc = "python programming is fun and python is great for document
-engineering"
+doc = "python programming is fun and python is great for document engineering"
 keywords = extract_keywords(doc, stops, min_freq=2)
 print(f"Keywords: {keywords}")
 ```
@@ -594,8 +592,7 @@ List[Tuple[str, str, str]]:
             results.append((left, word, right))
     return results
 
-doc = "Python is great. I love Python programming. Python makes
-coding fun."
+doc = "Python is great. I love Python programming. Python makes coding fun."
 kwic = keyword_in_context(doc, "Python", context=2)
 for left, key, right in kwic:
     print(f"...{left} [{key}] {right}...")
@@ -630,8 +627,7 @@ List[str]:
             results.append(line)
     return results
 
-doc = "Document engineering needs Python. Python helps with
-documents. Use Python daily."
+doc = "Document engineering needs Python. Python helps with documents. Use Python daily."
 lines = format_kwic(doc, "Python", width=25)
 for line in lines:
     print(line)
