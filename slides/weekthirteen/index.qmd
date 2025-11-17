@@ -131,16 +131,16 @@ punctuation in this approach?**
 
 :::
 
-## Advanced tokenization with punctuation
+## Tokenization with punctuation
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 10
 from typing import List
 import re
 
 def tokenize_words(text: str) -> List[str]:
-    """Extract words only, removing punctuation."""
+    """Perform tokenization by extracting words only, removing punctuation."""
     pattern = r'\b\w+\b'
     return re.findall(pattern, text.lower())
 
