@@ -356,15 +356,15 @@ for func in api_functions:
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.875em;"}
 
-- {{< iconify fa6-solid magnifying-glass >}} **For searching**:
-  - Small datasets: linear search is fine
-  - Large sorted datasets: use binary search
-  - Unsorted data: consider sorting first if searching often
+- {{< iconify fa6-solid magnifying-glass >}} **For searching algorithms**:
+  - *Small datasets*: linear search is fine
+  - *Large sorted datasets*: use binary search
+  - *Unsorted data*: consider sorting first if searching often
 
-- {{< iconify fa6-solid arrow-down-a-z >}} **For sorting**:
-  - Small datasets (< 50 items): simple sorts work well
-  - Large datasets: use Python's `sorted()` or `.sort()`
-  - Special cases: counting sort for restricted ranges
+- {{< iconify fa6-solid arrow-down-a-z >}} **For sorting algorithms**:
+  - *Small datasets (< 50 items)*: simple sorts work well
+  - *Large datasets*: use Python's `sorted()` or `.sort()`
+  - *Special cases*: counting sort for restricted ranges
 
 - {{< iconify fa6-solid lightbulb >}} **Make sure to understand algorithm
 worst-case time complexity to make smart choices for your document engineering
