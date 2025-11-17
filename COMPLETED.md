@@ -1204,3 +1204,150 @@ slides are at the `#` level in the Markdown file.
 - [X] Keep the total number of slides to a count less than the prior slide
 decks that I have created. For instance, this topic is less complicated than the
 material that I produced for weeknine and thus the slide count should be less.
+
+### Create Slides for Week Thirteen in `slides/weekthirteen/index.qmd`
+
+- [X] Review the content in the `GEMINI.md` file (or the `AGENTS.md` file) that
+explains the theme of the course on document engineering.
+- [X] Review the content in the `index.qmd` file in the root of the repository
+that explains the idea of a "Prosegrammer" and the concept of document
+engineering. All the slides that you create have to specifically connect to the
+theme of prosegramming and document engineering.
+- [X] Review the content in the `index.qmd` file in the `syllabus` directory of
+the repository that explains rules and regulations for this course on document
+engineering. Note that these are the rules that students follow and not
+specifically the rules and regulations that you follow as a coding agent.
+- [X] Please remember that I am currently working on the slides in
+`slides/weekthirteen/index.qmd` that introduce how to implement your own
+functions for natural language processing. I don't want any of the slides to
+use functions from packages like `nltk` or `spacy` or `gensim`. I want to only
+introduce basic concepts of natural language processing by explaining them with
+bullet points and examples and then adding source code examples that students
+can try out and run in the slides with `{pyodide}` blocks.
+- [X] Here is what I want you to add to the slides:
+    - Tokenization
+    - Segmentation
+    - Stemming
+    - Lemmatization
+    - Stop word removal
+    - Part of speech tagging
+    - Named entity recognition
+    - Key word extraction
+    - Word frequency analysis
+    - Key-word in context data structure and use
+- Again, none of the slides should use functions from packages like `nltk` or
+`spacy` or `gensim`. They have to be simple and implemented from scratch!
+- [X] You can look at the other slide decks that I have already prepared:
+  - `slides/weekone/index.qmd`
+  - `slides/weektwo/index.qmd`
+  - `slides/weekthree/index.qmd`
+  - `slides/weekfour/index.qmd`
+  - `slides/weekfive/index.qmd`
+  - `slides/weeksix/index.qmd`
+  - `slides/weekeight/index.qmd`
+  - `slides/weeknine/index.qmd`
+  - `slides/weekten/index.qmd` ... and see how I am currently using Markdown and
+  Quarto in my slides! There are also slides in other directories and you can
+  preview them as well.
+- [X] Please do not use Markdown or Quarto formats that I am not currently using
+in my slides to make sure that the content has a consistent format.
+- [X] If you check the `index.qmd` file in this GitHub repository, you can see a
+simple example of word frequency analysis. Please use simple examples like this
+one to illustrate how to use containers like lists, tuples, and sets in Python.
+- [X] Make sure that all the content is accessible to beginners who do not have
+extensive experience with programming or the documentation of a software tool.
+- [X] Make sure that all the content has concrete examples that make points
+clear to beginners. Provide simple summaries of the concrete code examples.
+- [X] Always include "signposting" slides that clearly state what you are going
+to explain in the next block of slides about a specific topic. These signposting
+slides are at the `#` level in the Markdown file.
+- [X] Always include a conclusion slide that has the title `Key takeaways for
+prosegrammers` and then summarizes the key points that students learned.
+- [X] Keep the total number of slides to a count less than the prior slide decks
+that I have created. For instance, this topic is less complicated than the
+material that I produced for weeknine and thus the slide count should be less.
+
+## Support for Week Thirteen Slides Content
+
+### Natural Language Processing for Document Engineering
+
+- Natural language processing (NLP) is a field of computer science and
+linguistics concerned with interactions between computers and human language,
+enabling automated text analysis and understanding
+- Basic NLP techniques like tokenization, stemming, and frequency analysis form
+the foundation of search engines, content management systems, and document
+analysis tools
+- Implementing NLP functions from scratch helps learners understand core
+concepts before using specialized libraries like NLTK, spaCy, or Gensim
+- Document engineering benefits from NLP through automated keyword extraction,
+content summarization, and document classification
+
+### Tokenization and Segmentation
+
+- Tokenization breaks text into individual units (tokens) such as words,
+numbers, or punctuation marks, forming the basis for all text analysis
+operations
+- Python's `str.split()` method provides basic whitespace tokenization, while
+`re.findall()` enables pattern-based tokenization to extract specific token
+types
+- Segmentation divides documents into larger units like sentences or
+paragraphs, using punctuation patterns or structural markers like double
+newlines
+- Regular expressions enable sophisticated tokenization and segmentation
+patterns for handling complex document structures
+
+### Stemming and Lemmatization
+
+- Stemming reduces words to their root form by removing common suffixes (e.g.,
+"running" becomes "run"), enabling matching of related word forms in search
+and analysis
+- The Porter Stemmer algorithm is a well-known stemming approach, but simple
+rule-based suffix removal provides effective results for basic applications
+- Lemmatization maps words to their dictionary base forms (lemmas) using
+linguistic knowledge, providing more accurate normalization than stemming
+- Dictionary-based lemmatization offers beginner-friendly implementation using
+Python dictionaries to map word forms to base forms
+
+### Stop Word Removal
+
+- Stop words are high-frequency function words (articles, prepositions,
+conjunctions) that carry little semantic meaning in text analysis
+- Removing stop words focuses analysis on content-bearing terms, improving
+keyword extraction and topic identification accuracy
+- Python sets provide efficient stop word filtering using the `in` operator for
+fast membership testing
+- Stop word lists vary by application domain, with different sets appropriate
+for general text versus technical documentation
+
+### Word Frequency Analysis
+
+- Word frequency counting identifies the most common terms in documents using
+dictionary-based accumulation patterns
+- The `dict.get()` method with default values provides concise frequency
+counting without explicitly checking for key existence
+- Frequency distributions reveal document themes, author style, and content
+patterns useful for classification and summarization
+- Top-N word extraction helps identify key topics without reading entire
+documents
+
+### Keyword Extraction and KWIC
+
+- Keyword extraction combines frequency analysis with stop word filtering to
+identify terms that best represent document content
+- Scoring keywords by frequency, length, or TF-IDF metrics enables ranking of
+term importance for indexing and search applications
+- Keyword in context (KWIC) displays show how terms are used within surrounding
+text, supporting concordance building and usage analysis
+- KWIC tools align keywords in formatted output for visual scanning and
+linguistic pattern identification
+
+### Educational Slide Design for NLP
+
+- Progressive complexity introduction starts with basic tokenization and builds
+to integrated analysis pipelines combining multiple techniques
+- Interactive Pyodide code blocks enable hands-on experimentation with NLP
+functions, providing immediate feedback for learning
+- Document engineering examples demonstrate practical applications of NLP
+techniques to real prosegrammer workflows
+- Simplified implementations using only Python standard library features ensure
+accessibility and portability across environments
