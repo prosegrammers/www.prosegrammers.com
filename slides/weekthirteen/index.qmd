@@ -390,16 +390,15 @@ reverse=True):
 
 # Enhancing word frequency analysis
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
 
-- {{< iconify fa6-solid chart-bar >}} **Word frequency** counts how
-often each word appears
+- {{< iconify fa6-solid chart-bar >}} **Word frequency counts how often each
+word appears**
   - Identifies most common terms
   - Reveals document themes and topics
   - Foundation for text mining and analysis
 
-- {{< iconify fa6-solid lightbulb >}} **Applications for
-prosegrammers**
+- {{< iconify fa6-solid lightbulb >}} **Applications for prosegrammers**
   - Find frequently discussed topics
   - Compare vocabulary across documents
   - Detect important technical terms
