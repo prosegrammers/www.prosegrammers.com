@@ -180,7 +180,7 @@ sentences or paragraphs
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 from typing import List
 import re
 
@@ -190,13 +190,13 @@ def segment_sentences(text: str) -> List[str]:
     sentences = re.split(pattern, text)
     return [s.strip() for s in sentences if s.strip()]
 
-doc = "Hello world. This is NLP. Isn't it great?"
+doc = "Hello prosegrammers! This is NLP. Isn't it great?"
 sentences = segment_sentences(doc)
 for i, sent in enumerate(sentences, 1):
     print(f"{i}. {sent}")
 ```
 
-::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+::: {.incremental style="margin-top: -0.2em; font-size: 0.8em;"}
 
 - Split on sentence-ending punctuation marks
 - Remove empty strings and extra whitespace
