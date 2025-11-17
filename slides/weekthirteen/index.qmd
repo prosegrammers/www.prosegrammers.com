@@ -237,17 +237,17 @@ for i, para in enumerate(paragraphs, 1):
 
 # Build stemming and lemmatization
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.75em;"}
 
-- {{< iconify fa6-solid cut >}} **Stemming** reduces words to their
+- {{< iconify fa6-solid tree >}} **Stemming** reduces words to their
 root form by removing suffixes
-  - "running" becomes "run", "happily" becomes "happi"
+  - Example: "running" becomes "run", "happily" becomes "happi"
   - Fast but may produce non-words
-  - Useful for search and matching
+  - Yet, useful for search and matching
 
 - {{< iconify fa6-solid book-open >}} **Lemmatization** reduces words
 to their dictionary form
-  - "running" becomes "run", "better" becomes "good"
+  - Example: "running" becomes "run", "better" becomes "good"
   - Although more accurate, it requires linguistic knowledge
   - This week, we'll implement simple rule-based stemming!
 
@@ -257,7 +257,7 @@ to their dictionary form
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 14
+#| max-lines: 10
 from typing import List
 
 def simple_stem(word: str) -> str:
@@ -277,9 +277,7 @@ for word in words:
 
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
-- Remove common English suffixes in priority order
-- Preserve minimum word length to avoid over-stemming
-- **Simple but effective for basic text normalization**
+- Attempt to remove common English suffixes according to a priority order
 
 :::
 
