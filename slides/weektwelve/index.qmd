@@ -751,4 +751,3 @@ MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
 Engineering course!**
 
 :::
-
