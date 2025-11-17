@@ -109,11 +109,11 @@ individual units called tokens
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 9
 from typing import List
 
 def tokenize(text: str) -> List[str]:
-    """Split text into words using whitespace."""
+    """Split text into words using blank spaces."""
     return text.split()
 
 sample = "Document engineering combines programming with writing."
@@ -124,9 +124,10 @@ print(f"Token count: {len(tokens)}")
 
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
-- Split text on whitespace to create list of tokens
-- Simple but effective for basic text analysis
-- **What happens to punctuation in this approach?**
+- Split text on blank spaces to create list of tokens
+- Simple, but effective, way to start basic text analysis
+- {{< iconify fa6-solid lightbulb >}} **Key question: What happens to
+punctuation in this approach?**
 
 :::
 
