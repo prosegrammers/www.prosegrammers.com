@@ -82,8 +82,8 @@ topics or processes.
 
 ::: {.fragment style="margin-top: -0.05em; font-size: 0.775em;"}
 
-- {{< iconify fa6-solid bullhorn >}} This week's content aids attainment
-of **CS-104-3**!
+- {{< iconify fa6-solid bullhorn >}} This week's content aids in the attainment
+of learning objective **CS-104-3**!
 
 :::
 
