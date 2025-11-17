@@ -198,8 +198,9 @@ for i, sent in enumerate(sentences, 1):
 
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.8em;"}
 
+- Use regular expressions to complete the task!
 - Split on sentence-ending punctuation marks
-- Remove empty strings and extra whitespace
+- Remove empty strings and extra blank spaces
 
 :::
 
@@ -234,7 +235,7 @@ for i, para in enumerate(paragraphs, 1):
 
 :::
 
-# Stemming and lemmatization: normalizing words
+# Build stemming and lemmatization
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
 
@@ -247,8 +248,8 @@ root form by removing suffixes
 - {{< iconify fa6-solid book-open >}} **Lemmatization** reduces words
 to their dictionary form
   - "running" becomes "run", "better" becomes "good"
-  - More accurate but requires linguistic knowledge
-  - We'll implement simple rule-based stemming
+  - Although more accurate, it requires linguistic knowledge
+  - This week, we'll implement simple rule-based stemming!
 
 :::
 
