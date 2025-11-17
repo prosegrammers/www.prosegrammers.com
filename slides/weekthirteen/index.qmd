@@ -22,27 +22,673 @@ format:
       theme: default
 ---
 
+# Natural language processing for prosegrammers
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **What is NLP for document
+engineering?**
+    - Breaking text into meaningful units
+    - Extracting key information from documents
+    - Analyzing language patterns
+    - Building tools to understand written content
+
+:::
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
+
+- {{< iconify fa6-solid book >}} **What are this week's highlights?**
+    - Implement fundamental NLP techniques from scratch
+        - Tokenization and segmentation
+        - Stemming and lemmatization
+        - Keyword extraction and frequency analysis
+        - Build keyword in context tools
+
+:::
+
+# Key insights for prosegrammers
+
+::: {.fragment .boxed-content .fade style="font-size: 1.0em;"}
+
+- {{< iconify fa6-solid gears >}} Natural language processing transforms
+raw text into structured data that programs can analyze
+- {{< iconify fa6-solid book >}} Simple algorithms handle common NLP
+tasks without external libraries
+- {{< iconify fa6-solid code >}} Understanding basic NLP helps
+prosegrammers build powerful document analysis tools
+
+:::
+
 ## Course learning objectives
 
-::: {.fragment .callout-note icon=true title="Learning Objectives for Document Engineering"}
+::: {.fragment .callout-note icon=true title="Learning Objectives for
+Document Engineering"}
 
 - **CS-104-1**: Explain processes such as software installation or
-design for a variety of technical and non-technical audiences ranging from
-inexperienced to expert.
-- **CS-104-2**: Use professional-grade integrated development environments (IDEs),
-command-line tools, and version control systems to compose, edit, and deploy
-well-structured, web-ready documents and industry-standard documentation tools.
-- **CS-104-3**: Build automated publishing pipelines to format, check, and ensure both the
-uniformity and quality of digital documents.
-- **CS-104-4**: Identify and apply appropriate conventions of a variety of technical
-communities, tools, and computer languages to produce industry-consistent
-diagrams, summaries, and descriptions of technical topics or processes.
+design for a variety of technical and non-technical audiences ranging
+from inexperienced to expert.
+- **CS-104-2**: Use professional-grade integrated development
+environments (IDEs), command-line tools, and version control systems to
+compose, edit, and deploy well-structured, web-ready documents and
+industry-standard documentation tools.
+- **CS-104-3**: Build automated publishing pipelines to format, check,
+and ensure both the uniformity and quality of digital documents.
+- **CS-104-4**: Identify and apply appropriate conventions of a variety
+of technical communities, tools, and computer languages to produce
+industry-consistent diagrams, summaries, and descriptions of technical
+topics or processes.
 
 :::
 
 ::: {.fragment style="margin-top: -0.05em; font-size: 0.775em;"}
 
-- {{< iconify fa6-solid bullhorn >}} This week's content aids attainment of
-**CS-104-3**!
+- {{< iconify fa6-solid bullhorn >}} This week's content aids attainment
+of **CS-104-3**!
+
+:::
+
+# Tokenization: breaking text into words
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid scissors >}} **Tokenization** splits text into
+individual units called tokens
+  - Words, numbers, punctuation marks
+  - Foundation for all text analysis tasks
+  - Simple approach uses whitespace splitting
+
+- {{< iconify fa6-solid lightbulb >}} **Why tokenize documents?**
+  - Count words and analyze vocabulary
+  - Search for specific terms
+  - Build word frequency distributions
+  - Prepare text for further NLP processing
+
+:::
+
+## Basic word tokenization
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import List
+
+def tokenize(text: str) -> List[str]:
+    """Split text into words using whitespace."""
+    return text.split()
+
+sample = "Document engineering combines programming with writing."
+tokens = tokenize(sample)
+print(f"Tokens: {tokens}")
+print(f"Token count: {len(tokens)}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Split text on whitespace to create list of tokens
+- Simple but effective for basic text analysis
+- **What happens to punctuation in this approach?**
+
+:::
+
+## Advanced tokenization with punctuation
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+from typing import List
+import re
+
+def tokenize_words(text: str) -> List[str]:
+    """Extract words only, removing punctuation."""
+    pattern = r'\b\w+\b'
+    return re.findall(pattern, text.lower())
+
+sample = "Hello, world! This is document engineering."
+tokens = tokenize_words(sample)
+print(f"Tokens: {tokens}")
+print(f"Token count: {len(tokens)}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Use regular expressions to extract only word characters
+- Convert to lowercase for consistent comparison
+- Removes punctuation and normalizes text
+
+:::
+
+# Segmentation: dividing text into sentences
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid paragraph >}} **Segmentation** splits text into
+sentences or paragraphs
+  - Identify sentence boundaries using punctuation
+  - Handle abbreviations and special cases
+  - Essential for readability analysis
+
+- {{< iconify fa6-solid lightbulb >}} **Why segment documents?**
+  - Calculate sentences per paragraph
+  - Analyze sentence complexity
+  - Extract specific paragraphs or sections
+  - Prepare text for summarization
+
+:::
+
+## Basic sentence segmentation
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import List
+import re
+
+def segment_sentences(text: str) -> List[str]:
+    """Split text into sentences using punctuation."""
+    pattern = r'[.!?]+'
+    sentences = re.split(pattern, text)
+    return [s.strip() for s in sentences if s.strip()]
+
+doc = "Hello world. This is NLP. Isn't it great?"
+sentences = segment_sentences(doc)
+for i, sent in enumerate(sentences, 1):
+    print(f"{i}. {sent}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Split on sentence-ending punctuation marks
+- Remove empty strings and extra whitespace
+- **Consider edge cases like abbreviations**
+
+:::
+
+## Paragraph segmentation
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import List
+
+def segment_paragraphs(text: str) -> List[str]:
+    """Split text into paragraphs using double newlines."""
+    paragraphs = text.split('\n\n')
+    return [p.strip() for p in paragraphs if p.strip()]
+
+doc = """First paragraph here.
+It has two sentences.
+
+Second paragraph here.
+
+Third paragraph here."""
+
+paragraphs = segment_paragraphs(doc)
+for i, para in enumerate(paragraphs, 1):
+    print(f"Paragraph {i}: {para[:30]}...")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Use double newlines as paragraph boundaries
+- Common convention in plain text documents
+- Filter empty paragraphs
+
+:::
+
+# Stemming and lemmatization: normalizing words
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid cut >}} **Stemming** reduces words to their
+root form by removing suffixes
+  - "running" becomes "run", "happily" becomes "happi"
+  - Fast but may produce non-words
+  - Useful for search and matching
+
+- {{< iconify fa6-solid book-open >}} **Lemmatization** reduces words
+to their dictionary form
+  - "running" becomes "run", "better" becomes "good"
+  - More accurate but requires linguistic knowledge
+  - We'll implement simple rule-based stemming
+
+:::
+
+## Simple suffix-based stemmer
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 14
+from typing import List
+
+def simple_stem(word: str) -> str:
+    """Remove common suffixes to find word stem."""
+    suffixes = ['ing', 'ed', 'ly', 'es', 's', 'er', 'est']
+    word = word.lower()
+    for suffix in suffixes:
+        if word.endswith(suffix) and len(word) > len(suffix) + 2:
+            return word[:-len(suffix)]
+    return word
+
+words = ["running", "happily", "programmed", "coder", "fastest"]
+for word in words:
+    stem = simple_stem(word)
+    print(f"{word} -> {stem}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Remove common English suffixes in priority order
+- Preserve minimum word length to avoid over-stemming
+- **Simple but effective for basic text normalization**
+
+:::
+
+## Basic lemmatization with lookup
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+from typing import Dict
+
+def simple_lemmatize(word: str, lemma_dict: Dict[str, str]) -> str:
+    """Map words to their base forms using a dictionary."""
+    return lemma_dict.get(word.lower(), word.lower())
+
+lemmas = {
+    "running": "run", "ran": "run", "runs": "run",
+    "better": "good", "best": "good",
+    "am": "be", "is": "be", "are": "be"
+}
+
+words = ["running", "better", "are", "coding"]
+for word in words:
+    lemma = simple_lemmatize(word, lemmas)
+    print(f"{word} -> {lemma}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Use dictionary to map words to base forms
+- Returns original word if not in dictionary
+- More accurate than stemming for known words
+
+:::
+
+# Stop word removal: filtering common words
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid filter >}} **Stop words** are common words that
+carry little meaning
+  - Articles: "the", "a", "an"
+  - Prepositions: "in", "on", "at"
+  - Conjunctions: "and", "or", "but"
+
+- {{< iconify fa6-solid lightbulb >}} **Why remove stop words?**
+  - Focus on meaningful content words
+  - Reduce data size for analysis
+  - Improve keyword extraction accuracy
+  - Highlight important terms in documents
+
+:::
+
+## Implementing stop word filtering
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+from typing import List, Set
+
+def remove_stop_words(tokens: List[str], stop_words: Set[str]) ->
+List[str]:
+    """Filter out common stop words from token list."""
+    return [word for word in tokens if word.lower() not in stop_words]
+
+stop_set = {"the", "a", "an", "in", "on", "at", "and", "or", "but",
+"is"}
+tokens = ["the", "quick", "brown", "fox", "is", "in", "the", "garden"]
+filtered = remove_stop_words(tokens, stop_set)
+print(f"Original: {tokens}")
+print(f"Filtered: {filtered}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Use set for efficient lookup of stop words
+- Filter tokens using list comprehension
+- **Preserves word order while removing common words**
+
+:::
+
+## Analyzing text with stop word removal
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 14
+from typing import List, Set, Dict
+
+def analyze_content(text: str, stop_words: Set[str]) -> Dict[str, int]:
+    """Count meaningful words after removing stop words."""
+    words = text.lower().split()
+    content_words = [w for w in words if w not in stop_words]
+    freq = {}
+    for word in content_words:
+        freq[word] = freq.get(word, 0) + 1
+    return freq
+
+stops = {"the", "a", "is", "in", "on", "and", "of"}
+doc = "the document is in the folder and the folder is on the desk"
+freq = analyze_content(doc, stops)
+print("Content word frequencies:")
+for word, count in sorted(freq.items(), key=lambda x: x[1],
+reverse=True):
+    print(f"  {word}: {count}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Combine tokenization with stop word removal
+- Count only meaningful content words
+- Reveals key topics in the document
+
+:::
+
+# Word frequency analysis: counting term occurrences
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid chart-bar >}} **Word frequency** counts how
+often each word appears
+  - Identifies most common terms
+  - Reveals document themes and topics
+  - Foundation for text mining and analysis
+
+- {{< iconify fa6-solid lightbulb >}} **Applications for
+prosegrammers**
+  - Find frequently discussed topics
+  - Compare vocabulary across documents
+  - Detect important technical terms
+  - Build word clouds and visualizations
+
+:::
+
+## Building a frequency counter
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+from typing import Dict
+
+def word_frequency(text: str) -> Dict[str, int]:
+    """Count occurrences of each word in text."""
+    words = text.lower().split()
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+    return freq
+
+doc = "python programming python code programming python"
+freq = word_frequency(doc)
+for word, count in sorted(freq.items(), key=lambda x: x[1],
+reverse=True):
+    print(f"{word}: {count}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Use dictionary to store word counts
+- Increment count for each occurrence
+- **Sort by frequency to find most common words**
+
+:::
+
+## Advanced frequency analysis
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 14
+from typing import Dict, List, Tuple
+
+def top_words(text: str, n: int = 5) -> List[Tuple[str, int]]:
+    """Return the n most frequent words with counts."""
+    words = text.lower().split()
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+    sorted_words = sorted(freq.items(), key=lambda x: x[1],
+reverse=True)
+    return sorted_words[:n]
+
+doc = "document engineering with python for document analysis and
+python programming"
+top = top_words(doc, 3)
+print("Top 3 words:")
+for word, count in top:
+    print(f"  {word}: {count} times")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Extract top N most frequent words
+- Returns sorted list of word-count pairs
+- Useful for quick document summarization
+
+:::
+
+# Keyword extraction: identifying important terms
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid key >}} **Keyword extraction** identifies terms
+that best represent content
+  - Combine frequency analysis with filtering
+  - Remove stop words to focus on content
+  - Select words above frequency threshold
+
+- {{< iconify fa6-solid lightbulb >}} **Why extract keywords?**
+  - Automatic document tagging and categorization
+  - Generate document summaries and abstracts
+  - Index documents for search engines
+  - Identify main topics in large text collections
+
+:::
+
+## Simple keyword extractor
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 15
+from typing import Set, List
+
+def extract_keywords(text: str, stop_words: Set[str], min_freq: int =
+2) -> List[str]:
+    """Extract keywords by frequency and stop word filtering."""
+    words = text.lower().split()
+    content_words = [w for w in words if w not in stop_words]
+    freq = {}
+    for word in content_words:
+        freq[word] = freq.get(word, 0) + 1
+    keywords = [word for word, count in freq.items() if count >=
+min_freq]
+    return sorted(keywords, key=lambda x: freq[x], reverse=True)
+
+stops = {"the", "a", "is", "in", "of", "and", "to", "for"}
+doc = "python programming is fun and python is great for document
+engineering"
+keywords = extract_keywords(doc, stops, min_freq=2)
+print(f"Keywords: {keywords}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Filter out stop words before counting
+- Keep words appearing at least min_freq times
+- **Sort by frequency to rank importance**
+
+:::
+
+## Advanced keyword scoring
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 14
+from typing import Dict, List, Tuple
+
+def score_keywords(text: str, stop_words: set) -> List[Tuple[str,
+float]]:
+    """Score keywords by frequency and length."""
+    words = [w.lower() for w in text.split() if w.lower() not in
+stop_words]
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+    total = len(words)
+    scores = [(w, (count/total) * len(w)) for w, count in freq.items()]
+    return sorted(scores, key=lambda x: x[1], reverse=True)[:5]
+
+stops = {"the", "a", "is", "in", "and", "to"}
+doc = "document engineering programming documentation tools analysis"
+scored = score_keywords(doc, stops)
+for word, score in scored:
+    print(f"{word}: {score:.3f}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Combine frequency with word length for scoring
+- Longer technical terms get higher scores
+- Normalized by total word count
+
+:::
+
+# Keyword in context: understanding word usage
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid search >}} **Keyword in context (KWIC)** shows
+words with surrounding text
+  - Display keyword with left and right context
+  - Understand how terms are used in practice
+  - Analyze word meanings and patterns
+
+- {{< iconify fa6-solid lightbulb >}} **Applications for document
+analysis**
+  - Study how technical terms are defined
+  - Find usage examples for documentation
+  - Analyze sentiment around specific words
+  - Build concordances for linguistic study
+
+:::
+
+## Building a KWIC tool
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 15
+from typing import List, Tuple
+
+def keyword_in_context(text: str, keyword: str, context: int = 3) ->
+List[Tuple[str, str, str]]:
+    """Find keyword with surrounding context words."""
+    words = text.split()
+    results = []
+    for i, word in enumerate(words):
+        if word.lower() == keyword.lower():
+            left = ' '.join(words[max(0, i-context):i])
+            right = ' '.join(words[i+1:i+context+1])
+            results.append((left, word, right))
+    return results
+
+doc = "Python is great. I love Python programming. Python makes
+coding fun."
+kwic = keyword_in_context(doc, "Python", context=2)
+for left, key, right in kwic:
+    print(f"...{left} [{key}] {right}...")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Find all occurrences of target keyword
+- Extract context words before and after
+- **Display as concordance with aligned keywords**
+
+:::
+
+## Enhanced KWIC with formatting
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 16
+from typing import List
+
+def format_kwic(text: str, keyword: str, width: int = 20) ->
+List[str]:
+    """Format KWIC display with aligned output."""
+    words = text.split()
+    results = []
+    for i, word in enumerate(words):
+        if word.lower() == keyword.lower():
+            left = ' '.join(words[max(0, i-3):i])
+            right = ' '.join(words[i+1:i+4])
+            left_pad = left.rjust(width)
+            line = f"{left_pad} | {word} | {right}"
+            results.append(line)
+    return results
+
+doc = "Document engineering needs Python. Python helps with
+documents. Use Python daily."
+lines = format_kwic(doc, "Python", width=25)
+for line in lines:
+    print(line)
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Align keywords in center column for easy scanning
+- Right-justify left context for visual alignment
+- Professional concordance display format
+
+:::
+
+# NLP tools for prosegrammers
+
+::: {.fragment .boxed-content style="margin-top: -0.2em; font-size:
+0.725em;"}
+
+- {{< iconify fa6-solid gears >}} **Next steps with NLP techniques**:
+  - Find locations in your tool where NLP could add value
+    - Could tokenization help parse user input?
+    - Would keyword extraction improve search features?
+    - Could KWIC help users find usage examples?
+  - Combine multiple techniques for powerful analysis
+  - {{< iconify fa6-solid lightbulb >}} **How would NLP make your
+document tools more intelligent?**
+
+:::
+
+## Key takeaways for prosegrammers
+
+::: {.incremental style="margin-top: 0.1em; font-size: 0.70em;"}
+
+- {{< iconify fa6-solid scissors >}} **Master text processing
+fundamentals**
+  - Tokenization splits text into analyzable units
+  - Segmentation divides documents into sentences and paragraphs
+  - Stemming and lemmatization normalize word forms
+
+- {{< iconify fa6-solid chart-bar >}} **Build powerful analysis tools**
+  - Word frequency reveals document themes and patterns
+  - Stop word removal focuses on meaningful content
+  - Keyword extraction identifies important terms automatically
+
+- {{< iconify fa6-solid search >}} **Understand context and usage**
+  - KWIC displays show how words are used in practice
+  - Combine techniques to build sophisticated document tools
+  - Simple algorithms handle many real-world NLP tasks
+
+- {{< iconify fa6-solid lightbulb >}} **Think like a prosegrammer**
+  - NLP transforms raw text into structured insights
+  - Build from scratch to understand core concepts
+  - Apply these techniques to real document engineering challenges
 
 :::
