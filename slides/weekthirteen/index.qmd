@@ -200,7 +200,6 @@ for i, sent in enumerate(sentences, 1):
 
 - Split on sentence-ending punctuation marks
 - Remove empty strings and extra whitespace
-- **Consider edge cases like abbreviations**
 
 :::
 
@@ -231,8 +230,7 @@ for i, para in enumerate(paragraphs, 1):
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
 - Use double newlines as paragraph boundaries
-- Common convention in plain text documents
-- Filter empty paragraphs
+- However, not all document adopt this common convention!
 
 :::
 
