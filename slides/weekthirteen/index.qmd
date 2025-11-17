@@ -22,7 +22,7 @@ format:
       theme: default
 ---
 
-# Natural language processing for prosegrammers
+# NLP for prosegrammers
 
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
 
@@ -38,7 +38,7 @@ engineering?**
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
 
 - {{< iconify fa6-solid book >}} **What are this week's highlights?**
-    - Implement fundamental NLP techniques from scratch
+    - A "from scratch" implementation of several key NLP techniques:
         - Tokenization and segmentation
         - Stemming and lemmatization
         - Keyword extraction and frequency analysis
