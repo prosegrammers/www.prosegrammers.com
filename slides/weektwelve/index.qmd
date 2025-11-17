@@ -751,3 +751,26 @@ MULTILINECOMMENT_RE_PYTHON = r'^[ \t]*"""(.*?)"""[ \t]*$'
 Engineering course!**
 
 :::
+
+## Key takeaways for prosegrammers
+
+::: {.incremental style="margin-top: 0.1em; font-size: 0.7em;"}
+
+- {{< iconify fa6-solid microscope >}} **Understand regex basics**
+  - Use raw strings (`r''`) and `re.compile()` for clarity and reuse
+  - Know metacharacters, character classes, and quantifiers
+
+- {{< iconify fa6-solid bullseye >}} **Apply regex thoughtfully**
+  - Use `search`, `match`, `findall`, and `sub` appropriately
+  - Prefer specialized parsers for complex formats (e.g., HTML or Markdown) 
+
+- {{< iconify fa6-solid flask >}} **Test and validate patterns**
+  - Write unit tests with positive, negative, and edge cases
+  - Benchmark patterns to avoid catastrophic backtracking
+
+- {{< iconify fa6-solid lightbulb >}} **Practical prosegrammer tips**
+  - Document and comment complex patterns and use named groups
+  - Compile once and reuse patterns for performance
+  - Use real-world sample data when testing
+
+:::
