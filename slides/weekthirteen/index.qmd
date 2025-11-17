@@ -410,7 +410,7 @@ word appears**
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 9
 from typing import Dict
 
 def word_frequency(text: str) -> Dict[str, int]:
