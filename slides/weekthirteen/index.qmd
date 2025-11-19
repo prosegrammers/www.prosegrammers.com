@@ -555,9 +555,9 @@ for word, score in scored:
 
 # Build a keyword in context structure
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.45em; font-size: 0.725em;"}
 
-- {{< iconify fa6-solid search >}} **Keyword in context (KWIC)** shows
+- {{< iconify fa6-solid rocket >}} **Keyword in context (KWIC)** shows
 words with surrounding text
   - Display keyword with left and right context
   - Understand how terms are used in practice
@@ -576,11 +576,10 @@ analysis**
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 15
+#| max-lines: 10
 from typing import List, Tuple
 
-def keyword_in_context(text: str, keyword: str, context: int = 3) ->
-List[Tuple[str, str, str]]:
+def keyword_in_context(text: str, keyword: str, context: int = 3) -> List[Tuple[str, str, str]]:
     """Find keyword with surrounding context words."""
     words = text.split()
     results = []
@@ -597,7 +596,7 @@ for left, key, right in kwic:
     print(f"...{left} [{key}] {right}...")
 ```
 
-::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
 
 - Find all occurrences of target keyword
 - Extract context words before and after
@@ -609,11 +608,10 @@ for left, key, right in kwic:
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 16
+#| max-lines: 10
 from typing import List
 
-def format_kwic(text: str, keyword: str, width: int = 20) ->
-List[str]:
+def format_kwic(text: str, keyword: str, width: int = 20) -> List[str]:
     """Format KWIC display with aligned output."""
     words = text.split()
     results = []
@@ -642,8 +640,7 @@ for line in lines:
 
 # NLP tools for prosegrammers
 
-::: {.fragment .boxed-content style="margin-top: -0.2em; font-size:
-0.725em;"}
+::: {.fragment .boxed-content style="margin-top: -0.2em; font-size: 0.725em;"}
 
 - {{< iconify fa6-solid gears >}} **Next steps with NLP techniques**:
   - Find locations in your tool where NLP could add value
@@ -658,7 +655,7 @@ document tools more intelligent?**
 
 ## Key takeaways for prosegrammers
 
-::: {.incremental style="margin-top: 0.1em; font-size: 0.70em;"}
+::: {.incremental style="margin-top: 0.1em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid scissors >}} **Master text processing
 fundamentals**
