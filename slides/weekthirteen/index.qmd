@@ -514,7 +514,7 @@ print(f"Keywords: {keywords}")
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
 - Filter out stop words before counting
-- Keep words appearing at least min_freq times
+- Keep words appearing at least `min_freq` times
 - **Sort by frequency to rank importance**
 
 :::
