@@ -545,7 +545,7 @@ for word, score in scored:
     print(f"{word}: {score:.3f}")
 ```
 
-::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
 
 - Combine frequency with word length for scoring
 - Longer technical terms get higher scores
@@ -553,7 +553,7 @@ for word, score in scored:
 
 :::
 
-# Keyword in context: understanding word usage
+# Build a keyword in context structure
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
 
