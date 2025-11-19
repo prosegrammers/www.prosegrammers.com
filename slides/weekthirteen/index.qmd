@@ -668,14 +668,9 @@ fundamentals**
   - Stop word removal focuses on meaningful content
   - Keyword extraction identifies important terms automatically
 
-- {{< iconify fa6-solid search >}} **Understand context and usage**
+- {{< iconify fa6-solid lightbulb >}} **Understand context and usage**
   - KWIC displays show how words are used in practice
   - Combine techniques to build sophisticated document tools
   - Simple algorithms handle many real-world NLP tasks
-
-- {{< iconify fa6-solid lightbulb >}} **Think like a prosegrammer**
-  - NLP transforms raw text into structured insights
-  - Build from scratch to understand core concepts
-  - Apply these techniques to real document engineering challenges
 
 :::
