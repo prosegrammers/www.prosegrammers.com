@@ -638,7 +638,7 @@ for line in lines:
 
 :::
 
-# NLP tools for prosegrammers
+# Hooray prosegramming with NLP techniques!
 
 ::: {.fragment .boxed-content style="margin-top: -0.2em; font-size: 0.725em;"}
 
@@ -647,7 +647,7 @@ for line in lines:
     - Could tokenization help parse user input?
     - Would keyword extraction improve search features?
     - Could KWIC help users find usage examples?
-  - Combine multiple techniques for powerful analysis
+  - Combine multiple techniques for a more powerful analysis
   - {{< iconify fa6-solid lightbulb >}} **How would NLP make your
 document tools more intelligent?**
 
