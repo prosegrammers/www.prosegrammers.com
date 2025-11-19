@@ -490,7 +490,7 @@ that best represent content
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 15
+#| max-lines: 10
 from typing import Set, List
 
 def extract_keywords(text: str, stop_words: Set[str], min_freq: int =
@@ -523,7 +523,7 @@ print(f"Keywords: {keywords}")
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 14
+#| max-lines: 8
 from typing import Dict, List, Tuple
 
 def score_keywords(text: str, stop_words: set) -> List[Tuple[str,
