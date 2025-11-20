@@ -397,7 +397,7 @@ projects**!
     sorted indexes
   - Consider full-text search or indexing or databases for complex queries
 
-- {{< iconify fa6-solid arrow-down-a-z >}} **Sort thoughtfully**
+- {{< iconify fa6-solid arrow-down-a-z >}} **Sort with project requirements in mind**
   - Use Python's `sorted()` or `.sort()` for production workloads
   - Use `key=` to sort by dates, relevance, or custom fields
 
