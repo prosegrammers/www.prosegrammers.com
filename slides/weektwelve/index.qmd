@@ -236,7 +236,7 @@ correctness?**
 - `?` matches zero or one repetition
 - `{n}` matches exactly `n` repetitions
 - `{n,m}` matches between `n` and `m` repetitions
-- `\` escapes special characters
+- `\` escapes special characters like `\.` to match a literal dot
 
 :::
 
