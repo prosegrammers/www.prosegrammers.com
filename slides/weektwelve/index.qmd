@@ -210,14 +210,14 @@ benefits and drawbacks of regular expressions?
 ::: {.fragment style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Pattern matching**: describe sets of strings concisely
-- **Practical extensions**: 
+- **Practical extensions of "basic" regular expressions**: 
     - `.` means any char
     - `+` means one or more
     - `[...]` is a character class
     - `[a-z]` matches any character in range
     - `[^abc]` matches any character except those listed
     - These are all "syntactic sugar" for convenience
-- {{< iconify fa6-solid lightbulb >}} **Can you write a regex for email
+- {{< iconify fa6-solid lightbulb >}} **Can you write an improved regex for email
 addresses?**
 - {{< iconify fa6-solid rocket >}} **How do you test a regular expressions'
 correctness?**
