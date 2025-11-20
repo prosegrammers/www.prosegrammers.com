@@ -147,7 +147,7 @@ test_strings2 = ['123', '456', '12', '1234', 'abc']
 test_pattern(pattern2, test_strings2)
 ```
 
-## Pattern matching for email
+## Simple pattern matching for email
 
 ```{pyodide}
 #| autorun: true
@@ -194,7 +194,7 @@ benefits and drawbacks of regular expressions?
 
 :::
 
-# Key Components of a Regular Expression
+# Key components of a regular expression
 
 ::: {.fragment .boxed-content style="margin-top: -0.15em; font-size: 0.95em;"}
 
@@ -240,7 +240,7 @@ correctness?**
 
 :::
 
-## Character classes in regex
+## Character classes in regex {transition="convex"}
 
 ::: {.fragment .boxed-content style="margin-top: -0.15em; font-size: 0.875em;"}
 
@@ -395,7 +395,7 @@ for email in emails:
 
 :::
 
-## Try extracting emails yourself
+## Try (again) to extract emails!
 
 ```{pyodide}
 #| autorun: true
@@ -417,7 +417,7 @@ for email in emails:
 include your own suitable emails
 - {{< iconify fa6-solid text-slash >}} **Exploration**: identify some email
 addresses that are not detected
-- {{< iconify fa6-solid rocket >}} **Extension**: make pattern detection for
+- {{< iconify fa6-solid rocket >}} **Extension**: try to make pattern detection for
 emails more robust
 
 :::
