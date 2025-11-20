@@ -234,8 +234,8 @@ correctness?**
 - `*` matches zero or more repetitions
 - `+` matches one or more repetitions
 - `?` matches zero or one repetition
-- `{n}` matches exactly n repetitions
-- `{n,m}` matches between n and m repetitions
+- `{n}` matches exactly `n` repetitions
+- `{n,m}` matches between `n` and `m` repetitions
 - `\` escapes special characters
 
 :::
