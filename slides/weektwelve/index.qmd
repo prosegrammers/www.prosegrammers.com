@@ -752,6 +752,22 @@ Engineering course!**
 
 :::
 
+# Regular expressions aid prosegramming
+
+::: {.fragment .boxed-content style="margin-top: -0.2em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid gears >}} **Next steps with regular expression techniques**:
+  - **Find locations in your tool where regex could add value**:
+    - Could pattern matching help validate input formats?
+    - Would text extraction improve document processing?
+    - Could regex speed up an automated content analysis?
+  - {{< iconify fa6-solid gears >}} **Combine multiple patterns for powerful
+  document tools**
+  - {{< iconify fa6-solid lightbulb >}} **How would regex make your document
+  tools more intelligent?**
+
+:::
+
 ## Key takeaways for prosegrammers
 
 ::: {.incremental style="margin-top: -0.1em; font-size: 0.665em;"}
