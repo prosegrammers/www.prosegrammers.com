@@ -736,7 +736,7 @@ for doc_id in kapfhammer_docs:
     - Could you use a dictionary to map IDs to content?
     - Would nested dictionaries organize complex data better?
     - Could JSON files store and load your tool's configuration?
-  - If you are already using dictionaries, how can you refactor them?
+  - If you are already using dictionaries, how can you refactor their use?
   - {{< iconify fa6-solid lightbulb >}} **How would dictionaries make
 your tool more powerful?**
 
