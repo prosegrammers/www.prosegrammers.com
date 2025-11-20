@@ -545,7 +545,7 @@ for word, score in scored:
     print(f"{word}: {score:.3f}")
 ```
 
-::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+::: {.incremental style="margin-top: -0.3em; font-size: 0.68em;"}
 
 - Combine frequency with word length for scoring
 - Longer technical terms get higher scores
@@ -633,8 +633,8 @@ for line in lines:
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
 - Align keywords in center column for easy scanning
-- Right-justify left context for visual alignment
-- Professional concordance display format
+- Right-justify left context for an improved visual alignment
+- Offers a more "professional" concordance display format
 
 :::
 
