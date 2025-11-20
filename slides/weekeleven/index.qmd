@@ -372,6 +372,22 @@ projects**!
 
 :::
 
+# Searching and sorting aid prosegramming
+
+::: {.fragment .boxed-content style="margin-top: -0.2em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid gears >}} **Next steps with searching and sorting techniques**:
+  - **Find locations in your tool where searching/sorting could add value**:
+    - Could binary search help find references quickly?
+    - Would sorting improve document organization?
+    - Could efficient algorithms speed up processing?
+  - {{< iconify fa6-solid gears >}} **Combine searching and sorting for powerful
+  document tools**
+  - {{< iconify fa6-solid lightbulb >}} **How would efficient algorithms make your
+  document tools better?**
+
+:::
+
 ## Key takeaways for prosegrammers
 
 ::: {.incremental style="margin-top: -0.1em; font-size: 0.65em;"}
