@@ -640,7 +640,7 @@ debugging
 - **Document patterns**: add comments explaining regex logic
 - **Version patterns**: track changes to regex as requirements evolve
 - **Benchmark performance**: test speed with large documents
-- **Handle errors**: use try-except blocks for malformed input
+- **Handle errors**: use `try`-`except` blocks for malformed input
 - **Share test data**: maintain test document collection for validation
 
 :::
