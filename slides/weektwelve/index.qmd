@@ -47,7 +47,7 @@ diagrams, summaries, and descriptions of technical topics or processes.
 
 :::
 
-# Creating regular expressions in Python
+# Creating cool regular expressions in Python
 
 ::: fragment
 
@@ -151,7 +151,7 @@ test_pattern(pattern2, test_strings2)
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 11
 import re
 
 # pattern for simple email validation
