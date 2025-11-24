@@ -440,7 +440,7 @@ reverse=True):
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 14
+#| max-lines: 8
 from typing import Dict, List, Tuple
 
 def top_words(text: str, n: int = 5) -> List[Tuple[str, int]]:
