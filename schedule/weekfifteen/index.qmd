@@ -10,7 +10,7 @@ toc-expand: 3
 ## Activities
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Monday**:
-  - Instructor-led deep-dive on retrieval augmented generation
+  - Instructor-led deep-dive on retrieval augmented generation (RAG)
   - As needed, instructor review of previous technical topics
 - {{< iconify fa6-solid people-line size=18px >}} **Tuesday**:
   - DECO5 and DECO6 and DEPC5 and DEPC6 presentation slides completed through
@@ -28,12 +28,14 @@ toc-expand: 3
   request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
   for their team's slides
 - {{< iconify fa6-solid people-line size=18px >}} **Wednesday**:
-  - Continue working on second document engineering tool-building project
+  - Instructor-led deep-dive on retrieval augmented generation (RAG)
+  - Continue working on third document engineering tool-building project
   - Students give in-person brief demonstration to course instructor
 - {{< iconify fa6-solid gears size=18px >}} **Wednesday Laboratory**:
   - Team-based delivery of DECO5 and DECO6 presentations
   - Team-based delivery of DEPC5 and DEPC6 presentations
 - {{< iconify fa6-solid gears size=18px >}} **Friday**:
+  - Students continue to give brief project demonstration to course instructor
   - Use installed software tools for document engineering skill-check six
   - Complete skill-check six during the in-person classroom session
   - Please review [Week One: Introduction to Document
