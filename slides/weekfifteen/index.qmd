@@ -445,7 +445,6 @@ query with retrieved information
   - Provide evidence for answers
   - Support factual responses
   - Enable source citation
-  - Ground generation in retrieved data
 
 :::
 
