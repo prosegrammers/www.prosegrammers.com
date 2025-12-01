@@ -198,8 +198,7 @@ def chunk_by_sentences(text: str) -> List[str]:
     chunks = [s.strip() for s in sentences if s.strip()]
     return chunks
 
-doc = "RAG systems retrieve documents. They combine results with
-generation. This creates better answers."
+doc = "RAG systems retrieve documents. They combine results with generation. This creates better answers."
 chunks = chunk_by_sentences(doc)
 for i, chunk in enumerate(chunks, 1):
     print(f"Chunk {i}: {chunk}")
@@ -229,8 +228,7 @@ def chunk_by_words(text: str, size: int = 5) -> List[str]:
         chunks.append(chunk)
     return chunks
 
-doc = "Document engineering combines programming skills with writing
-skills for creating better documentation systems"
+doc = "Document engineering combines programming skills with writing skills for creating better documentation systems"
 chunks = chunk_by_words(doc, size=5)
 for i, chunk in enumerate(chunks, 1):
     print(f"Chunk {i}: {chunk}")
@@ -371,8 +369,7 @@ relevant chunks for a query
 #| max-lines: 10
 from typing import List, Tuple
 
-def retrieve_chunks(query: str, chunks: List[str], top_k: int = 2) ->
-List[Tuple[str, float]]:
+def retrieve_chunks(query: str, chunks: List[str], top_k: int = 2) -> List[Tuple[str, float]]:
     """Retrieve top-k most similar chunks to query."""
     query_vec = create_word_vector(query)
     scored_chunks = []
@@ -383,9 +380,7 @@ List[Tuple[str, float]]:
     scored_chunks.sort(key=lambda x: x[1], reverse=True)
     return scored_chunks[:top_k]
 
-chunks = ["Document engineering combines programming and writing",
-"Prosegrammers use Python for document analysis", "RAG systems retrieve
-relevant documents"]
+chunks = ["Document engineering combines programming and writing", "Prosegrammers use Python for document analysis", "RAG systems retrieve relevant documents"]
 results = retrieve_chunks("document programming", chunks, top_k=2)
 for i, (chunk, score) in enumerate(results, 1):
     print(f"{i}. [{score:.2f}] {chunk}")
@@ -415,8 +410,7 @@ def explain_relevance(query: str, chunk: str) -> None:
     print(f"Matching words: {overlap}")
     print(f"Match score: {len(overlap)}/{len(query_words)} query words")
 
-explain_relevance("document tools", "Document engineering creates tools
-for writers")
+explain_relevance("document tools", "Document engineering creates tools for writers")
 ```
 
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
@@ -461,8 +455,7 @@ def build_context(query: str, retrieved: List[Tuple[str, float]]) -> str:
     return '\n'.join(context_parts)
 
 query = "What is document engineering?"
-chunks = ["Document engineering combines programming with writing",
-"Prosegrammers build document analysis tools"]
+chunks = ["Document engineering combines programming with writing", "Prosegrammers build document analysis tools"]
 retrieved = retrieve_chunks(query, chunks, top_k=2)
 context = build_context(query, retrieved)
 print(context)
@@ -481,8 +474,7 @@ print(context)
 ```{pyodide}
 #| autorun: true
 #| max-lines: 8
-def format_context_with_sources(query: str, chunks: List[Tuple[str,
-float]]) -> str:
+def format_context_with_sources(query: str, chunks: List[Tuple[str, float]]) -> str:
     """Format context with explicit source tracking."""
     parts = [f"Query: {query}", ""]
     for i, (chunk, score) in enumerate(chunks, 1):
@@ -491,9 +483,7 @@ float]]) -> str:
         parts.append("")
     return '\n'.join(parts)
 
-retrieved = retrieve_chunks("prosegrammer skills", ["Prosegrammers
-combine coding and writing", "Document tools require technical skills"],
-top_k=2)
+retrieved = retrieve_chunks("prosegrammer skills", ["Prosegrammers combine coding and writing", "Document tools require technical skills"], top_k=2)
 formatted = format_context_with_sources("prosegrammer skills", retrieved)
 print(formatted)
 ```
@@ -552,8 +542,7 @@ external APIs
 ```{pyodide}
 #| autorun: true
 #| max-lines: 9
-def generate_response(query: str, retrieved: List[Tuple[str, float]]) ->
-str:
+def generate_response(query: str, retrieved: List[Tuple[str, float]]) -> str:
     """Generate simple response from retrieved context."""
     if not retrieved:
         return "No relevant information found."
@@ -562,8 +551,7 @@ str:
     return response
 
 query = "What is document engineering?"
-chunks = ["Document engineering combines programming with technical
-writing", "Tools help automate document creation"]
+chunks = ["Document engineering combines programming with technical writing", "Tools help automate document creation"]
 retrieved = retrieve_chunks(query, chunks, top_k=1)
 response = generate_response(query, retrieved)
 print(f"Query: {query}")
@@ -583,8 +571,7 @@ print(f"Response: {response}")
 ```{pyodide}
 #| autorun: true
 #| max-lines: 10
-def generate_detailed_response(query: str, retrieved: List[Tuple[str,
-float]]) -> str:
+def generate_detailed_response(query: str, retrieved: List[Tuple[str, float]]) -> str:
     """Generate response incorporating multiple sources."""
     if not retrieved:
         return "No relevant information found."
@@ -594,9 +581,7 @@ float]]) -> str:
     return '\n'.join(response_parts)
 
 query = "How do prosegrammers work?"
-chunks = ["Prosegrammers combine programming and writing skills",
-"Document tools automate content creation", "Analysis techniques improve
-document quality"]
+chunks = ["Prosegrammers combine programming and writing skills", "Document tools automate content creation", "Analysis techniques improve document quality"]
 retrieved = retrieve_chunks(query, chunks, top_k=2)
 response = generate_detailed_response(query, retrieved)
 print(f"Query: {query}\n")
@@ -636,8 +621,7 @@ combines all components
 ```{pyodide}
 #| autorun: true
 #| max-lines: 10
-def simple_rag_system(documents: List[str], query: str, top_k: int = 2)
--> str:
+def simple_rag_system(documents: List[str], query: str, top_k: int = 2) -> str:
     """Complete RAG pipeline from documents to response."""
     all_chunks = []
     for doc in documents:
@@ -648,9 +632,7 @@ def simple_rag_system(documents: List[str], query: str, top_k: int = 2)
     response = generate_detailed_response(query, retrieved)
     return response
 
-docs = ["Document engineering uses Python to analyze text. Tools help
-automate writing tasks.", "Prosegrammers combine programming skills with
-technical writing. They create better documentation systems."]
+docs = ["Document engineering uses Python to analyze text. Tools help automate writing tasks.", "Prosegrammers combine programming skills with technical writing. They create better documentation systems."]
 query = "What tools do prosegrammers use?"
 response = simple_rag_system(docs, query)
 print(f"Query: {query}\n")
@@ -684,9 +666,7 @@ def rag_with_sources(documents: List[str], query: str) -> None:
     print(f"\nGenerated response:")
     print(generate_detailed_response(query, retrieved))
 
-docs = ["RAG systems retrieve relevant documents", "Retrieved
-information grounds generated responses", "Context improves answer
-quality"]
+docs = ["RAG systems retrieve relevant documents", "Retrieved information grounds generated responses", "Context improves answer quality"]
 rag_with_sources(docs, "How does RAG work?")
 ```
 
