@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Augmented Generation for Document Engineering"
 echo: true
-description: "Build functions for advanced document analysis"
+description: "Understanding RAG concepts and building simple implementations"
 date: "2025-12-01"
 date-format: long
 author: Gregory M. Kapfhammer
@@ -26,23 +26,23 @@ format:
 
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
 
-- {{< iconify fa6-solid lightbulb >}} **What is NLP for document
-engineering?**
-    - Breaking text into meaningful units
-    - Extracting key information from documents
-    - Analyzing language patterns
-    - Building tools to understand written content
+- {{< iconify fa6-solid lightbulb >}} **What is RAG?**
+    - Combining document retrieval with text generation
+    - Finding relevant information to support answers
+    - Building context-aware document systems
+    - Enhancing responses with retrieved knowledge
 
 :::
 
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
 
 - {{< iconify fa6-solid book >}} **What are this week's highlights?**
-    - A "from scratch" implementation of several key NLP techniques:
-        - Tokenization and segmentation
-        - Stemming and lemmatization
-        - Keyword extraction and frequency analysis
-        - Build keyword in context tools
+    - A "from scratch" implementation of RAG concepts:
+        - Document ingestion and preprocessing
+        - Text chunking and organization
+        - Simple vector-like representations
+        - Retrieval and context building
+        - Response generation with context
 
 :::
 
@@ -50,12 +50,12 @@ engineering?**
 
 ::: {.fragment .boxed-content .fade style="font-size: 1.0em;"}
 
-- {{< iconify fa6-solid gears >}} Natural language processing transforms raw
-text into structured data that programs can more easily analyze
-- {{< iconify fa6-solid book >}} Although great packages exist, simple
-algorithms handle common NLP tasks without external libraries
-- {{< iconify fa6-solid code >}} Understanding basic NLP helps prosegrammers
-build their own powerful document analysis tools
+- {{< iconify fa6-solid gears >}} RAG combines retrieval and generation to
+build intelligent document systems that provide contextual answers
+- {{< iconify fa6-solid book >}} Simple implementations using basic Python
+can demonstrate core RAG concepts without complex libraries
+- {{< iconify fa6-solid code >}} Understanding RAG fundamentals helps
+prosegrammers design better document-based applications
 
 :::
 
@@ -82,8 +82,643 @@ topics or processes.
 
 ::: {.fragment style="margin-top: -0.05em; font-size: 0.775em;"}
 
-- {{< iconify fa6-solid bullhorn >}} This week's content aids in the attainment
-of learning objective **CS-104-3**!
+- {{< iconify fa6-solid bullhorn >}} This week's content aids in the
+attainment of learning objectives **CS-104-3** and **CS-104-4**!
+
+:::
+
+# Document ingestion and preprocessing
+
+::: {.incremental style="margin-top: -0.45em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid file-import >}} **Document ingestion** loads text
+data into a processing pipeline
+  - Read files from the filesystem
+  - Parse different text formats
+  - Extract raw content for analysis
+  - Foundation of all RAG systems
+
+- {{< iconify fa6-solid lightbulb >}} **Why ingest documents?**
+  - Build knowledge base for retrieval
+  - Prepare content for searching
+  - Enable context-aware responses
+  - Support question-answering systems
+
+:::
+
+## Reading documents from files
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import List
+
+def read_document(content: str) -> str:
+    """Read and return document content as string."""
+    return content.strip()
+
+sample_doc = """
+Document engineering combines programming with technical writing.
+Prosegrammers create tools to analyze and generate documents.
+"""
+doc_content = read_document(sample_doc)
+print(f"Document loaded with {len(doc_content)} characters")
+print(f"Preview: {doc_content[:80]}...")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Simple document loading from string content
+- Normalize text by removing extra whitespace
+- **Key concept**: RAG starts with loading documents into memory
+
+:::
+
+## Data cleaning and preprocessing
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+import re
+
+def clean_text(text: str) -> str:
+    """Clean text by normalizing whitespace and punctuation."""
+    text = re.sub(r'\s+', ' ', text)
+    text = text.strip()
+    return text
+
+raw_text = """
+    Document    engineering    is    exciting!
+    
+    Let's   build   document   tools.
+"""
+cleaned = clean_text(raw_text)
+print(f"Original: {repr(raw_text)}")
+print(f"Cleaned: {cleaned}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Remove extra whitespace and normalize formatting
+- Prepare text for consistent processing
+- **Cleaning ensures uniform document handling**
+
+:::
+
+# Converting text to chunks
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid scissors >}} **Text chunking** divides documents
+into smaller, manageable pieces
+  - Split long documents into segments
+  - Create context-sized pieces for retrieval
+  - Balance chunk size for completeness
+  - Enable efficient searching and matching
+
+- {{< iconify fa6-solid lightbulb >}} **Why chunk documents?**
+  - Large documents overwhelm processing
+  - Smaller chunks match queries better
+  - Control context window size
+  - Improve retrieval precision
+
+:::
+
+## Simple sentence-based chunking
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+import re
+from typing import List
+
+def chunk_by_sentences(text: str) -> List[str]:
+    """Split text into sentence chunks."""
+    sentences = re.split(r'[.!?]+', text)
+    chunks = [s.strip() for s in sentences if s.strip()]
+    return chunks
+
+doc = "RAG systems retrieve documents. They combine results with
+generation. This creates better answers."
+chunks = chunk_by_sentences(doc)
+for i, chunk in enumerate(chunks, 1):
+    print(f"Chunk {i}: {chunk}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Split documents into sentence-level chunks
+- Each chunk becomes searchable unit
+- **Smaller chunks enable precise retrieval**
+
+:::
+
+## Fixed-size word chunking
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 9
+from typing import List
+
+def chunk_by_words(text: str, size: int = 5) -> List[str]:
+    """Split text into fixed-size word chunks."""
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), size):
+        chunk = ' '.join(words[i:i+size])
+        chunks.append(chunk)
+    return chunks
+
+doc = "Document engineering combines programming skills with writing
+skills for creating better documentation systems"
+chunks = chunk_by_words(doc, size=5)
+for i, chunk in enumerate(chunks, 1):
+    print(f"Chunk {i}: {chunk}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Control chunk size by word count
+- Useful for consistent context windows
+- **Trade-off between completeness and granularity**
+
+:::
+
+# Creating vector-like representations
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid vector-square >}} **Vector representations** encode
+text as numerical values
+  - Transform text into comparable format
+  - Enable similarity calculations
+  - Foundation for semantic search
+  - Real systems use embeddings from models
+
+- {{< iconify fa6-solid lightbulb >}} **Simple representation approach**
+  - Word frequency as feature vector
+  - Shared vocabulary across chunks
+  - Basic similarity through overlap
+  - Demonstrates core concept simply
+
+:::
+
+## Tools for vector embeddings
+
+::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid box >}} **Popular embedding tools**:
+  - **Sentence Transformers**: Pre-trained models for semantic embeddings
+  - **OpenAI Embeddings API**: Cloud-based embedding generation
+  - **Hugging Face Transformers**: Open-source embedding models
+  - **FAISS**: Efficient similarity search for vectors
+  - **ChromaDB**: Vector database for RAG systems
+  - **Pinecone**: Managed vector database service
+
+:::
+
+::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **For this course**: We use simple
+word-based representations to understand concepts without external
+dependencies
+
+:::
+
+## Simple word frequency vectors
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import Dict
+
+def create_word_vector(text: str) -> Dict[str, int]:
+    """Create simple frequency-based vector representation."""
+    words = text.lower().split()
+    vector = {}
+    for word in words:
+        vector[word] = vector.get(word, 0) + 1
+    return vector
+
+chunk = "document engineering tools help create documents"
+vector = create_word_vector(chunk)
+print("Word vector representation:")
+for word, count in sorted(vector.items()):
+    print(f"  {word}: {count}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Represent text as word frequency dictionary
+- Each word becomes a feature dimension
+- **Simple but demonstrates vectorization concept**
+
+:::
+
+## Computing similarity between chunks
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
+from typing import Dict, Set
+
+def compute_overlap(vec1: Dict[str, int], vec2: Dict[str, int]) -> float:
+    """Compute similarity as shared word ratio."""
+    words1 = set(vec1.keys())
+    words2 = set(vec2.keys())
+    overlap = len(words1 & words2)
+    total = len(words1 | words2)
+    return overlap / total if total > 0 else 0.0
+
+query_vec = create_word_vector("document tools")
+chunk_vec = create_word_vector("document engineering creates tools")
+similarity = compute_overlap(query_vec, chunk_vec)
+print(f"Similarity score: {similarity:.3f}")
+print(f"Shared words: {set(query_vec.keys()) & set(chunk_vec.keys())}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Calculate overlap between word sets
+- Higher overlap means higher relevance
+- **Basis for retrieval ranking**
+
+:::
+
+# Retrieving relevant documents
+
+::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid magnifying-glass >}} **Retrieval** finds most
+relevant chunks for a query
+  - Compare query against all chunks
+  - Rank by similarity score
+  - Select top matches
+  - Core of RAG systems
+
+- {{< iconify fa6-solid lightbulb >}} **Why retrieve documents?**
+  - Provide relevant context for answers
+  - Find supporting information
+  - Build knowledge-grounded responses
+  - Enable question answering
+
+:::
+
+## Building a simple retriever
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import List, Tuple
+
+def retrieve_chunks(query: str, chunks: List[str], top_k: int = 2) ->
+List[Tuple[str, float]]:
+    """Retrieve top-k most similar chunks to query."""
+    query_vec = create_word_vector(query)
+    scored_chunks = []
+    for chunk in chunks:
+        chunk_vec = create_word_vector(chunk)
+        score = compute_overlap(query_vec, chunk_vec)
+        scored_chunks.append((chunk, score))
+    scored_chunks.sort(key=lambda x: x[1], reverse=True)
+    return scored_chunks[:top_k]
+
+chunks = ["Document engineering combines programming and writing",
+"Prosegrammers use Python for document analysis", "RAG systems retrieve
+relevant documents"]
+results = retrieve_chunks("document programming", chunks, top_k=2)
+for i, (chunk, score) in enumerate(results, 1):
+    print(f"{i}. [{score:.2f}] {chunk}")
+```
+
+::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+
+- Score all chunks against query
+- Sort by relevance score
+- Return top matches
+- **Demonstrates retrieval mechanism**
+
+:::
+
+## Understanding relevance scores
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+def explain_relevance(query: str, chunk: str) -> None:
+    """Show why a chunk is relevant to query."""
+    query_words = set(query.lower().split())
+    chunk_words = set(chunk.lower().split())
+    overlap = query_words & chunk_words
+    print(f"Query: {query}")
+    print(f"Chunk: {chunk}")
+    print(f"Matching words: {overlap}")
+    print(f"Match score: {len(overlap)}/{len(query_words)} query words")
+
+explain_relevance("document tools", "Document engineering creates tools
+for writers")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Show explicit word matches
+- Explain why chunk is relevant
+- **Transparency builds understanding**
+
+:::
+
+# Combining retrieved context with queries
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid layer-group >}} **Context combination** merges
+query with retrieved information
+  - Build context from top chunks
+  - Format for response generation
+  - Maintain source attribution
+  - Create comprehensive knowledge base
+
+- {{< iconify fa6-solid lightbulb >}} **Why combine context?**
+  - Provide evidence for answers
+  - Support factual responses
+  - Enable source citation
+  - Ground generation in retrieved data
+
+:::
+
+## Building context from retrieval
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+from typing import List
+
+def build_context(query: str, retrieved: List[Tuple[str, float]]) -> str:
+    """Combine query with retrieved chunks into context."""
+    context_parts = [f"Question: {query}", "", "Relevant information:"]
+    for i, (chunk, score) in enumerate(retrieved, 1):
+        context_parts.append(f"{i}. {chunk}")
+    return '\n'.join(context_parts)
+
+query = "What is document engineering?"
+chunks = ["Document engineering combines programming with writing",
+"Prosegrammers build document analysis tools"]
+retrieved = retrieve_chunks(query, chunks, top_k=2)
+context = build_context(query, retrieved)
+print(context)
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Format query with retrieved chunks
+- Create structured context
+- **Ready for response generation**
+
+:::
+
+## Formatting context for responses
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
+def format_context_with_sources(query: str, chunks: List[Tuple[str,
+float]]) -> str:
+    """Format context with explicit source tracking."""
+    parts = [f"Query: {query}", ""]
+    for i, (chunk, score) in enumerate(chunks, 1):
+        parts.append(f"Source {i} (relevance: {score:.2f}):")
+        parts.append(f"  {chunk}")
+        parts.append("")
+    return '\n'.join(parts)
+
+retrieved = retrieve_chunks("prosegrammer skills", ["Prosegrammers
+combine coding and writing", "Document tools require technical skills"],
+top_k=2)
+formatted = format_context_with_sources("prosegrammer skills", retrieved)
+print(formatted)
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Add source tracking to context
+- Include relevance scores
+- **Transparency in information sources**
+
+:::
+
+# Generating responses with context
+
+::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid comment-dots >}} **Response generation** creates
+answers using retrieved context
+  - Extract relevant information
+  - Synthesize coherent responses
+  - Maintain factual grounding
+  - In practice, uses language models
+
+- {{< iconify fa6-solid lightbulb >}} **Simple generation approach**
+  - Template-based responses
+  - Direct information extraction
+  - Demonstrates concept flow
+  - Real systems use LLMs for flexibility
+
+:::
+
+## Tools for response generation
+
+::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid box >}} **Language models for generation**:
+  - **OpenAI GPT**: Cloud-based LLM for text generation
+  - **Anthropic Claude**: Conversational AI with long context
+  - **Google Gemini**: Multimodal generation capabilities
+  - **Hugging Face Models**: Open-source LLMs like Llama
+  - **LangChain**: Framework for building RAG applications
+  - **LlamaIndex**: Data framework for LLM applications
+
+:::
+
+::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **For this course**: We use
+template-based generation to demonstrate the concept without requiring
+external APIs
+
+:::
+
+## Simple template-based generation
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 9
+def generate_response(query: str, retrieved: List[Tuple[str, float]]) ->
+str:
+    """Generate simple response from retrieved context."""
+    if not retrieved:
+        return "No relevant information found."
+    top_chunk = retrieved[0][0]
+    response = f"Based on the documents, {top_chunk.lower()}"
+    return response
+
+query = "What is document engineering?"
+chunks = ["Document engineering combines programming with technical
+writing", "Tools help automate document creation"]
+retrieved = retrieve_chunks(query, chunks, top_k=1)
+response = generate_response(query, retrieved)
+print(f"Query: {query}")
+print(f"Response: {response}")
+```
+
+::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+
+- Create response from top retrieved chunk
+- Simple template wraps information
+- **Demonstrates basic generation concept**
+
+:::
+
+## Enhanced response with multiple sources
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+def generate_detailed_response(query: str, retrieved: List[Tuple[str,
+float]]) -> str:
+    """Generate response incorporating multiple sources."""
+    if not retrieved:
+        return "No relevant information found."
+    response_parts = ["Based on the available information:"]
+    for i, (chunk, score) in enumerate(retrieved, 1):
+        response_parts.append(f"- {chunk}")
+    return '\n'.join(response_parts)
+
+query = "How do prosegrammers work?"
+chunks = ["Prosegrammers combine programming and writing skills",
+"Document tools automate content creation", "Analysis techniques improve
+document quality"]
+retrieved = retrieve_chunks(query, chunks, top_k=2)
+response = generate_detailed_response(query, retrieved)
+print(f"Query: {query}\n")
+print(response)
+```
+
+::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+
+- Synthesize information from multiple chunks
+- Present comprehensive answer
+- **Better responses use more context**
+
+:::
+
+# Complete RAG pipeline demonstration
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+
+- {{< iconify fa6-solid diagram-project >}} **End-to-end RAG system**
+combines all components
+  - Ingest and preprocess documents
+  - Chunk text into searchable units
+  - Create vector representations
+  - Retrieve relevant chunks
+  - Generate context-grounded responses
+
+- {{< iconify fa6-solid lightbulb >}} **Real-world applications**
+  - Question answering systems
+  - Document search assistants
+  - Knowledge base chatbots
+  - Technical documentation helpers
+
+:::
+
+## Building a complete RAG system
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+def simple_rag_system(documents: List[str], query: str, top_k: int = 2)
+-> str:
+    """Complete RAG pipeline from documents to response."""
+    all_chunks = []
+    for doc in documents:
+        cleaned = clean_text(doc)
+        chunks = chunk_by_sentences(cleaned)
+        all_chunks.extend(chunks)
+    retrieved = retrieve_chunks(query, all_chunks, top_k)
+    response = generate_detailed_response(query, retrieved)
+    return response
+
+docs = ["Document engineering uses Python to analyze text. Tools help
+automate writing tasks.", "Prosegrammers combine programming skills with
+technical writing. They create better documentation systems."]
+query = "What tools do prosegrammers use?"
+response = simple_rag_system(docs, query)
+print(f"Query: {query}\n")
+print(response)
+```
+
+::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+
+- Integrate all RAG components
+- Process multiple documents
+- Return context-aware response
+- **Complete working system**
+
+:::
+
+## RAG system with source attribution
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+def rag_with_sources(documents: List[str], query: str) -> None:
+    """RAG system showing retrieval and generation steps."""
+    all_chunks = []
+    for doc in documents:
+        all_chunks.extend(chunk_by_sentences(clean_text(doc)))
+    retrieved = retrieve_chunks(query, all_chunks, top_k=2)
+    print(f"Query: {query}\n")
+    print("Retrieved chunks:")
+    for i, (chunk, score) in enumerate(retrieved, 1):
+        print(f"  {i}. [{score:.2f}] {chunk}")
+    print(f"\nGenerated response:")
+    print(generate_detailed_response(query, retrieved))
+
+docs = ["RAG systems retrieve relevant documents", "Retrieved
+information grounds generated responses", "Context improves answer
+quality"]
+rag_with_sources(docs, "How does RAG work?")
+```
+
+::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+
+- Show retrieval step explicitly
+- Display source chunks with scores
+- **Transparency in RAG process**
+
+:::
+
+# Building better document systems
+
+::: {.fragment .boxed-content style="margin-top: -0.2em; font-size:
+0.725em;"}
+
+- {{< iconify fa6-solid gears >}} **Improving RAG systems**:
+  - **Better chunking strategies**:
+    - Semantic chunking by topic
+    - Overlapping chunks for context
+    - Adaptive chunk sizes
+  - **Enhanced retrieval methods**:
+    - Advanced similarity metrics
+    - Hybrid search combining keywords and vectors
+    - Re-ranking for better results
+  - **Context optimization**:
+    - Chunk selection strategies
+    - Context window management
+    - Prompt engineering for generation
+
+- {{< iconify fa6-solid lightbulb >}} **How would you enhance a RAG
+system for your document engineering projects?**
 
 :::
 
@@ -91,20 +726,23 @@ of learning objective **CS-104-3**!
 
 ::: {.incremental style="margin-top: 0.1em; font-size: 0.7em;"}
 
-- {{< iconify fa6-solid scissors >}} **Master text processing
-fundamentals**
-  - Tokenization splits text into analyzable units
-  - Segmentation divides documents into sentences and paragraphs
-  - Stemming and lemmatization normalize word forms
+- {{< iconify fa6-solid diagram-project >}} **Understand RAG components**
+  - Document ingestion prepares knowledge base
+  - Chunking creates retrievable units
+  - Vector representations enable similarity search
+  - Retrieval finds relevant context
+  - Generation produces grounded responses
 
-- {{< iconify fa6-solid chart-bar >}} **Build powerful analysis tools**
-  - Word frequency reveals document themes and patterns
-  - Stop word removal focuses on meaningful content
-  - Keyword extraction identifies important terms automatically
+- {{< iconify fa6-solid search >}} **Master retrieval concepts**
+  - Similarity scoring ranks relevance
+  - Top-k selection balances context and precision
+  - Source attribution maintains transparency
+  - Retrieved context grounds generated answers
 
-- {{< iconify fa6-solid lightbulb >}} **Understand context and usage**
-  - KWIC displays show how words are used in practice
-  - Combine techniques to build sophisticated document tools
-  - Simple algorithms handle many real-world NLP tasks
+- {{< iconify fa6-solid lightbulb >}} **Apply RAG to document engineering**
+  - Build question-answering systems
+  - Create documentation assistants
+  - Develop knowledge base applications
+  - Simple implementations demonstrate core concepts
 
 :::
