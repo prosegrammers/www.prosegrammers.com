@@ -397,12 +397,11 @@ for i, (chunk, score) in enumerate(results, 1):
     print(f"{i}. [{score:.2f}] {chunk}")
 ```
 
-::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+::: {.incremental style="margin-top: -0.3em; font-size: 0.75em;"}
 
 - Score all chunks against query
-- Sort by relevance score
-- Return top matches
-- **Demonstrates retrieval mechanism**
+- Sort by relevance score ...
+- ... And return top matches! **For this query, did system pick correct chunks?**
 
 :::
 
@@ -428,7 +427,6 @@ explain_relevance("document tools", "Document engineering creates tools for writ
 
 - Show explicit word matches
 - Explain why chunk is relevant
-- **Transparency builds understanding**
 
 :::
 
