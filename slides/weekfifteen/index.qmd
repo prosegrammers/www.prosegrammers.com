@@ -168,7 +168,7 @@ print(f"Cleaned: {cleaned}")
 
 :::
 
-# Make text chunks
+# Divide text into chunks
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.7em;"}
 
@@ -184,6 +184,7 @@ into smaller, manageable pieces
   - Smaller chunks match queries better
   - Control context window size
   - Improve retrieval precision
+  - **Trade-off efficiency and representation of document's relevance!**
 
 :::
 
