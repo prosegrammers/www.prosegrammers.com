@@ -245,7 +245,7 @@ for i, chunk in enumerate(chunks, 1):
 
 :::
 
-# Vector-like representations
+# Vector-like entities
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
 
@@ -346,7 +346,7 @@ print(f"Shared words: {set(query_vec.keys()) & set(chunk_vec.keys())}")
 
 :::
 
-# Retrieving relevant documents
+# Find relevant documents
 
 ::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
 
@@ -569,7 +569,7 @@ print(f"Response: {response}")
 
 :::
 
-## Enhanced response with multiple sources
+## Better response with multiple sources
 
 ```{pyodide}
 #| autorun: true
@@ -681,10 +681,9 @@ rag_with_sources(docs, "How does RAG work?")
 
 :::
 
-# Building better document systems
+# Enhancing RAG
 
-::: {.fragment .boxed-content style="margin-top: -0.2em; font-size:
-0.725em;"}
+::: {.fragment style="margin-top: -0.6em; font-size:0.625em;"}
 
 - {{< iconify fa6-solid gears >}} **Improving RAG systems**:
   - **Better chunking strategies**:
@@ -700,14 +699,11 @@ rag_with_sources(docs, "How does RAG work?")
     - Context window management
     - Prompt engineering for generation
 
-- {{< iconify fa6-solid lightbulb >}} **How would you enhance a RAG
-system for your document engineering projects?**
-
 :::
 
 ## Key takeaways for prosegrammers
 
-::: {.incremental style="margin-top: 0.1em; font-size: 0.7em;"}
+::: {.incremental style="margin-top: -0.3em; font-size: 0.65em;"}
 
 - {{< iconify fa6-solid diagram-project >}} **Understand RAG components**
   - Document ingestion prepares knowledge base
@@ -722,10 +718,8 @@ system for your document engineering projects?**
   - Source attribution maintains transparency
   - Retrieved context grounds generated answers
 
-- {{< iconify fa6-solid lightbulb >}} **Apply RAG to document engineering**
-  - Build question-answering systems
-  - Create documentation assistants
-  - Develop knowledge base applications
-  - Simple implementations demonstrate core concepts
+- {{< iconify fa6-solid lightbulb >}} **What are some practical ways in which
+you could integrate RAG into your document engineering tool? How will you
+extend the starting implementation presented this week?**
 
 :::
