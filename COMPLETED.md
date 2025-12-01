@@ -1351,3 +1351,198 @@ functions, providing immediate feedback for learning
 techniques to real prosegrammer workflows
 - Simplified implementations using only Python standard library features ensure
 accessibility and portability across environments
+
+### Create Slides for Week Fifteen in `slides/weekfifteen/index.qmd`
+
+- [X] Review the content in the `GEMINI.md` file (or the `AGENTS.md` file)
+that explains the theme of the course on document engineering.
+- [X] Review the content in the `index.qmd` file in the root of the
+repository that explains the idea of a "Prosegrammer" and the concept of
+document engineering. All the slides that you create have to specifically
+connect to the theme of prosegramming and document engineering.
+- [X] Review the content in the `index.qmd` file in the `syllabus` directory
+of the repository that explains rules and regulations for this course on
+document engineering. Note that these are the rules that students follow and
+not specifically the rules and regulations that you follow as a coding agent.
+- [X] Please remember that I am currently working on the slides in
+`slides/weekfifteen/index.qmd` that introduce how to perform retrieval
+augmented generation (RAG). I do not want any of the slides to use functions
+from packages like `nltk` or `spacy` or `gensim` or `SentenceTransformers`. I
+want to only introduce basic concepts of retrieval augmented generation by
+explaining them with bullet points and examples and then adding source code
+examples that students can try out and run in the slides with `{pyodide}`
+blocks.
+- [X] If there are specific tools that would normally be used for a specific
+step in the RAG pipeline, then please reference them in a bulleted list and
+explain what they do. However, you cannot make the slides `import` those
+packages in Python or install a tool, like a vector database, on a computer.
+- [X] The high-level workflow that you should start with is as follows:
+    - Document ingestion
+    - Data cleaning and preprocessing
+    - Converting text to chunks
+    - Create and store vector embeddings
+    - Retrieve relevant documents based on user queries
+    - Make it clear how the documents are relevant with simple examples
+    - Combine retrieved documents with user queries
+    - Generate responses using a language model
+- [X] Please note that you cannot use any external packages that are not part
+of the Python standard library to complete any of these steps.
+- [X] Again, none of the slides should use functions that come from any
+external package that is available on PyPI or through any external site. All
+the content must be from the standard Python library. It has to be simple and
+implemented from scratch!
+- [X] You can look at the other slide decks that I have already prepared:
+  - `slides/weekone/index.qmd`
+  - `slides/weektwo/index.qmd`
+  - `slides/weekthree/index.qmd`
+  - `slides/weekfour/index.qmd`
+  - `slides/weekfive/index.qmd`
+  - `slides/weeksix/index.qmd`
+  - `slides/weekeight/index.qmd`
+  - `slides/weeknine/index.qmd`
+  - `slides/weekten/index.qmd` ... and see how I am currently using Markdown
+  and Quarto in my slides! There are also slides in other directories and you
+  can preview them as well.
+- [X] You should definitely review the slides from `weekthirteen` called
+"Natural Language Processing for Document Engineering" as this will illustrate
+how I taught the students about some of the NLP concepts you can build on in
+this slide deck. Again, notice that none of that content uses an external
+package, it is all "simple" and also "built from scratch".
+- [X] Please do not use Markdown or Quarto formats that I am not currently
+using in my slides to make sure that the content has a consistent format.
+- [X] If you check the `index.qmd` file in this GitHub repository, you can
+see a simple example of word frequency analysis. Please use simple examples
+like this one to illustrate how to perform retrieval augmented generation
+(RAG).
+- [X] Make sure that all the content is accessible to beginners who do not
+have extensive experience with programming or the documentation of a software
+tool.
+- [X] Make sure that all the content has concrete examples that make points
+clear to beginners. Provide simple summaries of the concrete code examples.
+- [X] Always include "signposting" slides that clearly state what you are
+going to explain in the next block of slides about a specific topic. These
+signposting slides are at the `#` level in the Markdown file.
+- [X] Always include a conclusion slide that has the title `Key takeaways for
+prosegrammers` and then summarizes the key points that students learned.
+- [X] Keep the total number of slides to a count less than the prior slide
+decks that I have created. For instance, this topic is less complicated than
+the material that I produced for weeknine and thus the slide count should be
+less.
+
+## Support for Week Fifteen Slides Content
+
+### Retrieval Augmented Generation for Document Engineering
+
+- Retrieval Augmented Generation (RAG) is a technique that combines
+information retrieval with natural language generation to produce more
+accurate, context-grounded responses, as described in the original RAG paper
+by Lewis et al. (2020) from Facebook AI Research
+- RAG addresses the limitation of language models generating "hallucinated"
+information by grounding responses in retrieved factual documents from a
+knowledge base
+- The approach has become fundamental to modern AI applications including
+ChatGPT plugins, documentation assistants, and question-answering systems
+- Document engineering benefits from RAG through automated technical
+documentation assistants, code explanation systems, and knowledge base
+chatbots
+
+### RAG Pipeline Components
+
+- Document ingestion and preprocessing forms the foundation of RAG systems by
+loading, cleaning, and normalizing text data from various sources
+- Text chunking divides long documents into smaller, semantically coherent
+segments that fit within context windows and improve retrieval precision
+- Vector embeddings transform text into numerical representations that enable
+semantic similarity calculations, typically using transformer-based models
+like BERT or sentence transformers
+- Retrieval mechanisms rank document chunks by relevance to queries using
+similarity metrics like cosine similarity or dot product
+- Context combination merges retrieved chunks with user queries to create
+comprehensive prompts for language models
+- Response generation uses language models (GPT, Claude, Llama) to synthesize
+answers grounded in retrieved information
+
+### Document Chunking Strategies
+
+- Sentence-based chunking splits text at sentence boundaries using
+punctuation patterns, providing natural semantic units for retrieval
+- Fixed-size word chunking creates uniform segments with consistent lengths,
+useful for controlling context window sizes in language models
+- Semantic chunking groups related content together, though this approach
+requires more sophisticated analysis beyond simple rule-based splitting
+- Overlapping chunks include content from adjacent segments to preserve
+context at boundaries, improving retrieval quality for queries spanning chunk
+boundaries
+- The choice of chunking strategy impacts retrieval precision, context
+completeness, and system performance
+
+### Simple Vector Representations
+
+- Word frequency vectors represent text as dictionaries mapping words to
+occurrence counts, providing a simple baseline for semantic similarity
+- Set-based overlap metrics calculate similarity as the ratio of shared words
+to total words, demonstrating basic retrieval relevance scoring
+- Real-world systems use dense embeddings from neural models (sentence
+transformers, OpenAI embeddings) that capture semantic meaning beyond simple
+word overlap
+- Vector databases (FAISS, ChromaDB, Pinecone) enable efficient similarity
+search over large document collections using approximate nearest neighbor
+algorithms
+- The simplified representations in course slides demonstrate core concepts
+without requiring external dependencies or API access
+
+### Retrieval and Ranking Mechanisms
+
+- Similarity scoring quantifies relevance between queries and document chunks
+using metrics like Jaccard similarity, cosine similarity, or BM25
+- Top-k selection retrieves the most relevant chunks while balancing context
+size and precision, with typical values ranging from 2 to 10 chunks
+- Re-ranking strategies apply multiple relevance signals to improve initial
+retrieval results, such as combining keyword match with semantic similarity
+- Source attribution tracks which chunks contributed to responses, enabling
+transparency and verification of generated information
+- Retrieval quality directly impacts response accuracy, making it a critical
+component of RAG systems
+
+### Context Construction and Response Generation
+
+- Context formatting structures retrieved chunks with queries into prompts
+that language models can effectively process
+- Template-based generation provides deterministic responses from retrieved
+information, suitable for educational demonstrations without requiring LLM
+APIs
+- Language model integration (GPT, Claude, Llama) enables flexible,
+natural-sounding responses that synthesize information from multiple sources
+- Prompt engineering techniques guide language models to ground responses in
+retrieved context and avoid hallucination
+- Multi-turn conversations maintain context across interactions, enabling
+follow-up questions and clarifications in RAG applications
+
+### Real-World RAG Applications
+
+- Technical documentation assistants use RAG to answer developer questions by
+retrieving relevant documentation sections and generating contextual
+explanations
+- Customer support chatbots combine company knowledge bases with conversational
+AI to provide accurate, source-grounded responses
+- Research paper assistants help scholars find relevant citations and
+summarize academic literature through retrieval-augmented summarization
+- Code explanation systems retrieve related code examples and documentation to
+explain programming concepts and provide usage examples
+- These applications demonstrate RAG's value for document-intensive domains
+where factual accuracy and source attribution are critical
+
+### Educational Slide Design for RAG
+
+- Progressive pipeline introduction builds from document ingestion through
+retrieval to generation, showing how components connect
+- Simplified implementations using only Python standard library demonstrate
+core concepts without external dependencies
+- Interactive Pyodide code blocks enable hands-on experimentation with
+chunking, retrieval, and generation functions
+- Tool reference slides list professional RAG libraries (LangChain,
+LlamaIndex) and vector databases while keeping examples dependency-free
+- Document engineering context frames RAG as practical skill for building
+intelligent documentation systems and knowledge management tools
+- Beginner-accessible explanations focus on conceptual understanding over
+mathematical complexity or advanced NLP techniques
