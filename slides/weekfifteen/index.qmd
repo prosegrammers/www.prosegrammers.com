@@ -141,7 +141,7 @@ print(f"Preview: {doc_content[:80]}...")
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 9
 import re
 
 def clean_text(text: str) -> str:
@@ -160,17 +160,17 @@ print(f"Original: {repr(raw_text)}")
 print(f"Cleaned: {cleaned}")
 ```
 
-::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+::: {.incremental style="margin-top: -0.2em; font-size: 0.725em;"}
 
-- Remove extra whitespace and normalize formatting
+- Remove extra blank spaces and normalize formatting
 - Prepare text for consistent processing
 - **Cleaning ensures uniform document handling**
 
 :::
 
-# Converting text to chunks
+# Make text chunks
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid scissors >}} **Text chunking** divides documents
 into smaller, manageable pieces
@@ -191,7 +191,7 @@ into smaller, manageable pieces
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 import re
 from typing import List
 
@@ -245,7 +245,7 @@ for i, chunk in enumerate(chunks, 1):
 
 :::
 
-# Creating vector-like representations
+# Vector-like representations
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
 
