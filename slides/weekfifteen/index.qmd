@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Augmented Generation for Document Engineering"
 echo: true
-description: "Understanding RAG concepts and building simple implementations"
+description: "Understanding RAG with simple functions"
 date: "2025-12-01"
 date-format: long
 author: Gregory M. Kapfhammer
@@ -22,7 +22,7 @@ format:
       theme: default
 ---
 
-# Retrieval augmented generation
+# Understanding RAG
 
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
 
