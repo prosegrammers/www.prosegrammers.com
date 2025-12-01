@@ -40,3 +40,13 @@ toc-expand: 3
   - Complete skill-check six during the in-person classroom session
   - Please review [Week One: Introduction to Document
   Engineering](../../slides/weekone/) for a list of necessary software tools
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekfifteen/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Fifteen: Retrieval Augmented Generation for Document
+Engineering](../../slides/weekfifteen/)
