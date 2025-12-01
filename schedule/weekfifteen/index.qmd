@@ -38,6 +38,9 @@ toc-expand: 3
   - Students continue to give brief project demonstration to course instructor
   - Use installed software tools for document engineering skill-check six
   - Complete skill-check six during the in-person classroom session
+  - Confirm through in-person assessment that
+      - Tools like `uvx gatorgrade` work as intended
+      - You can explain the source code that you submitted
   - Please review [Week One: Introduction to Document
   Engineering](../../slides/weekone/) for a list of necessary software tools
 
