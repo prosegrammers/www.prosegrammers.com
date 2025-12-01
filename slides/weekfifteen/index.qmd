@@ -24,7 +24,7 @@ format:
 
 # Understanding RAG
 
-::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
+::: {.fragment style="margin-top: -0.75em; font-size: 0.70em;"}
 
 - {{< iconify fa6-solid lightbulb >}} **What is RAG?**
     - Combining document retrieval with text generation
@@ -34,10 +34,10 @@ format:
 
 :::
 
-::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.675em;"}
 
 - {{< iconify fa6-solid book >}} **What are this week's highlights?**
-    - A "from scratch" implementation of RAG concepts:
+    - A "from scratch" implementation of basic RAG concepts:
         - Document ingestion and preprocessing
         - Text chunking and organization
         - Simple vector-like representations
@@ -48,14 +48,17 @@ format:
 
 # Key insights for prosegrammers
 
-::: {.fragment .boxed-content .fade style="font-size: 1.0em;"}
+::: {.fragment .boxed-content .fade style="font-size: 0.8em;"}
 
 - {{< iconify fa6-solid gears >}} RAG combines retrieval and generation to
-build intelligent document systems that provide contextual answers
-- {{< iconify fa6-solid book >}} Simple implementations using basic Python
-can demonstrate core RAG concepts without complex libraries
+build intelligent document systems that provide meaningful, contextualized
+answers
+- {{< iconify fa6-solid book >}} Simple implementations using basic Python can
+demonstrate core RAG concepts without requiring use of complex libraries
 - {{< iconify fa6-solid code >}} Understanding RAG fundamentals helps
-prosegrammers design better document-based applications
+prosegrammers design better document engineering tools and pipelines
+- {{< iconify fa6-solid rocket >}} You can leverage these insights to build a
+more full-featured system using packages `SentenceTransformers` and `FAISS`!
 
 :::
 
