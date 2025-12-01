@@ -83,16 +83,16 @@ topics or processes.
 
 :::
 
-::: {.fragment style="margin-top: -0.05em; font-size: 0.775em;"}
+::: {.fragment style="margin-top: -0.05em; font-size: 0.75em;"}
 
-- {{< iconify fa6-solid bullhorn >}} This week's content aids in the
-attainment of learning objectives **CS-104-3** and **CS-104-4**!
+- {{< iconify fa6-solid bullhorn >}} Content aids in attainment of learning
+objectives **CS-104-3** and **CS-104-4**!
 
 :::
 
 # Document ingestion and preprocessing
 
-::: {.incremental style="margin-top: -0.45em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.45em; font-size: 0.65em;"}
 
 - {{< iconify fa6-solid file-import >}} **Document ingestion** loads text
 data into a processing pipeline
@@ -113,7 +113,7 @@ data into a processing pipeline
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 from typing import List
 
 def read_document(content: str) -> str:
@@ -132,8 +132,8 @@ print(f"Preview: {doc_content[:80]}...")
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
 - Simple document loading from string content
-- Normalize text by removing extra whitespace
-- **Key concept**: RAG starts with loading documents into memory
+- Normalize text by removing extra blank spaces
+- **Key insight**: RAG starts with loading documents into memory
 
 :::
 
