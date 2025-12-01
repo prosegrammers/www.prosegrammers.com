@@ -369,6 +369,7 @@ relevant chunks for a query
   - Find supporting information
   - Build knowledge-grounded responses
   - Enable question answering
+  - Offer input to a local or cloud-based LLM
 
 :::
 
