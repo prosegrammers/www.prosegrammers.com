@@ -387,7 +387,8 @@ def retrieve_chunks(query: str, chunks: List[str], top_k: int = 2) -> List[Tuple
     for chunk in chunks:
         chunk_vec = create_word_vector(chunk)
         score = compute_overlap(query_vec, chunk_vec)
-        scored_chunks.append((chunk, score))
+        if score > 0:
+            scored_chunks.append((chunk, score))
     scored_chunks.sort(key=lambda x: x[1], reverse=True)
     return scored_chunks[:top_k]
 
@@ -586,18 +587,17 @@ def generate_detailed_response(query: str, retrieved: List[Tuple[str, float]]) -
     return '\n'.join(response_parts)
 
 query = "How do prosegrammers work?"
-chunks = ["Prosegrammers combine programming and writing skills", "Document tools automate content creation", "Analysis techniques improve document quality"]
+chunks = ["Prosegrammers combine programming and writing skills", "Prosegrammers use Python to create and analyze documents", "Document tools automate content creation", "Achieve learning objectives in document engineering"]
 retrieved = retrieve_chunks(query, chunks, top_k=2)
 response = generate_detailed_response(query, retrieved)
-print(f"Query: {query}\n")
+print(f"Query: {query}")
 print(response)
 ```
 
-::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
+::: {.incremental style="margin-top: -0.3em; font-size: 0.65em;"}
 
-- Synthesize information from multiple chunks
-- Present comprehensive answer
-- **Better responses use more context**
+- Synthesize information from multiple chunks and present full answer
+- Better responses use more context; **can you explain why these match**?
 
 :::
 
@@ -616,16 +616,14 @@ combines all components
 - {{< iconify fa6-solid lightbulb >}} **Real-world applications**
   - Question answering systems
   - Document search assistants
-  - Knowledge base chatbots
-  - Technical documentation helpers
 
 :::
 
-## Building a complete RAG system
+## Complete RAG system
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 def simple_rag_system(documents: List[str], query: str, top_k: int = 2) -> str:
     """Complete RAG pipeline from documents to response."""
     all_chunks = []
@@ -637,10 +635,10 @@ def simple_rag_system(documents: List[str], query: str, top_k: int = 2) -> str:
     response = generate_detailed_response(query, retrieved)
     return response
 
-docs = ["Document engineering uses Python to analyze text. Tools help automate writing tasks.", "Prosegrammers combine programming skills with technical writing. They create better documentation systems."]
+docs = ["Students use a laptop computer for document engineering. The laptop is equipped with software like VSCode and a terminal window.", "Document engineering uses Python to analyze text. Tools help automate writing tasks.", "Prosegrammers combine programming skills with technical writing. They create better documentation systems.", "They achieve learning objectives and attend class."]
 query = "What tools do prosegrammers use?"
 response = simple_rag_system(docs, query)
-print(f"Query: {query}\n")
+print(f"Query: {query}")
 print(response)
 ```
 
@@ -649,7 +647,6 @@ print(response)
 - Integrate all RAG components
 - Process multiple documents
 - Return context-aware response
-- **Complete working system**
 
 :::
 
@@ -657,7 +654,7 @@ print(response)
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 def rag_with_sources(documents: List[str], query: str) -> None:
     """RAG system showing retrieval and generation steps."""
     all_chunks = []
@@ -674,14 +671,6 @@ def rag_with_sources(documents: List[str], query: str) -> None:
 docs = ["RAG systems retrieve relevant documents", "Retrieved information grounds generated responses", "Context improves answer quality"]
 rag_with_sources(docs, "How does RAG work?")
 ```
-
-::: {.incremental style="margin-top: -0.3em; font-size: 0.7em;"}
-
-- Show retrieval step explicitly
-- Display source chunks with scores
-- **Transparency in RAG process**
-
-:::
 
 # Enhancing RAG
 
@@ -722,6 +711,8 @@ rag_with_sources(docs, "How does RAG work?")
 
 - {{< iconify fa6-solid lightbulb >}} **What are some practical ways in which
 you could integrate RAG into your document engineering tool? How will you
-extend the starting implementation presented this week?**
+extend the starting implementation presented this week? Make sure to listen to
+[SE Radio Episode 690: Kacper Łukawski on Qdrant Vector
+Database](https://se-radio.net/2025/10/se-radio-691-kacper-lukawski-on-qdrant-vector-database/)**!
 
 :::
