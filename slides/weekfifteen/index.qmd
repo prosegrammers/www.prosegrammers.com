@@ -248,7 +248,7 @@ for i, chunk in enumerate(chunks, 1):
 
 # Vector-like entities
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.45em; font-size: 0.725em;"}
 
 - {{< iconify fa6-solid vector-square >}} **Vector representations** encode
 text as numerical values
@@ -263,27 +263,33 @@ text as numerical values
   - Basic similarity through overlap
   - Demonstrates core concept simply
 
+- {{< iconify fa6-solid rocket >}} **Better to use `SentenceTransformers` or a
+cloud-based API for an LLM!**
+
 :::
 
 ## Tools for vector embeddings
 
-::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -0.2em; font-size: 0.8em;"}
 
-- {{< iconify fa6-solid box >}} **Popular embedding tools**:
-  - **Sentence Transformers**: Pre-trained models for semantic embeddings
+- {{< iconify fa6-solid box >}} **Popular embedding tools and packages**:
+  - **SentenceTransformers**: Pre-trained models for semantic embeddings
   - **OpenAI Embeddings API**: Cloud-based embedding generation
   - **Hugging Face Transformers**: Open-source embedding models
   - **FAISS**: Efficient similarity search for vectors
   - **ChromaDB**: Vector database for RAG systems
   - **Pinecone**: Managed vector database service
+  - **Qdrant**: Vector search and storage solutions
 
 :::
 
-::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+::: {.fragment .boxed-content style="margin-top: -0.3em; font-size: 0.65em;"}
 
-- {{< iconify fa6-solid lightbulb >}} **For this course**: We use simple
-word-based representations to understand concepts without external
-dependencies
+- {{< iconify fa6-solid lightbulb >}} **For this course**: Simple word-based
+representations without external dependencies!
+- {{< iconify fa6-solid microphone >}} **Want to learn more?** [SE Radio 690:
+Kacper Łukawski on Qdrant Vector
+Database](https://se-radio.net/2025/10/se-radio-691-kacper-lukawski-on-qdrant-vector-database/)
 
 :::
 
