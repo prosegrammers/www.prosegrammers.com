@@ -471,9 +471,7 @@ print(context)
 
 ::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
 
-- Format query with retrieved chunks
-- Create structured context
-- **Ready for response generation**
+- Format query with retrieved chunks and create structured context
 
 :::
 
@@ -496,24 +494,22 @@ formatted = format_context_with_sources("prosegrammer skills", retrieved)
 print(formatted)
 ```
 
-::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+::: {.incremental style="margin-top: -0.8em; font-size: 0.775em;"}
 
-- Add source tracking to context
-- Include relevance scores
-- **Transparency in information sources**
+- Add source tracking to context and include relevance scores
 
 :::
 
-# Generating responses with context
+# Context-driven data
 
-::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.35em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid comment-dots >}} **Response generation** creates
 answers using retrieved context
   - Extract relevant information
   - Synthesize coherent responses
   - Maintain factual grounding
-  - In practice, uses language models
+  - In practice, uses (large) language models
 
 - {{< iconify fa6-solid lightbulb >}} **Simple generation approach**
   - Template-based responses
@@ -537,11 +533,12 @@ answers using retrieved context
 
 :::
 
-::: {.fragment style="margin-top: 0.1em; font-size: 0.8em;"}
+::: {.fragment .boxed-content style="margin-top: 0.1em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid lightbulb >}} **For this course**: We use
-template-based generation to demonstrate the concept without requiring
-external APIs
+template-based generation to demonstrate the concept without requiring external
+APIs or packages. This approach generates an interesting result! Yet, not
+general-purpose enough to be used in a production RAG tool.
 
 :::
 
