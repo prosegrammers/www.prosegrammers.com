@@ -432,7 +432,7 @@ explain_relevance("document tools", "Document engineering creates tools for writ
 
 # Combining retrieved context with queries
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.45em; font-size: 0.7em;"}
 
 - {{< iconify fa6-solid layer-group >}} **Context combination** merges
 query with retrieved information
