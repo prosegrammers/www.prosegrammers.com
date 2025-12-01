@@ -297,7 +297,7 @@ Database](https://se-radio.net/2025/10/se-radio-691-kacper-lukawski-on-qdrant-ve
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 10
+#| max-lines: 8
 from typing import Dict
 
 def create_word_vector(text: str) -> Dict[str, int]:
@@ -315,11 +315,10 @@ for word, count in sorted(vector.items()):
     print(f"  {word}: {count}")
 ```
 
-::: {.incremental style="margin-top: -0.2em; font-size: 0.775em;"}
+::: {.incremental style="margin-top: -0.2em; font-size: 0.725em;"}
 
-- Represent text as word frequency dictionary
-- Each word becomes a feature dimension
-- **Simple but demonstrates vectorization concept**
+- See text as word frequency dictionary, each word becomes a "feature
+dimension"
 
 :::
 
@@ -350,10 +349,11 @@ print(f"Shared words: {set(query_vec.keys()) & set(chunk_vec.keys())}")
 - Calculate overlap between word sets
 - Higher overlap means higher relevance
 - **Basis for retrieval ranking**
+- **Sophistated systems use cosine similarity or other metrics!**
 
 :::
 
-# Find relevant documents
+# Relevant documents
 
 ::: {.incremental style="margin-top: -0.35em; font-size: 0.725em;"}
 
