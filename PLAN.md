@@ -18,12 +18,24 @@ specifically the rules and regulations that you follow as a coding agent.
 `slides/weekfifteen/index.qmd` that introduce how to perform retrieval augmented
 generation (RAG). I do not want any of the slides to use functions from packages
 like `nltk` or `spacy` or `gensim` or `SentenceTransformers`. I want to only
-introduce basic concepts of retrieval by explaining them with bullet points and
-examples and then adding source code examples that students can try out and run
-in the slides with `{pyodide}` blocks.
-- [ ] 
-- [ ] Here is what I want you to add to the slides:
-    - Tokenization
+introduce basic concepts of retrieval augmented generation by explaining them
+with bullet points and examples and then adding source code examples that
+students can try out and run in the slides with `{pyodide}` blocks.
+- [ ] If there are specific tools that would normally be used for a specific
+step in the RAG pipeline, then please reference them in a bulleted list
+and explain what they do. However, you cannot make the slides `import` those
+packages in Python or install a tool, like a vector database, on a computer.
+- [ ] The high-level workflow that you should start with is as follows:
+    - Document ingestion
+    - Data cleaning and preprocessing
+    - Converting text to chunks
+    - Create and store vector embeddings
+    - Retrieve relevant documents based on user queries
+    - Make it clear how the documents are relevant with simple examples
+    - Combine retrieved documents with user queries
+    - Generate responses using a language model
+- Please note that you cannot use any external packages that are not part of
+the Python standard library to complete any of these steps.
 - Again, none of the slides should use functions that come from any external
 package that is available on PyPI or through any external site. All the content
 must be from the standard Python library. It has to be simple and implemented
@@ -40,6 +52,11 @@ from scratch!
   - `slides/weekten/index.qmd` ... and see how I am currently using Markdown and
   Quarto in my slides! There are also slides in other directories and you can
   preview them as well.
+- [ ] You should definitely review the slides from `weekthirteen` called
+"Natural Language Processing for Document Engineering" as this will illustrate
+how I taught the students about some of the NLP concepts you can build on in
+this slide deck. Again, notice that none of that content uses an external
+package, it is all "simple" and also "built from scratch".
 - [ ] Please do not use Markdown or Quarto formats that I am not currently using
 in my slides to make sure that the content has a consistent format.
 - [ ] If you check the `index.qmd` file in this GitHub repository, you can see a
