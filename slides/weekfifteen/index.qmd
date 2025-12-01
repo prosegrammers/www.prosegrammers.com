@@ -1,0 +1,110 @@
+---
+title: "Retrieval Augmented Generation for Document Engineering"
+echo: true
+description: "Build functions for advanced document analysis"
+date: "2025-12-01"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  freeze: auto
+format:
+  live-revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    html-math-method: mathjax
+    footer: "Prosegrammers"
+    mermaid:
+      theme: default
+---
+
+# Retrieval augmented generation
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **What is NLP for document
+engineering?**
+    - Breaking text into meaningful units
+    - Extracting key information from documents
+    - Analyzing language patterns
+    - Building tools to understand written content
+
+:::
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.70em;"}
+
+- {{< iconify fa6-solid book >}} **What are this week's highlights?**
+    - A "from scratch" implementation of several key NLP techniques:
+        - Tokenization and segmentation
+        - Stemming and lemmatization
+        - Keyword extraction and frequency analysis
+        - Build keyword in context tools
+
+:::
+
+# Key insights for prosegrammers
+
+::: {.fragment .boxed-content .fade style="font-size: 1.0em;"}
+
+- {{< iconify fa6-solid gears >}} Natural language processing transforms raw
+text into structured data that programs can more easily analyze
+- {{< iconify fa6-solid book >}} Although great packages exist, simple
+algorithms handle common NLP tasks without external libraries
+- {{< iconify fa6-solid code >}} Understanding basic NLP helps prosegrammers
+build their own powerful document analysis tools
+
+:::
+
+## Course learning objectives
+
+::: {.fragment .callout-note icon=true title="Learning Objectives for
+Document Engineering"}
+
+- **CS-104-1**: Explain processes such as software installation or
+design for a variety of technical and non-technical audiences ranging
+from inexperienced to expert.
+- **CS-104-2**: Use professional-grade integrated development
+environments (IDEs), command-line tools, and version control systems to
+compose, edit, and deploy well-structured, web-ready documents and
+industry-standard documentation tools.
+- **CS-104-3**: Build automated publishing pipelines to format, check,
+and ensure both the uniformity and quality of digital documents.
+- **CS-104-4**: Identify and apply appropriate conventions of a variety
+of technical communities, tools, and computer languages to produce
+industry-consistent diagrams, summaries, and descriptions of technical
+topics or processes.
+
+:::
+
+::: {.fragment style="margin-top: -0.05em; font-size: 0.775em;"}
+
+- {{< iconify fa6-solid bullhorn >}} This week's content aids in the attainment
+of learning objective **CS-104-3**!
+
+:::
+
+## Key takeaways for prosegrammers
+
+::: {.incremental style="margin-top: 0.1em; font-size: 0.7em;"}
+
+- {{< iconify fa6-solid scissors >}} **Master text processing
+fundamentals**
+  - Tokenization splits text into analyzable units
+  - Segmentation divides documents into sentences and paragraphs
+  - Stemming and lemmatization normalize word forms
+
+- {{< iconify fa6-solid chart-bar >}} **Build powerful analysis tools**
+  - Word frequency reveals document themes and patterns
+  - Stop word removal focuses on meaningful content
+  - Keyword extraction identifies important terms automatically
+
+- {{< iconify fa6-solid lightbulb >}} **Understand context and usage**
+  - KWIC displays show how words are used in practice
+  - Combine techniques to build sophisticated document tools
+  - Simple algorithms handle many real-world NLP tasks
+
+:::
