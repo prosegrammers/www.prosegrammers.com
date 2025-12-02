@@ -1,0 +1,41 @@
+---
+title: "Project Critique for `FastAPI`"
+description: "Evaluating a project's documentation"
+date: "2025-12-03"
+date-format: long
+author: Anshu Pathak, Logan Butler, Tien DeLong-Headley
+execute:
+  echo: true
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Prosegrammers"
+---
+## 1. What is FastAPI overall?
+
+## 2. How well documented is FastAPI?
+
+## 2a. Discuss overall layout in detail
+
+## 2b. Introduce major feature 1 based on the FastAPI docs' ability to explain it
+
+## 2c. Introduce major feature 2 based on the FastAPI docs' ability to explain it
+
+## 2d. Introduce major feature 3 based on the FastAPI docs' ability to explain it
+
+
+## 3. Critique of overall documentation features and layout
+
+## 4. Is FastAPI a worthwhile tool?
+
+## 4a. Minor comparison to a competitor tool like django (since we were introduced to it before)
+
+## 4b. Overview of strengths of FastAPI docs
+
+## 4c. Overview of weaknesses
