@@ -1,0 +1,19 @@
+---
+title: "Project Critique for `Pyrefly`"
+description: "Evaluating a project's documentation"
+date: "2025-12-03"
+date-format: long
+author: V Rieger, Brandon Thompson
+execute:
+  echo: true
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Prosegrammers"
+---
