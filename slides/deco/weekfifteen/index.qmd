@@ -1,0 +1,20 @@
+---
+title: "Understanding the Zettelkasten Method"
+description: "A document-engineering perspective"
+date: "2025-12-2"
+date-format: long
+author: "Hank Grefenstette, Brandon Ladakos"
+execute:
+  echo: true
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Prosegrammers"
+---
+
