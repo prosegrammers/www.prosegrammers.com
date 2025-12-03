@@ -1,0 +1,62 @@
+---
+title: "Digital Gardening"
+description: "A short introduction to digital gardening, an approach to organizing and sharing ideas online as living, evolving notes rather than finished posts"
+date: "2025-12-03"
+date-format: long
+author: Chezka Quinola, Krish Yendluri, DJ Battle
+execute:
+  echo: true
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Prosegrammers"
+---
+
+# Digital Gardening
+
+<!--- DJ -->
+## Introduction
+
+
+## Origins and Context
+
+
+<!--- Chezka -->
+## Core Principle: Ever Evolving Content
+
+
+## Core Principle: Networked Structure
+
+
+## Core Principle: Atomic Notes
+
+
+## Core Principle: Transparency and Work in Progress
+
+
+## Core Principle: Flexible Navigation
+
+
+<!--- Krish -->
+## Why Digital Gardening Matters
+
+
+## Anatomy of a Digital Garden
+
+
+## Tools and How to Build One
+
+
+## Challenges
+
+
+## Who Benefits
+
+
+## Conclusion
