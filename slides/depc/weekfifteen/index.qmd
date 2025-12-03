@@ -23,13 +23,33 @@ format:
 
 ## 2a. Discuss overall layout in detail
 
-## 2b. Introduce major feature 1 based on the FastAPI docs' ability to explain it
+# Automatic Interactive Documentation
 
-## 2c. Introduce major feature 2 based on the FastAPI docs' ability to explain it
+::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+- States that FastAPI automatically generates OpenAPI schemas from your code.
+- Introduces the two documentation UIs , Swagger UI and ReDoc.
+- Shows how different examples of each types
+- Gives links to each types github
+- Lacks indepth explantation of feature and differences between Swagger UI and ReDoc.
+:::
 
-## 2d. Introduce major feature 3 based on the FastAPI docs' ability to explain it
+# High Performance
 
+::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+- Explains its on par with NodeJS and GO
+- You have to click two seperate links before getting to an explantation page
+- Benchmarks are an outside website not on the actual FastAPI website.
+- Lacks indepth explantation of why and how fast FastAPI actually is.
+:::
+# Dependency Injection
 
+::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+- Introduces the Depends() system as a simple way to declare reusable logic.
+- Demonstrates how dependencies can handle tasks like authentication, database sessions, or common parameters.
+- Explains that dependencies can be nested, allowing complex logic to be broken into smaller reusable pieces.
+- Emphasizes that dependency injection keeps code modular, testable, and easier to maintain.
+- No link to dependency section of documention on features tab.
+:::
 ## 3. Critique of overall documentation features and layout
 
 ## 4. Is FastAPI a worthwhile tool?
