@@ -45,18 +45,20 @@ format:
 
 <!--- Chezka -->
 ## Core Principle: Ever Evolving Content
-
+A digital garden treats ideas as ongoing projects rather than final products. Notes are regularly updated as your understanding deepens, allowing concepts to grow gradually. Instead of aiming for perfection, the focus is on continual refinement and long term learning.
 
 ## Core Principle: Networked Structure
-
+Digital gardens use links to connect related ideas, forming a web rather than a linear feed. This structure mirrors how people actually think, making it easier to see relationships, trace influences, and follow curiosity across topics.
 
 ## Core Principle: Atomic Notes
-
+Information is broken into small, focused pieces that each cover a single idea. These atomic notes are easier to write, update, and connect. Over time, they create a rich, modular knowledge system that can be reused and recombined in different ways.
 
 ## Core Principle: Transparency and Work in Progress
-
+Gardens make it normal to share drafts, half formed thoughts, and evolving ideas. This transparency highlights the process behind learning rather than hiding it. Readers can watch ideas unfold, and creators can experiment without pressure to be polished.
 
 ## Core Principle: Flexible Navigation
+Instead of scrolling through posts in chronological order, readers can explore through tags, links, maps, or graphs. This flexibility allows people to move through the garden in any direction, discovering new connections and building their own paths through the material.
+
 
 
 <!--- Krish -->
