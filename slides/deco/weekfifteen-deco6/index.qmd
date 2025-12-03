@@ -22,26 +22,36 @@ format:
 
 <!--- DJ -->
 ## Introduction
--A Next.js site that curates evolving “digital gardens,” displaying interlinked MDX-based notes.
+- A Next.js site that curates evolving “digital gardens,” displaying
+    interlinked MDX-based notes.
 
--Uses next-mdx-remote to render MDX, with TailwindCSS for styling and a layout wrapper.
+- Uses `next-mdx-remote` to render MDX, with Tailwind CSS for styling and a
+    layout wrapper.
 
--Includes key views: homepage highlighting gardens/tools, directory of all gardens, and dynamic slug pages for individual entries.
+- Includes key views: homepage highlighting gardens and tools, a directory of
+    all gardens, and dynamic slug pages for individual entries.
 
 ## Origins and Context
--Rooted in digital gardening concepts from Mike Caulfield, later expanded by Tom Critchlow, Joel Hooks, and Maggie Appleton.
+- Rooted in digital gardening concepts from Mike Caulfield, later expanded by
+    Tom Critchlow, Joel Hooks, and Maggie Appleton.
 
--Inherits practices from wikis, Zettelkasten, and knowledge-graph systems emphasizing non-linear, incremental publishing.
+- Inherits practices from wikis, Zettelkasten, and knowledge-graph systems,
+    emphasizing non-linear, incremental publishing.
 
--Technically grounded in the MDX + static-site ecosystem (Next.js, Gatsby, Jekyll) and supports bidirectional linking.
+- Technically grounded in the MDX + static-site ecosystem (Next.js, Gatsby,
+    Jekyll) and supports bidirectional linking.
 
--Designed to showcase notable digital gardens, tools, and the philosophies behind networked note-taking.
+- Designed to showcase notable digital gardens, tools, and the philosophies
+    behind networked note-taking.
 
--Acts as a starter kit for writers, researchers, and developers building evolving, public knowledge bases.
+- Acts as a starter kit for writers, researchers, and developers building
+    evolving, public knowledge bases.
 
--README.md serves as a theory-and-tools hub, providing examples and foundations for new garden structures.
+- README.md serves as a theory-and-tools hub, providing examples and
+    foundations for new garden structures.
 
--Future facing stack prepared for enhancements like Algolia search (via build-search.js), expanded content, and richer metadata.
+- Future-facing stack prepared for enhancements like Algolia Search (via
+    `build-search.js`), expanded content, and richer metadata.
 
 <!--- Chezka -->
 
@@ -56,7 +66,7 @@ updates = ["Added links", "Tried a p5.js sketch", "Expanded definition"]
 
 for update in updates:
     print(f"Growing note: {update}")
-````
+```
 
 ## Core Principle: Networked Structure
 
@@ -82,7 +92,7 @@ Each note is a tiny tile in a larger mosaic. Small notes are easier to write and
 
 ```python
 atomic_note = {
-    "title": "What Is a Fractal",
+    "title": "What Is a Fractal?",
     "definition": "A shape made of smaller copies of itself, often used in generative art."
 }
 
@@ -134,12 +144,12 @@ for item in nav:
 - Use note apps like Obsidian or Notion
 - Publish with simple tools like Quartz
 - Start with just text files and links
-- Add fancy features later if you want
+- Add fancy features later, if you want
 
 ## Challenges
 - It feels weird to share unfinished ideas
 - Setting up the tech can be tricky
-- Hard to stay consistent with updating
+- Hard to stay consistent with updates
 - Easy to spend more time organizing than writing
 
 ## Who Benefits
