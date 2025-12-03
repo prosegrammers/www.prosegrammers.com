@@ -1,6 +1,6 @@
 ---
 title: "Digital Gardening"
-description: "A short introduction to digital gardening, an approach to organizing and sharing ideas online as living, evolving notes rather than finished posts"
+description: "Seeing documents as digital gardens"
 date: "2025-12-03"
 date-format: long
 author: Chezka Quinola, Krish Yendluri, DJ Battle
