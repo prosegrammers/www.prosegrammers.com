@@ -1,7 +1,7 @@
 ---
 title: "Project Critique for `FastAPI`"
 description: "Evaluating a project's documentation"
-date: "2025-12-03"
+date: "2025-12-01"
 date-format: long
 author: Anshu Pathak, Logan Butler, Tien DeLong-Headley
 execute:
@@ -35,7 +35,8 @@ format:
 - Examples are easy to follow but often stay basic.
 - Pages mix “how to do it” with “what it is.”
 - Doesn’t clearly explain when to use Swagger UI vs. ReDoc.
-- Mentions some helpful features, but misses deeper explanation or real-world guidance.
+- Mentions some helpful features, but misses deeper explanation or real-world
+guidance.
 
 :::
 
@@ -43,25 +44,34 @@ format:
 ## High Performance
 
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - Explains it's on par with NodeJS and GO
 - You have to click two separate links before getting to an explanation page
 - Benchmarks are an outside website not on the actual FastAPI website.
 - Lacks indepth explanation of why and how fast FastAPI actually is.
+
 :::
+
 ## Dependency Injection
 
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - Introduces the Depends() system as a simple way to declare reusable logic.
-- Demonstrates how dependencies can handle tasks like authentication, database sessions, or common parameters.
-- Explains that dependencies can be nested, allowing complex logic to be broken into smaller reusable pieces.
-- Emphasizes that dependency injection keeps code modular, testable, and easier to maintain.
+- Demonstrates how dependencies can handle tasks like authentication, database
+sessions, or common parameters.
+- Explains that dependencies can be nested, allowing complex logic to be broken
+into smaller reusable pieces.
+- Emphasizes that dependency injection keeps code modular, testable, and easier
+to maintain.
 - No link to dependency section of documentation on features tab.
+
 :::
 
 ## Critique of Overall Documentation Features and Layout
 
 ### Strengths
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - **Strong reference documentation**
   - Clear API signatures, parameters, defaults, and behavior.
   - Reliable for looking up low-level details.
@@ -69,11 +79,15 @@ format:
 - **Beginner-friendly introductory material**
   - Quickstart/tutorial content with runnable examples.
   - Clear demonstration through interactive docs.
+
 :::
+
 ---
 
 ### Weaknesses (Diátaxis Misalignments)
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - **Blurring of documentation modes**
   - Many pages mix tutorial, reference, and conceptual info.
   - Harder for readers to know *what type of help* a page provides.
@@ -81,11 +95,13 @@ format:
 - **Limited “Explanation” content**
   - Lacks deep discussion of architectural trade-offs or design philosophy
   - Makes advanced use harder to reason about.
+
 :::
 
 ---
 
 ### Structural Gaps
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
 - No “documentation map” guiding users to:
   - *learn* (tutorials)
@@ -94,50 +110,68 @@ format:
   - *look up* (reference)
 - Docs scale well for small projects, but guidance diminishes for large / complex systems.
 - Real-world patterns and best practices are scattered instead of clearly organized.
+
 :::
 
 ## Is FastAPI a Worthwhile Tool for Beginners?
 
 ### Overall Assessment
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
 - **Yes—kind of.**
   - The learning curve is gentle for small projects due to excellent beginner-oriented examples.
   - Type-hint-driven design gives immediate feedback and intuitive API creation.
   - The interactive docs make it easy for beginners to visualize results.
+
 :::
+
 ---
 
 ### Benefits for Beginners
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - Quick “first success”: build a working API in minutes.
 - Automatic validation reduces trial-and-error.
 - Clear, example-driven introductory material.
+
 :::
+
 ---
 
 ### Challenges for Beginners
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - As projects grow, beginners may struggle:
   - Fewer conceptual explanations for *why* things work the way they do.
   - Less guidance on project structure, testing strategies, deployment patterns.
 - Beginners transitioning to intermediate users may find gaps in “How-to” style documentation.
+
 :::
+
 ---
 
 ## Minor Comparison: FastAPI vs. Django Documentation
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - **Django has more mature Diátaxis structure:**
   - Clear separation between tutorials, topic guides, reference, and how-tos.
   - Rich conceptual explanations (for things like tool architecture)
   - Strong real-world “how-tos”.
+
 :::
 ---
 
 ### How FastAPI Differs
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
+
 - FastAPI is easier to *start* with, but Django is easier to *grow* with.
 - FastAPI’s docs favor code-first examples while Django’s favors structured learning.
 - Django’s documentation ecosystem is extensive while FastAPI’s is still growing.
+
 :::
 
 ## Overview of strengths of FastAPI docs
@@ -148,9 +182,11 @@ format:
 - Built-in interactive API docs explained well.
 - Good beginner-friendly introductions.
 - Frequently updated and maintained.
+
 :::
 
 ## Overview of weaknesses of FastAPI docs
+
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
 
 - Some topics feel lightly explained.
@@ -158,6 +194,7 @@ format:
 - Large-project advice is limited.
 - Dependency system needs deeper examples.
 - Sections sometimes mix concepts and tutorials.
+
 :::
 
 # Questions?
