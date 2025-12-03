@@ -43,7 +43,7 @@ format:
 ## High Performance
 
 ::: {.incremental .fade-right style="margin-top: -0.2em; font-size: 0.775em;"}
-- Explains its on par with NodeJS and GO
+- Explains it's on par with NodeJS and GO
 - You have to click two separate links before getting to an explanation page
 - Benchmarks are an outside website not on the actual FastAPI website.
 - Lacks indepth explanation of why and how fast FastAPI actually is.
