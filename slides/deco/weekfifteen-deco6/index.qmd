@@ -1,0 +1,165 @@
+---
+title: "Digital Gardening"
+description: "A short introduction to digital gardening, an approach to organizing and sharing ideas online as living, evolving notes rather than finished posts"
+date: "2025-12-03"
+date-format: long
+author: Chezka Quinola, Krish Yendluri, DJ Battle
+execute:
+  echo: true
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Prosegrammers"
+---
+
+# Digital Gardening
+
+<!--- DJ -->
+## Introduction
+- A Next.js site that curates evolving “digital gardens,” displaying
+    interlinked MDX-based notes.
+
+- Uses `next-mdx-remote` to render MDX, with Tailwind CSS for styling and a
+    layout wrapper.
+
+- Includes key views: homepage highlighting gardens and tools, a directory of
+    all gardens, and dynamic slug pages for individual entries.
+
+## Origins and Context
+- Rooted in digital gardening concepts from Mike Caulfield, later expanded by
+    Tom Critchlow, Joel Hooks, and Maggie Appleton.
+
+- Inherits practices from wikis, Zettelkasten, and knowledge-graph systems,
+    emphasizing non-linear, incremental publishing.
+
+- Technically grounded in the MDX + static-site ecosystem (Next.js, Gatsby,
+    Jekyll) and supports bidirectional linking.
+
+- Designed to showcase notable digital gardens, tools, and the philosophies
+    behind networked note-taking.
+
+- Acts as a starter kit for writers, researchers, and developers building
+    evolving, public knowledge bases.
+
+- README.md serves as a theory-and-tools hub, providing examples and
+    foundations for new garden structures.
+
+- Future-facing stack prepared for enhancements like Algolia Search (via
+    `build-search.js`), expanded content, and richer metadata.
+
+<!--- Chezka -->
+
+## Core Principle: Ever Evolving Content
+Think of your ideas like plants that never stop growing. You can water them later, trim them, or let them bloom into something totally new. A note you write today might look completely different next month, and that is part of the fun.
+
+**Example:**
+```python
+# idea_seed.py
+note = "I want to learn creative coding."
+updates = ["Added links", "Tried a p5.js sketch", "Expanded definition"]
+
+for update in updates:
+    print(f"Growing note: {update}")
+```
+
+## Core Principle: Networked Structure
+
+Instead of one long path, a garden branches out in all directions. Notes connect to other notes so ideas can cross pollinate. Readers can hop from concept to concept like moving between garden beds.
+
+**Example link map:**
+
+```python
+graph = {
+    "Creative Coding": ["Generative Art", "p5.js Experiments"],
+    "Generative Art": ["Randomness"],
+}
+
+for node, links in graph.items():
+    print(f"{node} -> {', '.join(links)}")
+```
+
+## Core Principle: Atomic Notes
+
+Each note is a tiny tile in a larger mosaic. Small notes are easier to write and update, and they can snap together like Lego bricks to form big ideas.
+
+**Example atomic note:**
+
+```python
+atomic_note = {
+    "title": "What Is a Fractal?",
+    "definition": "A shape made of smaller copies of itself, often used in generative art."
+}
+
+print(atomic_note["title"], ":", atomic_note["definition"])
+```
+
+## Core Principle: Transparency and Work in Progress
+
+Digital gardens celebrate messy drafts. You can show your thinking as it unfolds, not just the polished final version. Readers get to see the real process behind your ideas.
+
+**Example WIP tag:**
+
+```python
+note_status = "🌱 Growing"
+draft_content = ["intro written", "needs sketches", "needs examples"]
+
+print("Status:", note_status)
+print("To do:", draft_content)
+```
+
+## Core Principle: Flexible Navigation
+
+There is no single correct path through your garden. People can explore by tags, maps, links, or even graphs. It feels more like wandering than scrolling.
+
+**Example navigation block:**
+
+```python
+nav = ["Design Principles", "Visual Experiments", "Tools I Use"]
+
+for item in nav:
+    print("Explore:", item)
+```
+
+
+<!--- Krish -->
+## Why Digital Gardening Matters
+- Share your ideas as they grow, not just when they're "perfect"
+- Connect your thoughts together like a web, not a timeline
+- Learn and share at the same time
+- Build your own personal Wikipedia
+
+## Anatomy of a Digital Garden
+- A collection of notes that link to each other
+- Some notes are new ideas, others are fully developed
+- Pages grow and change over time
+- Easy to jump between related topics
+
+## Tools and How to Build One
+- Use note apps like Obsidian or Notion
+- Publish with simple tools like Quartz
+- Start with just text files and links
+- Add fancy features later, if you want
+
+## Challenges
+- It feels weird to share unfinished ideas
+- Setting up the tech can be tricky
+- Hard to stay consistent with updates
+- Easy to spend more time organizing than writing
+
+## Who Benefits
+- Students organizing their learning
+- Writers working through ideas
+- Anyone who wants to share what they're learning
+- People tired of traditional blogs
+
+## Conclusion
+- Digital gardens change how we share knowledge online
+- They value growth and connections over perfection
+- Start small, tend regularly, and let your garden evolve
+- Your messy, growing garden is better than a perfect blog that never starts
