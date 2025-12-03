@@ -18,3 +18,29 @@ format:
     footer: "Prosegrammers"
 ---
 
+## What is the Zettelkasten Method?
+
+The Zettelkasten Method is a system of linked notes that form a growing
+network of ideas. Each note captures one concept and connects to others,
+creating a personal knowledge graph rather than a linear notebook.
+
+## How it works 
+
+- It's hypertextual
+    - Each note links and refers to related ideas
+- Adheres to principles of atomicity
+    - The idea that each note connected not builds off the last
+- Content is stored as a reusable block
+    - Each note is assigned a unique id that can be refered to
+
+## What is a Zettel
+
+- Represents a **single idea** stored in an independent note
+- Its **unique identifier** alowws it to connecte to relateated notes through links and references
+- This moduluar structure supports **reusabilty** and **scalabilty** making ideal for creating larger ideas from smaller components
+
+## Linking & Structure
+
+- Notes connect through intentional links and references 
+- The result is a **non-linear network** of ideas and notes
+- Over time clusters of related notes can form new ideas and topics.
