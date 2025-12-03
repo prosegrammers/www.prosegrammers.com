@@ -22,10 +22,26 @@ format:
 
 <!--- DJ -->
 ## Introduction
+-A Next.js site that curates evolving “digital gardens,” displaying interlinked MDX-based notes.
 
+-Uses next-mdx-remote to render MDX, with TailwindCSS for styling and a layout wrapper.
+
+-Includes key views: homepage highlighting gardens/tools, directory of all gardens, and dynamic slug pages for individual entries.
 
 ## Origins and Context
+-Rooted in digital gardening concepts from Mike Caulfield, later expanded by Tom Critchlow, Joel Hooks, and Maggie Appleton.
 
+-Inherits practices from wikis, Zettelkasten, and knowledge-graph systems emphasizing non-linear, incremental publishing.
+
+-Technically grounded in the MDX + static-site ecosystem (Next.js, Gatsby, Jekyll) and supports bidirectional linking.
+
+-Designed to showcase notable digital gardens, tools, and the philosophies behind networked note-taking.
+
+-Acts as a starter kit for writers, researchers, and developers building evolving, public knowledge bases.
+
+-README.md serves as a theory-and-tools hub, providing examples and foundations for new garden structures.
+
+-Future facing stack prepared for enhancements like Algolia search (via build-search.js), expanded content, and richer metadata.
 
 <!--- Chezka -->
 ## Core Principle: Ever Evolving Content
