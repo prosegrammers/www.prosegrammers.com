@@ -17,7 +17,6 @@ format:
     highlight-style: github
     footer: "Prosegrammers"
 ---
-
 ## What is the Zettelkasten Method?
 
 The Zettelkasten Method is a system of linked notes that form a growing
@@ -36,11 +35,51 @@ creating a personal knowledge graph rather than a linear notebook.
 ## What is a Zettel
 
 - Represents a **single idea** stored in an independent note
-- Its **unique identifier** alowws it to connecte to relateated notes through links and references
-- This moduluar structure supports **reusabilty** and **scalabilty** making ideal for creating larger ideas from smaller components
+- Its **unique identifier** allows it to connect to related notes through links and references
+- This moduluar structure supports **reusabilty** and **scaleabilty** making ideal for creating larger ideas from smaller components
 
 ## Linking & Structure
 
 - Notes connect through intentional links and references 
 - The result is a **non-linear network** of ideas and notes
 - Over time clusters of related notes can form new ideas and topics.
+
+## Challenges and Critiques
+
+::: fragment
+
+- Time-intensive
+While notes can reference each other, each individual note must be manually written, which can be somewhat
+ineffective when dealing with larger projects.
+
+:::
+
+::: fragment
+
+- Lack of readability for other users
+Because of its non-linearity and being structured by connections between notes, it can be challenging
+for other users to navigate your notes if they are reviewing or studying them.
+
+:::
+
+
+## Takeaways
+
+::: fragment
+
+- While time-consuming, its structure allows for the user to take on larger and more complex projects if they desire
+
+:::
+
+::: fragment
+
+- Ability to reuse content through reusable notes/blocks improves convenience for authors and helps make up for repetition in other areas
+
+:::
+
+::: fragment
+
+- Designed for productivity by self-establishing guidelines
+Notes that are missing are easier to notice to the writer
+
+:::
