@@ -17,3 +17,48 @@ format:
     highlight-style: github
     footer: "Prosegrammers"
 ---
+
+## Overview of Pyrefly
+Pyrefly is a tool used mainly for type checking. Type checking is making sure that data, such as variables, are the types that they need to be. When using variables, some languages require you to specify a variables type when declaring it, like with Java. This is called a `statically typed language`. Python, however, does not require this specification, as it is a `dynamically typed language`. Dynamically typed languages have type checking occur at runtime.
+
+## Overview of Pyrefly
+Pyrefly is a way to catch errors before that happens. By using any type annotations that you may have set for a variable, it can tell you when you are assigning a value that doesn’t align with that. For example: declaring a variable as a string with a type annotation then trying to update it with an integer value will have Pyrefly flag that update to let you know there is a problem. This tool not only allows you to catch issues earlier as it works during development rather than having to wait to catch the error in runtime, but it also makes your code more readable by encouraging use of type annotations so you know more about a variable or function.
+
+## Overview of Pyrefly
+Pyrefly also acts as a language server which provides “language-specific features” to a code editor or IDE. Some of the features it provides include go to definition and find references. The former will allow you to click on where a function or class, for example, and bring you to where you defined it, and the latter does the reverse by allowing you to click on a definition and go to all of its uses.
+
+## Overview of Pyrefly's Documentation
+- Covers what Pyrefly is and why type checking matters
+- Includes guides for installation, configuration, and installation
+- Includes sections for IDE setup, CLI commands, and FAQs
+- Provides examples showing how Pyrefly finds type errors
+
+## Strengths of Pyrefly's Documentation
+- Very clear and well organized
+- Has beginner and advanced topics
+- Good code examples
+- Easy to follow steps for setup
+- Is very transparent about its limitations due to it being in beta
+
+## Weaknesses of Pyrefly's Documentation
+- Some sections lack deep detail
+- Not many real-world examples or complex use cases
+- Lacks guidance for troubleshooting
+- Some features are still marked as unstable due to it being in beta
+
+## Relation to Diataxis
+Pyrefly's documentation includes:
+
+- A section for learning about python typing - tutorial
+- Installation and configuration guides - how-to guide
+- A list of features - reference
+
+The documentation could, however, include more explanations, further breaking down some of the information.
+
+## Relation to Literate Programming
+Literate programming is about documenting your code to make it more human readable. Pyrefly does this by encouraging use of type annotations in your code. Having these type annotations can give you more information about your variables, functions, classes, etc. which makes them easier to understand.
+
+## Suggestions for improvement
+- Add real-world examples and more complex use cases
+- Create a troubleshooting section
+- Add Guidance for compatability for popular libraries
