@@ -35,7 +35,7 @@ format:
 - Examples are easy to follow but often stay basic.
 - Pages mix “how to do it” with “what it is.”
 - Doesn’t clearly explain when to use Swagger UI vs. ReDoc.
-- Mentions some helpful features, but miss deeper explanation or real-world guidance.
+- Mentions some helpful features, but misses deeper explanation or real-world guidance.
 
 :::
 
