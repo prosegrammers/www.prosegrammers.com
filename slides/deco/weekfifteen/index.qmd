@@ -1,0 +1,85 @@
+---
+title: "Understanding the Zettelkasten Method"
+description: "A document-engineering perspective"
+date: "2025-12-2"
+date-format: long
+author: "Hank Grefenstette, Brandon Ladakos"
+execute:
+  echo: true
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Prosegrammers"
+---
+## What is the Zettelkasten Method?
+
+The Zettelkasten Method is a system of linked notes that form a growing
+network of ideas. Each note captures one concept and connects to others,
+creating a personal knowledge graph rather than a linear notebook.
+
+## How it works 
+
+- It's hypertextual
+    - Each note links and refers to related ideas
+- Adheres to principles of atomicity
+    - The idea that each note connected not builds off the last
+- Content is stored as a reusable block
+    - Each note is assigned a unique id that can be refered to
+
+## What is a Zettel
+
+- Represents a **single idea** stored in an independent note
+- Its **unique identifier** allows it to connect to related notes through links and references
+- This moduluar structure supports **reusabilty** and **scaleabilty** making ideal for creating larger ideas from smaller components
+
+## Linking & Structure
+
+- Notes connect through intentional links and references 
+- The result is a **non-linear network** of ideas and notes
+- Over time clusters of related notes can form new ideas and topics.
+
+## Challenges and Critiques
+
+::: fragment
+
+- Time-intensive
+While notes can reference each other, each individual note must be manually written, which can be somewhat
+ineffective when dealing with larger projects.
+
+:::
+
+::: fragment
+
+- Lack of readability for other users
+Because of its non-linearity and being structured by connections between notes, it can be challenging
+for other users to navigate your notes if they are reviewing or studying them.
+
+:::
+
+
+## Takeaways
+
+::: fragment
+
+- While time-consuming, its structure allows for the user to take on larger and more complex projects if they desire
+
+:::
+
+::: fragment
+
+- Ability to reuse content through reusable notes/blocks improves convenience for authors and helps make up for repetition in other areas
+
+:::
+
+::: fragment
+
+- Designed for productivity by self-establishing guidelines
+Notes that are missing are easier to notice to the writer
+
+:::
