@@ -703,16 +703,16 @@ rag_with_sources(docs, "How does RAG work?")
   - Retrieval finds relevant context
   - Generation produces grounded responses
 
-- {{< iconify fa6-solid search >}} **Master retrieval concepts**
+- {{< iconify fa6-solid rocket >}} **Master retrieval concepts**
   - Similarity scoring ranks relevance
   - Top-k selection balances context and precision
   - Source attribution maintains transparency
   - Retrieved context grounds generated answers
 
 - {{< iconify fa6-solid lightbulb >}} **What are some practical ways in which
-you could integrate RAG into your document engineering tool? How will you
-extend the starting implementation presented this week? Make sure to listen to
-[SE Radio Episode 690: Kacper Łukawski on Qdrant Vector
+you could integrate RAG into your document engineering tool? How will you extend
+the starting implementation presented this week? Make sure to listen to [SE
+Radio Episode 690: Kacper Łukawski on Qdrant Vector
 Database](https://se-radio.net/2025/10/se-radio-691-kacper-lukawski-on-qdrant-vector-database/)**!
 
 :::
