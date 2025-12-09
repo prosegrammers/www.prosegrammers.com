@@ -316,7 +316,7 @@ print("Modified meta:", meta)
   - Eliminate duplicate tags automatically
   - Build clean tag collections
 
-- {{< iconify fa6-solid intersect >}} **Performing set operations**
+- {{< iconify fa6-solid rocket >}} **Performing set operations**
   - Find common and unique tags
   - Analyze document relationships
 
