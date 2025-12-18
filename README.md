@@ -1,14 +1,14 @@
 # www.prosegrammers.com.
 
 This is the GitHub repository for
-[Prosegrammers](http://www.prosegrammers.com/), a website for a course about
-document engineering. Prosegrammers learn to use Python for creating,
-analyzing, and improving documents, blending programming with technical
-writing. The course covers tools like Jupyter Notebooks and Quarto, and
-teaches skills in documentation, version control, and AI-assisted coding
-with [GitHub Copilot](https://github.com/features/copilot) and
-[OpenCode](https://opencode.ai/). All resources and projects are publicly
-available.
+[Prosegrammers](http://www.prosegrammers.com/), the website for a course on
+document engineering. Here, prosegrammers—those who blend programming with
+prose—learn to harness Python for creating, analyzing, and enhancing documents.
+The course explores essential tools like Jupyter Notebooks and Quarto, while
+building skills in documentation, version control, and AI-assisted coding with
+[GitHub Copilot](https://github.com/features/copilot) and
+[OpenCode](https://opencode.ai/). All materials and projects are publicly
+available to foster learning and collaboration.
 
 The website serves as a comprehensive hub for students enrolled in the
 Document Engineering course, offering structured access to course materials,
